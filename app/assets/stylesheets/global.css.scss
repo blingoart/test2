@@ -1,0 +1,17 @@
+// Place all the styles related to the global site here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@font-face {
+	font-family: "helvetica-neue";
+	font-style: normal;
+	font-weight: normal;
+	src: font-url('HelveticaNeueLTStd-Th.otf');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: helvetica-neue, helvetica, sans-serif;
+  background: image-url('wall_backgound.jpg') fixed  top center;
+}

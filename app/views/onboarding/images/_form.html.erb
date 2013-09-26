@@ -1,0 +1,14 @@
+<%= form_for @onboarding_image, :html => {:multipart => true}, url: onboarding_images_create_path do |f| %>
+  <% if @onboarding_image.errors.any? %>
+    <div class="onboarding-error-explanation">
+      <div><%= pluralize(@onboarding_image.errors.count, "error") %> prohibited this image from being saved:</div>
+      <ul>
+      <% @onboarding_image.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <%= f.file_field :file_name, :multiple => :true %>
+  <%= f.submit "Upload File(s)", :class => "button1" %>
+<% end %>

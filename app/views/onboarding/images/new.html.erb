@@ -1,0 +1,9 @@
+<div id="onboarding-buttons-container">
+  <div class="button2" id="choose-file-button">Choose file(s)</div>
+  <div id="show-files-container">
+    <div id="show-files" class="show-file-names"></div>
+  </div>
+  <%= render 'form' %>
+  <%= link_to "Bio", onboarding_artist_show_path, :class =>"button2 onboarding-button", :id => "bio-button" %>
+</div>
+<%= render 'files' %>

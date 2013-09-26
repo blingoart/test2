@@ -1,0 +1,12 @@
+<%= render 'signin_name' %>
+
+<% unless @errors.empty? %>
+  <div id="error-explanation">Please answer the required questions.</div>
+<% end %>
+
+<%= form_tag onboarding_artist_signin_path do |f| %>
+
+  <%= label_tag :password %> <%= password_field_tag :password %>
+  <br />
+  <%= submit_tag "Sign in" %>
+<% end %>

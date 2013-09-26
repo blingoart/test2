@@ -1,0 +1,6 @@
+<%- messages.each do |name, message| -%>
+  <div class="<%= name %> message" style="display:none">
+    <%= message %>
+    <div class="close_button"><span class="x_button">&#x2612;</span>CLOSE</div>
+  </div>
+<%- end -%>

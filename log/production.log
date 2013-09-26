@@ -1,0 +1,550 @@
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Started GET "/onboarding/johnsmith" for 127.0.0.1 at 2013-09-15 07:06:54 -0400
+Connecting to database specified by database.yml
+
+Mysql2::Error (Access denied for user 'blingomain'@'localhost' (using password: YES)):
+  mysql2 (0.3.11) lib/mysql2/client.rb:44:in `connect'
+  mysql2 (0.3.11) lib/mysql2/client.rb:44:in `initialize'
+  activerecord (3.2.13) lib/active_record/connection_adapters/mysql2_adapter.rb:16:in `new'
+  activerecord (3.2.13) lib/active_record/connection_adapters/mysql2_adapter.rb:16:in `mysql2_connection'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:315:in `new_connection'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:325:in `checkout_new_connection'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:247:in `block (2 levels) in checkout'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:242:in `loop'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:242:in `block in checkout'
+  /Users/ted/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:239:in `checkout'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:102:in `block in connection'
+  /Users/ted/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:101:in `connection'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:410:in `retrieve_connection'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_specification.rb:171:in `retrieve_connection'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_specification.rb:145:in `connection'
+  activerecord (3.2.13) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.13) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `_run__4337247854423111121__call__605402893274558021__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/ted/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/ted/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/ted/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/ted/.rvm/gems/ruby-2.0.0-p247@rails-3.2.13/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (18.8ms)
+  Rendered /Users/ted/.rvm/gems/ruby-2.0.0-p247@rails-3.2.13/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.4ms)
+  Rendered /Users/ted/.rvm/gems/ruby-2.0.0-p247@rails-3.2.13/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (117.8ms)
+Started GET "/favicon.ico" for 127.0.0.1 at 2013-09-15 07:06:55 -0400
+
+Mysql2::Error (Access denied for user 'blingomain'@'localhost' (using password: YES)):
+  mysql2 (0.3.11) lib/mysql2/client.rb:44:in `connect'
+  mysql2 (0.3.11) lib/mysql2/client.rb:44:in `initialize'
+  activerecord (3.2.13) lib/active_record/connection_adapters/mysql2_adapter.rb:16:in `new'
+  activerecord (3.2.13) lib/active_record/connection_adapters/mysql2_adapter.rb:16:in `mysql2_connection'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:315:in `new_connection'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:325:in `checkout_new_connection'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:247:in `block (2 levels) in checkout'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:242:in `loop'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:242:in `block in checkout'
+  /Users/ted/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:239:in `checkout'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:102:in `block in connection'
+  /Users/ted/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:101:in `connection'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:410:in `retrieve_connection'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_specification.rb:171:in `retrieve_connection'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_specification.rb:145:in `connection'
+  activerecord (3.2.13) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.13) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `_run__4337247854423111121__call__605402893274558021__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/ted/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/ted/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/ted/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/ted/.rvm/gems/ruby-2.0.0-p247@rails-3.2.13/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/ted/.rvm/gems/ruby-2.0.0-p247@rails-3.2.13/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/ted/.rvm/gems/ruby-2.0.0-p247@rails-3.2.13/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.1ms)
+Started GET "/onboarding/johnsmith" for 127.0.0.1 at 2013-09-15 07:08:12 -0400
+Connecting to database specified by database.yml
+Processing by Onboarding::FilesController#show as HTML
+  Parameters: {"signin_name"=>"johnsmith"}
+  Rendered onboarding/files/show.html.erb within layouts/onboarding/onboarding (2.5ms)
+Completed 500 Internal Server Error in 185ms
+
+ActionView::Template::Error (application.css isn't precompiled):
+    3: <head>
+    4:   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    5:   <title><%= title %></title>
+    6:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    7:   <%= javascript_include_tag "application" %>
+    8:   <%= csrf_meta_tag %>
+    9: </head>
+  app/views/layouts/onboarding/onboarding.html.erb:6:in `_app_views_layouts_onboarding_onboarding_html_erb___1104767854115953758_70209321892180'
+
+
+  Rendered /Users/ted/.rvm/gems/ruby-2.0.0-p247@rails-3.2.13/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/ted/.rvm/gems/ruby-2.0.0-p247@rails-3.2.13/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/ted/.rvm/gems/ruby-2.0.0-p247@rails-3.2.13/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.8ms)
+Started GET "/favicon.ico" for 127.0.0.1 at 2013-09-15 07:08:13 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/ted/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/ted/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/ted/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/ted/.rvm/gems/ruby-2.0.0-p247@rails-3.2.13/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+Compiled jquery.js  (24ms)  (pid 6302)
+Compiled jquery_ujs.js  (0ms)  (pid 6302)
+Compiled api/packs.js  (53ms)  (pid 6302)
+Compiled api/stickers.js  (0ms)  (pid 6302)
+Compiled jquery.cookie.js  (0ms)  (pid 6302)
+Compiled messages.js  (0ms)  (pid 6302)
+Compiled onboarding.js  (0ms)  (pid 6302)
+Compiled onboarding/artists.js  (0ms)  (pid 6302)
+Compiled onboarding/files.js  (0ms)  (pid 6302)
+Compiled onboarding/onboarding.js  (0ms)  (pid 6302)
+Compiled onboarding/sessions.js  (0ms)  (pid 6302)
+Compiled site.js  (0ms)  (pid 6302)
+Compiled application.js  (125ms)  (pid 6302)
+Compiled all/global.css  (7ms)  (pid 6302)
+Compiled all/messages.css  (27ms)  (pid 6302)
+Compiled all/onboarding.css  (68ms)  (pid 6302)
+Compiled all/onboarding/artists.css  (1ms)  (pid 6302)
+Compiled all/onboarding/images.css  (0ms)  (pid 6302)
+Compiled all/onboarding/sessions.css  (0ms)  (pid 6302)
+Compiled all/site.css  (12ms)  (pid 6302)
+Compiled application-all.css  (137ms)  (pid 6302)
+Compiled ie/ie.css  (2ms)  (pid 6302)
+Compiled application-ie.css  (5ms)  (pid 6302)
+Compiled jquery.js  (24ms)  (pid 6302)
+Compiled jquery_ujs.js  (0ms)  (pid 6302)
+Compiled api/packs.js  (50ms)  (pid 6302)
+Compiled api/stickers.js  (0ms)  (pid 6302)
+Compiled jquery.cookie.js  (0ms)  (pid 6302)
+Compiled messages.js  (0ms)  (pid 6302)
+Compiled onboarding.js  (0ms)  (pid 6302)
+Compiled onboarding/artists.js  (0ms)  (pid 6302)
+Compiled onboarding/files.js  (0ms)  (pid 6302)
+Compiled onboarding/onboarding.js  (0ms)  (pid 6302)
+Compiled onboarding/sessions.js  (0ms)  (pid 6302)
+Compiled site.js  (0ms)  (pid 6302)
+Compiled application.js  (114ms)  (pid 6302)
+Compiled all/global.css  (6ms)  (pid 6302)
+Compiled all/messages.css  (27ms)  (pid 6302)
+Compiled all/onboarding.css  (67ms)  (pid 6302)
+Compiled all/onboarding/artists.css  (1ms)  (pid 6302)
+Compiled all/onboarding/images.css  (0ms)  (pid 6302)
+Compiled all/onboarding/sessions.css  (0ms)  (pid 6302)
+Compiled all/site.css  (11ms)  (pid 6302)
+Compiled application-all.css  (134ms)  (pid 6302)
+Compiled ie/ie.css  (1ms)  (pid 6302)
+Compiled application-ie.css  (4ms)  (pid 6302)
+Compiled jquery.js  (23ms)  (pid 6319)
+Compiled jquery_ujs.js  (0ms)  (pid 6319)
+Compiled api/packs.js  (50ms)  (pid 6319)
+Compiled api/stickers.js  (1ms)  (pid 6319)
+Compiled jquery.cookie.js  (0ms)  (pid 6319)
+Compiled messages.js  (0ms)  (pid 6319)
+Compiled onboarding.js  (0ms)  (pid 6319)
+Compiled onboarding/artists.js  (0ms)  (pid 6319)
+Compiled onboarding/files.js  (0ms)  (pid 6319)
+Compiled onboarding/onboarding.js  (0ms)  (pid 6319)
+Compiled onboarding/sessions.js  (0ms)  (pid 6319)
+Compiled site.js  (0ms)  (pid 6319)
+Compiled application.js  (116ms)  (pid 6319)
+Compiled ie/ie.css  (4ms)  (pid 6319)
+Compiled application-ie.css  (7ms)  (pid 6319)
+Compiled jquery.js  (24ms)  (pid 6319)
+Compiled jquery_ujs.js  (0ms)  (pid 6319)
+Compiled api/packs.js  (48ms)  (pid 6319)
+Compiled api/stickers.js  (1ms)  (pid 6319)
+Compiled jquery.cookie.js  (0ms)  (pid 6319)
+Compiled messages.js  (0ms)  (pid 6319)
+Compiled onboarding.js  (0ms)  (pid 6319)
+Compiled onboarding/artists.js  (0ms)  (pid 6319)
+Compiled onboarding/files.js  (0ms)  (pid 6319)
+Compiled onboarding/onboarding.js  (0ms)  (pid 6319)
+Compiled onboarding/sessions.js  (0ms)  (pid 6319)
+Compiled site.js  (0ms)  (pid 6319)
+Compiled application.js  (110ms)  (pid 6319)
+Compiled ie/ie.css  (4ms)  (pid 6319)
+Compiled application-ie.css  (7ms)  (pid 6319)
+Compiled jquery.js  (23ms)  (pid 6325)
+Compiled jquery_ujs.js  (0ms)  (pid 6325)
+Compiled api/packs.js  (50ms)  (pid 6325)
+Compiled api/stickers.js  (0ms)  (pid 6325)
+Compiled jquery.cookie.js  (0ms)  (pid 6325)
+Compiled messages.js  (0ms)  (pid 6325)
+Compiled onboarding.js  (0ms)  (pid 6325)
+Compiled onboarding/artists.js  (0ms)  (pid 6325)
+Compiled onboarding/files.js  (0ms)  (pid 6325)
+Compiled onboarding/onboarding.js  (0ms)  (pid 6325)
+Compiled onboarding/sessions.js  (0ms)  (pid 6325)
+Compiled site.js  (0ms)  (pid 6325)
+Compiled application.js  (110ms)  (pid 6325)
+Compiled ie/ie.css  (4ms)  (pid 6325)
+Compiled application-ie.css  (7ms)  (pid 6325)
+Compiled jquery.js  (23ms)  (pid 6325)
+Compiled jquery_ujs.js  (0ms)  (pid 6325)
+Compiled api/packs.js  (49ms)  (pid 6325)
+Compiled api/stickers.js  (0ms)  (pid 6325)
+Compiled jquery.cookie.js  (0ms)  (pid 6325)
+Compiled messages.js  (0ms)  (pid 6325)
+Compiled onboarding.js  (0ms)  (pid 6325)
+Compiled onboarding/artists.js  (0ms)  (pid 6325)
+Compiled onboarding/files.js  (0ms)  (pid 6325)
+Compiled onboarding/onboarding.js  (0ms)  (pid 6325)
+Compiled onboarding/sessions.js  (0ms)  (pid 6325)
+Compiled site.js  (0ms)  (pid 6325)
+Compiled application.js  (112ms)  (pid 6325)
+Compiled ie/ie.css  (4ms)  (pid 6325)
+Compiled application-ie.css  (7ms)  (pid 6325)
+Compiled jquery.js  (23ms)  (pid 6329)
+Compiled jquery_ujs.js  (0ms)  (pid 6329)
+Compiled api/packs.js  (49ms)  (pid 6329)
+Compiled api/stickers.js  (0ms)  (pid 6329)
+Compiled jquery.cookie.js  (0ms)  (pid 6329)
+Compiled messages.js  (0ms)  (pid 6329)
+Compiled onboarding.js  (0ms)  (pid 6329)
+Compiled onboarding/artists.js  (0ms)  (pid 6329)
+Compiled onboarding/files.js  (0ms)  (pid 6329)
+Compiled onboarding/onboarding.js  (0ms)  (pid 6329)
+Compiled onboarding/sessions.js  (0ms)  (pid 6329)
+Compiled site.js  (0ms)  (pid 6329)
+Compiled application.js  (109ms)  (pid 6329)
+Compiled ie/ie.css  (4ms)  (pid 6329)
+Compiled application-ie.css  (7ms)  (pid 6329)
+Compiled jquery.js  (23ms)  (pid 6329)
+Compiled jquery_ujs.js  (0ms)  (pid 6329)
+Compiled api/packs.js  (50ms)  (pid 6329)
+Compiled api/stickers.js  (1ms)  (pid 6329)
+Compiled jquery.cookie.js  (0ms)  (pid 6329)
+Compiled messages.js  (0ms)  (pid 6329)
+Compiled onboarding.js  (0ms)  (pid 6329)
+Compiled onboarding/artists.js  (0ms)  (pid 6329)
+Compiled onboarding/files.js  (0ms)  (pid 6329)
+Compiled onboarding/onboarding.js  (0ms)  (pid 6329)
+Compiled onboarding/sessions.js  (0ms)  (pid 6329)
+Compiled site.js  (0ms)  (pid 6329)
+Compiled application.js  (117ms)  (pid 6329)
+Compiled ie/ie.css  (4ms)  (pid 6329)
+Compiled application-ie.css  (7ms)  (pid 6329)
+Compiled jquery.js  (23ms)  (pid 6333)
+Compiled jquery_ujs.js  (0ms)  (pid 6333)
+Compiled api/packs.js  (49ms)  (pid 6333)
+Compiled api/stickers.js  (0ms)  (pid 6333)
+Compiled jquery.cookie.js  (0ms)  (pid 6333)
+Compiled messages.js  (0ms)  (pid 6333)
+Compiled onboarding.js  (0ms)  (pid 6333)
+Compiled onboarding/artists.js  (0ms)  (pid 6333)
+Compiled onboarding/files.js  (0ms)  (pid 6333)
+Compiled onboarding/onboarding.js  (0ms)  (pid 6333)
+Compiled onboarding/sessions.js  (0ms)  (pid 6333)
+Compiled site.js  (0ms)  (pid 6333)
+Compiled application.js  (115ms)  (pid 6333)
+Compiled ie/ie.css  (4ms)  (pid 6333)
+Compiled application-ie.css  (7ms)  (pid 6333)
+Compiled jquery.js  (23ms)  (pid 6333)
+Compiled jquery_ujs.js  (0ms)  (pid 6333)
+Compiled api/packs.js  (49ms)  (pid 6333)
+Compiled api/stickers.js  (0ms)  (pid 6333)
+Compiled jquery.cookie.js  (0ms)  (pid 6333)
+Compiled messages.js  (0ms)  (pid 6333)
+Compiled onboarding.js  (0ms)  (pid 6333)
+Compiled onboarding/artists.js  (0ms)  (pid 6333)
+Compiled onboarding/files.js  (0ms)  (pid 6333)
+Compiled onboarding/onboarding.js  (0ms)  (pid 6333)
+Compiled onboarding/sessions.js  (0ms)  (pid 6333)
+Compiled site.js  (0ms)  (pid 6333)
+Compiled application.js  (108ms)  (pid 6333)
+Compiled ie/ie.css  (4ms)  (pid 6333)
+Compiled application-ie.css  (7ms)  (pid 6333)
+Compiled jquery.js  (24ms)  (pid 6341)
+Compiled jquery_ujs.js  (0ms)  (pid 6341)
+Compiled api/packs.js  (57ms)  (pid 6341)
+Compiled api/stickers.js  (1ms)  (pid 6341)
+Compiled jquery.cookie.js  (0ms)  (pid 6341)
+Compiled messages.js  (0ms)  (pid 6341)
+Compiled onboarding.js  (0ms)  (pid 6341)
+Compiled onboarding/artists.js  (0ms)  (pid 6341)
+Compiled onboarding/files.js  (0ms)  (pid 6341)
+Compiled onboarding/onboarding.js  (0ms)  (pid 6341)
+Compiled onboarding/sessions.js  (0ms)  (pid 6341)
+Compiled site.js  (0ms)  (pid 6341)
+Compiled application.js  (124ms)  (pid 6341)
+Compiled ie/ie.css  (4ms)  (pid 6341)
+Compiled application-ie.css  (7ms)  (pid 6341)
+Compiled jquery.js  (23ms)  (pid 6341)
+Compiled jquery_ujs.js  (0ms)  (pid 6341)
+Compiled api/packs.js  (49ms)  (pid 6341)
+Compiled api/stickers.js  (0ms)  (pid 6341)
+Compiled jquery.cookie.js  (0ms)  (pid 6341)
+Compiled messages.js  (0ms)  (pid 6341)
+Compiled onboarding.js  (0ms)  (pid 6341)
+Compiled onboarding/artists.js  (0ms)  (pid 6341)
+Compiled onboarding/files.js  (0ms)  (pid 6341)
+Compiled onboarding/onboarding.js  (0ms)  (pid 6341)
+Compiled onboarding/sessions.js  (0ms)  (pid 6341)
+Compiled site.js  (0ms)  (pid 6341)
+Compiled application.js  (115ms)  (pid 6341)
+Compiled ie/ie.css  (4ms)  (pid 6341)
+Compiled application-ie.css  (7ms)  (pid 6341)
+Compiled jquery.js  (24ms)  (pid 6352)
+Compiled jquery_ujs.js  (0ms)  (pid 6352)
+Compiled api/packs.js  (51ms)  (pid 6352)
+Compiled api/stickers.js  (1ms)  (pid 6352)
+Compiled jquery.cookie.js  (0ms)  (pid 6352)
+Compiled messages.js  (0ms)  (pid 6352)
+Compiled onboarding.js  (0ms)  (pid 6352)
+Compiled onboarding/artists.js  (0ms)  (pid 6352)
+Compiled onboarding/files.js  (0ms)  (pid 6352)
+Compiled onboarding/onboarding.js  (0ms)  (pid 6352)
+Compiled onboarding/sessions.js  (0ms)  (pid 6352)
+Compiled site.js  (0ms)  (pid 6352)
+Compiled application.js  (111ms)  (pid 6352)
+Compiled ie/ie.css  (4ms)  (pid 6352)
+Compiled application-ie.css  (7ms)  (pid 6352)
+Compiled jquery.js  (23ms)  (pid 6352)
+Compiled jquery_ujs.js  (0ms)  (pid 6352)
+Compiled api/packs.js  (52ms)  (pid 6352)
+Compiled api/stickers.js  (1ms)  (pid 6352)
+Compiled jquery.cookie.js  (0ms)  (pid 6352)
+Compiled messages.js  (0ms)  (pid 6352)
+Compiled onboarding.js  (0ms)  (pid 6352)
+Compiled onboarding/artists.js  (0ms)  (pid 6352)
+Compiled onboarding/files.js  (0ms)  (pid 6352)
+Compiled onboarding/onboarding.js  (0ms)  (pid 6352)
+Compiled onboarding/sessions.js  (0ms)  (pid 6352)
+Compiled site.js  (0ms)  (pid 6352)
+Compiled application.js  (113ms)  (pid 6352)
+Compiled ie/ie.css  (4ms)  (pid 6352)
+Compiled application-ie.css  (7ms)  (pid 6352)
+Compiled jquery.js  (24ms)  (pid 6357)
+Compiled jquery_ujs.js  (0ms)  (pid 6357)
+Compiled api/packs.js  (48ms)  (pid 6357)
+Compiled api/stickers.js  (1ms)  (pid 6357)
+Compiled jquery.cookie.js  (0ms)  (pid 6357)
+Compiled messages.js  (0ms)  (pid 6357)
+Compiled onboarding.js  (0ms)  (pid 6357)
+Compiled onboarding/artists.js  (0ms)  (pid 6357)
+Compiled onboarding/files.js  (0ms)  (pid 6357)
+Compiled onboarding/onboarding.js  (0ms)  (pid 6357)
+Compiled onboarding/sessions.js  (1ms)  (pid 6357)
+Compiled site.js  (0ms)  (pid 6357)
+Compiled application.js  (115ms)  (pid 6357)
+Compiled ie/ie.css  (4ms)  (pid 6357)
+Compiled application-ie.css  (7ms)  (pid 6357)
+Compiled jquery.js  (23ms)  (pid 6362)
+Compiled jquery_ujs.js  (0ms)  (pid 6362)
+Compiled api/packs.js  (51ms)  (pid 6362)
+Compiled api/stickers.js  (0ms)  (pid 6362)
+Compiled jquery.cookie.js  (0ms)  (pid 6362)
+Compiled messages.js  (0ms)  (pid 6362)
+Compiled onboarding.js  (0ms)  (pid 6362)
+Compiled onboarding/artists.js  (0ms)  (pid 6362)
+Compiled onboarding/files.js  (0ms)  (pid 6362)
+Compiled onboarding/onboarding.js  (0ms)  (pid 6362)
+Compiled onboarding/sessions.js  (0ms)  (pid 6362)
+Compiled site.js  (0ms)  (pid 6362)
+Compiled application.js  (114ms)  (pid 6362)
+Compiled ie/ie.css  (4ms)  (pid 6362)
+Compiled application-ie.css  (7ms)  (pid 6362)
+Compiled api/packs.css  (1ms)  (pid 6362)
+Compiled api/stickers.css  (0ms)  (pid 6362)
+Compiled global.css  (3ms)  (pid 6362)
+Compiled messages.css  (26ms)  (pid 6362)
+Compiled onboarding.css  (67ms)  (pid 6362)
+Compiled onboarding/artists.css  (1ms)  (pid 6362)
+Compiled onboarding/images.css  (0ms)  (pid 6362)
+Compiled onboarding/sessions.css  (0ms)  (pid 6362)
+Compiled site.css  (12ms)  (pid 6362)
+Compiled application.css  (139ms)  (pid 6362)
+Compiled jquery.js  (24ms)  (pid 6362)
+Compiled jquery_ujs.js  (0ms)  (pid 6362)
+Compiled api/packs.js  (50ms)  (pid 6362)
+Compiled api/stickers.js  (1ms)  (pid 6362)
+Compiled jquery.cookie.js  (0ms)  (pid 6362)
+Compiled messages.js  (0ms)  (pid 6362)
+Compiled onboarding.js  (0ms)  (pid 6362)
+Compiled onboarding/artists.js  (0ms)  (pid 6362)
+Compiled onboarding/files.js  (0ms)  (pid 6362)
+Compiled onboarding/onboarding.js  (0ms)  (pid 6362)
+Compiled onboarding/sessions.js  (0ms)  (pid 6362)
+Compiled site.js  (0ms)  (pid 6362)
+Compiled application.js  (116ms)  (pid 6362)
+Compiled ie/ie.css  (4ms)  (pid 6362)
+Compiled application-ie.css  (7ms)  (pid 6362)
+Compiled api/packs.css  (1ms)  (pid 6362)
+Compiled api/stickers.css  (0ms)  (pid 6362)
+Compiled global.css  (3ms)  (pid 6362)
+Compiled messages.css  (26ms)  (pid 6362)
+Compiled onboarding.css  (66ms)  (pid 6362)
+Compiled onboarding/artists.css  (1ms)  (pid 6362)
+Compiled onboarding/images.css  (0ms)  (pid 6362)
+Compiled onboarding/sessions.css  (0ms)  (pid 6362)
+Compiled site.css  (12ms)  (pid 6362)
+Compiled application.css  (135ms)  (pid 6362)
+Compiled jquery.js  (23ms)  (pid 6368)
+Compiled jquery_ujs.js  (0ms)  (pid 6368)
+Compiled api/packs.js  (51ms)  (pid 6368)
+Compiled api/stickers.js  (1ms)  (pid 6368)
+Compiled jquery.cookie.js  (0ms)  (pid 6368)
+Compiled messages.js  (0ms)  (pid 6368)
+Compiled onboarding.js  (0ms)  (pid 6368)
+Compiled onboarding/artists.js  (0ms)  (pid 6368)
+Compiled onboarding/files.js  (0ms)  (pid 6368)
+Compiled onboarding/onboarding.js  (0ms)  (pid 6368)
+Compiled onboarding/sessions.js  (0ms)  (pid 6368)
+Compiled site.js  (0ms)  (pid 6368)
+Compiled application.js  (118ms)  (pid 6368)
+Compiled ie/ie.css  (4ms)  (pid 6368)
+Compiled application-ie.css  (7ms)  (pid 6368)
+Compiled api/packs.css  (1ms)  (pid 6368)
+Compiled api/stickers.css  (0ms)  (pid 6368)
+Compiled global.css  (3ms)  (pid 6368)
+Compiled messages.css  (26ms)  (pid 6368)
+Compiled onboarding.css  (66ms)  (pid 6368)
+Compiled onboarding/artists.css  (1ms)  (pid 6368)
+Compiled onboarding/images.css  (0ms)  (pid 6368)
+Compiled onboarding/sessions.css  (1ms)  (pid 6368)
+Compiled site.css  (12ms)  (pid 6368)
+Compiled application.css  (138ms)  (pid 6368)
+Compiled jquery.js  (23ms)  (pid 6368)
+Compiled jquery_ujs.js  (0ms)  (pid 6368)
+Compiled api/packs.js  (50ms)  (pid 6368)
+Compiled api/stickers.js  (1ms)  (pid 6368)
+Compiled jquery.cookie.js  (0ms)  (pid 6368)
+Compiled messages.js  (0ms)  (pid 6368)
+Compiled onboarding.js  (0ms)  (pid 6368)
+Compiled onboarding/artists.js  (0ms)  (pid 6368)
+Compiled onboarding/files.js  (0ms)  (pid 6368)
+Compiled onboarding/onboarding.js  (0ms)  (pid 6368)
+Compiled onboarding/sessions.js  (0ms)  (pid 6368)
+Compiled site.js  (0ms)  (pid 6368)
+Compiled application.js  (113ms)  (pid 6368)
+Compiled ie/ie.css  (5ms)  (pid 6368)
+Compiled application-ie.css  (8ms)  (pid 6368)
+Compiled api/packs.css  (1ms)  (pid 6368)
+Compiled api/stickers.css  (0ms)  (pid 6368)
+Compiled global.css  (3ms)  (pid 6368)
+Compiled messages.css  (27ms)  (pid 6368)
+Compiled onboarding.css  (67ms)  (pid 6368)
+Compiled onboarding/artists.css  (1ms)  (pid 6368)
+Compiled onboarding/images.css  (0ms)  (pid 6368)
+Compiled onboarding/sessions.css  (0ms)  (pid 6368)
+Compiled site.css  (12ms)  (pid 6368)
+Compiled application.css  (141ms)  (pid 6368)
+Compiled jquery.js  (24ms)  (pid 6430)
+Compiled jquery_ujs.js  (0ms)  (pid 6430)
+Compiled api/packs.js  (61ms)  (pid 6430)
+Compiled api/stickers.js  (1ms)  (pid 6430)
+Compiled jquery.cookie.js  (0ms)  (pid 6430)
+Compiled messages.js  (0ms)  (pid 6430)
+Compiled onboarding.js  (0ms)  (pid 6430)
+Compiled onboarding/artists.js  (0ms)  (pid 6430)
+Compiled onboarding/files.js  (0ms)  (pid 6430)
+Compiled onboarding/onboarding.js  (0ms)  (pid 6430)
+Compiled onboarding/sessions.js  (0ms)  (pid 6430)
+Compiled site.js  (0ms)  (pid 6430)
+Compiled application.js  (146ms)  (pid 6430)
+Compiled ie/ie.css  (6ms)  (pid 6430)
+Compiled application-ie.css  (9ms)  (pid 6430)
+Compiled api/packs.css  (1ms)  (pid 6430)
+Compiled api/stickers.css  (0ms)  (pid 6430)
+Compiled global.css  (3ms)  (pid 6430)
+Compiled messages.css  (47ms)  (pid 6430)
+Compiled onboarding.css  (46ms)  (pid 6430)
+Compiled onboarding/artists.css  (1ms)  (pid 6430)
+Compiled onboarding/images.css  (0ms)  (pid 6430)
+Compiled onboarding/sessions.css  (0ms)  (pid 6430)
+Compiled site.css  (12ms)  (pid 6430)
+Compiled application.css  (142ms)  (pid 6430)
+Compiled jquery.js  (24ms)  (pid 6430)
+Compiled jquery_ujs.js  (0ms)  (pid 6430)
+Compiled api/packs.js  (52ms)  (pid 6430)
+Compiled api/stickers.js  (1ms)  (pid 6430)
+Compiled jquery.cookie.js  (0ms)  (pid 6430)
+Compiled messages.js  (0ms)  (pid 6430)
+Compiled onboarding.js  (0ms)  (pid 6430)
+Compiled onboarding/artists.js  (0ms)  (pid 6430)
+Compiled onboarding/files.js  (0ms)  (pid 6430)
+Compiled onboarding/onboarding.js  (0ms)  (pid 6430)
+Compiled onboarding/sessions.js  (0ms)  (pid 6430)
+Compiled site.js  (0ms)  (pid 6430)
+Compiled application.js  (122ms)  (pid 6430)
+Compiled ie/ie.css  (4ms)  (pid 6430)
+Compiled application-ie.css  (8ms)  (pid 6430)
+Compiled api/packs.css  (1ms)  (pid 6430)
+Compiled api/stickers.css  (0ms)  (pid 6430)
+Compiled global.css  (3ms)  (pid 6430)
+Compiled messages.css  (26ms)  (pid 6430)
+Compiled onboarding.css  (66ms)  (pid 6430)
+Compiled onboarding/artists.css  (1ms)  (pid 6430)
+Compiled onboarding/images.css  (0ms)  (pid 6430)
+Compiled onboarding/sessions.css  (0ms)  (pid 6430)
+Compiled site.css  (12ms)  (pid 6430)
+Compiled application.css  (138ms)  (pid 6430)

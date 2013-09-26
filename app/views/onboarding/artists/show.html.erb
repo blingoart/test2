@@ -1,0 +1,36 @@
+<%= image_tag("onboarding_close.png", :width => "40", :height =>"40", :class => "onboarding-close") %>
+<%= form_for @onboarding_artist, url: onboarding_artist_create_path do |f| %>
+  <%= f.text_area :bio, :placeholder => "<INPUT BIO TEXT HERE>" %>
+
+<div id="onboarding-artist-container">
+  <div class="onboarding-artist-photo-container">
+    <div class="onboarding-file-image-container">
+      <%= image_tag(@onboarding_artist.photo, :width => "300", :id => "onboarding-artist-photo") %>
+    </div>
+  </div>
+
+  <div id="onboarding-buttons-container">
+    <div class="onboarding-bio-button-container">
+      <div class="button2" id="choose-photo-button">Choose Photo</div>
+      <div id="show-photo-container">
+        <div id="show-photo" class="show-file-names"></div>
+      </div>
+      <%= f.file_field :photo %>
+    </div>
+      <% unless @onboarding_artist.photo.to_s.match("onboarding_default_artist_photo") %>
+        <div class="onboarding-bio-button-container">
+          <%= link_to image_tag("onboarding_trash_small.png", :width => "31", :height =>"40", :id => "onboarding-artist-trash"), onboarding_artist_photo_destroy_path, confirm: 'Are you sure you want to delete this file?', method: :delete %>
+          <%= link_to "Delete Photo", onboarding_artist_photo_destroy_path, confirm: 'Are you sure you want to delete this photo?', method: :delete, :class => "button2 onboarding-button", :id =>"delete-photo-button" %>
+        </div>
+      <% end %>
+      <div class="onboarding-bio-button-container">
+        <%= f.submit "Save All", :class => "button1", :id =>"save-all-button" %>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<%= javascript_tag do %>
+  close_path = '<%= onboarding_images_new_path %>';
+  initialize_close_button();
+<% end %>

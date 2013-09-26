@@ -1,0 +1,13 @@
+<div class="onboarding-images-container">
+<%- @files.each do |file| %>
+    <div class="onboarding-image-container">
+      <div class="onboarding-image-file-container">
+        <div class="onboarding-image-hover-container">
+          <%= link_to image_tag("onboarding_file_hover.png", :width => "83", :height =>"84", :class => "onboarding-image-hover-image"), onboarding_images_edit_path(file) %>
+        </div>
+        <%= show_files file, onboarding_images_edit_path(file), "small" %>
+      </div>
+      <div class="onboarding-image-name"><%= truncate(File.basename(file.file_name.to_s), length: 25) %></div>
+    </div>
+<%- end %>
+</div>

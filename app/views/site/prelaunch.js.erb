@@ -1,0 +1,19 @@
+<% if defined? @prelaunch %>
+  var msg = "";
+  <% if @prelaunch.errors.any? %>
+      <% @prelaunch.errors.full_messages.each do |msg| %>
+        msg += '<%= msg %> ';
+      <% end %>
+      $("#prelaunch-errors").html(msg);
+  <% else %>
+    msg = '<div id="prelaunch-thanks">Thanks for your interest, <%= @prelaunch.email %></div>';
+    $("#prelaunch").html(msg);
+    setTimeout("hide_prelaunch()", 2000);
+    $("#stay-tuned").fadeOut(400);
+  <% end %>
+<% else %>
+  msg = "<h2>Thank you, <%= @prelaunch.email %>.</h2>";
+  $("#prelaunch").html(msg);
+  setTimeout("hide_prelaunch()", 2000);
+  $("#stay-tuned").fadeOut(400);
+<% end %>

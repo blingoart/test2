@@ -1,0 +1,324 @@
+Connecting to database specified by database.yml
+Started GET "/" for 127.0.0.1 at 2013-09-20 16:37:38 -0400
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/homepage (3.5ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (keep_me_informed.png isn't precompiled):
+    1: <div id="overlay"></div>
+    2: <div class="center-content" id="prelaunch">
+    3:   <%= image_tag("keep_me_informed.png", :width => "501", :height => "346", :id => "keep-me-informed") %>
+    4:   <div id="prelaunch-close">[X]</div>
+    5: 
+    6:   <%= form_tag prelaunch_path, :remote => true do %>
+  app/views/site/index.html.erb:3:in `_app_views_site_index_html_erb___3597254800911578503_70235966661120'
+  app/controllers/site_controller.rb:6:in `index'
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-20 16:37:53 -0400
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/homepage (0.7ms)
+Completed 500 Internal Server Error in 1ms
+
+ActionView::Template::Error (keep_me_informed.png isn't precompiled):
+    1: <div id="overlay"></div>
+    2: <div class="center-content" id="prelaunch">
+    3:   <%= image_tag("keep_me_informed.png", :width => "501", :height => "346", :id => "keep-me-informed") %>
+    4:   <div id="prelaunch-close">[X]</div>
+    5: 
+    6:   <%= form_tag prelaunch_path, :remote => true do %>
+  app/views/site/index.html.erb:3:in `_app_views_site_index_html_erb___3597254800911578503_70235966661120'
+  app/controllers/site_controller.rb:6:in `index'
+
+
+Connecting to database specified by database.yml
+Started GET "/" for 127.0.0.1 at 2013-09-20 18:34:16 -0400
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/homepage (3.1ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (keep_me_informed.png isn't precompiled):
+    1: <div id="overlay"></div>
+    2: <div class="center-content" id="prelaunch">
+    3:   <%= image_tag("keep_me_informed.png", :width => "501", :height => "346", :id => "keep-me-informed") %>
+    4:   <div id="prelaunch-close">[X]</div>
+    5: 
+    6:   <%= form_tag prelaunch_path, :remote => true do %>
+  app/views/site/index.html.erb:3:in `_app_views_site_index_html_erb__381571225671001687_70340194789040'
+  app/controllers/site_controller.rb:6:in `index'
+
+
+Connecting to database specified by database.yml
+Started GET "/" for 127.0.0.1 at 2013-09-20 18:34:51 -0400
+Processing by SiteController#index as HTML
+  Rendered application/_messages.html.erb (0.4ms)
+  Rendered site/index.html.erb within layouts/homepage (26.8ms)
+Compiled api/packs.css  (177ms)  (pid 15224)
+Compiled api/stickers.css  (1ms)  (pid 15224)
+Compiled ie/ie.css  (1ms)  (pid 15224)
+Compiled application-ie.css  (5ms)  (pid 15224)
+Compiled global.css  (3ms)  (pid 15224)
+Compiled messages.css  (29ms)  (pid 15224)
+Compiled onboarding.css  (48ms)  (pid 15224)
+Compiled onboarding/artists.css  (1ms)  (pid 15224)
+Compiled onboarding/images.css  (1ms)  (pid 15224)
+Compiled onboarding/sessions.css  (1ms)  (pid 15224)
+Compiled site.css  (14ms)  (pid 15224)
+Compiled application.css  (315ms)  (pid 15224)
+Compiled jquery.js  (4ms)  (pid 15224)
+Compiled jquery_ujs.js  (0ms)  (pid 15224)
+Compiled api/packs.js  (91ms)  (pid 15224)
+Compiled api/stickers.js  (1ms)  (pid 15224)
+Compiled jquery.cookie.js  (0ms)  (pid 15224)
+Compiled messages.js  (0ms)  (pid 15224)
+Compiled onboarding.js  (0ms)  (pid 15224)
+Compiled onboarding/artists.js  (0ms)  (pid 15224)
+Compiled onboarding/files.js  (0ms)  (pid 15224)
+Compiled onboarding/onboarding.js  (0ms)  (pid 15224)
+Compiled onboarding/sessions.js  (0ms)  (pid 15224)
+Compiled site.js  (0ms)  (pid 15224)
+Compiled application.js  (145ms)  (pid 15224)
+Completed 200 OK in 613ms (Views: 612.7ms | ActiveRecord: 0.0ms)
+Started GET "/assets/api/packs.css?body=1" for 127.0.0.1 at 2013-09-20 18:34:52 -0400
+Served asset /api/packs.css - 200 OK (3ms)
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-20 18:34:52 -0400
+Served asset /application.css - 200 OK (12ms)
+Started GET "/assets/api/stickers.css?body=1" for 127.0.0.1 at 2013-09-20 18:34:52 -0400
+Served asset /api/stickers.css - 200 OK (1ms)
+Started GET "/assets/ie/ie.css?body=1" for 127.0.0.1 at 2013-09-20 18:34:52 -0400
+Served asset /ie/ie.css - 200 OK (1ms)
+Started GET "/assets/application-ie.css?body=1" for 127.0.0.1 at 2013-09-20 18:34:52 -0400
+Served asset /application-ie.css - 200 OK (2ms)
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2013-09-20 18:34:52 -0400
+Served asset /global.css - 200 OK (1ms)
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2013-09-20 18:34:52 -0400
+Served asset /messages.css - 200 OK (1ms)
+Started GET "/assets/onboarding.css?body=1" for 127.0.0.1 at 2013-09-20 18:34:52 -0400
+Served asset /onboarding.css - 200 OK (2ms)
+Started GET "/assets/onboarding/artists.css?body=1" for 127.0.0.1 at 2013-09-20 18:34:52 -0400
+Served asset /onboarding/artists.css - 200 OK (1ms)
+Started GET "/assets/onboarding/images.css?body=1" for 127.0.0.1 at 2013-09-20 18:34:52 -0400
+Served asset /onboarding/images.css - 200 OK (1ms)
+Started GET "/assets/onboarding/sessions.css?body=1" for 127.0.0.1 at 2013-09-20 18:34:52 -0400
+Served asset /onboarding/sessions.css - 200 OK (1ms)
+Started GET "/assets/site.css?body=1" for 127.0.0.1 at 2013-09-20 18:34:52 -0400
+Served asset /site.css - 200 OK (3ms)
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-20 18:34:52 -0400
+Served asset /jquery.js - 200 OK (28ms)
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-20 18:34:52 -0400
+Served asset /jquery_ujs.js - 200 OK (3ms)
+Started GET "/assets/api/packs.js?body=1" for 127.0.0.1 at 2013-09-20 18:34:52 -0400
+Served asset /api/packs.js - 200 OK (3ms)
+Started GET "/assets/api/stickers.js?body=1" for 127.0.0.1 at 2013-09-20 18:34:52 -0400
+Served asset /api/stickers.js - 200 OK (2ms)
+Started GET "/assets/jquery.cookie.js?body=1" for 127.0.0.1 at 2013-09-20 18:34:52 -0400
+Served asset /jquery.cookie.js - 200 OK (1ms)
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2013-09-20 18:34:52 -0400
+Served asset /messages.js - 200 OK (1ms)
+Started GET "/assets/onboarding.js?body=1" for 127.0.0.1 at 2013-09-20 18:34:52 -0400
+Served asset /onboarding.js - 200 OK (1ms)
+Started GET "/assets/onboarding/artists.js?body=1" for 127.0.0.1 at 2013-09-20 18:34:52 -0400
+Served asset /onboarding/artists.js - 200 OK (1ms)
+Started GET "/assets/onboarding/files.js?body=1" for 127.0.0.1 at 2013-09-20 18:34:52 -0400
+Served asset /onboarding/files.js - 200 OK (2ms)
+Started GET "/assets/onboarding/onboarding.js?body=1" for 127.0.0.1 at 2013-09-20 18:34:52 -0400
+Served asset /onboarding/onboarding.js - 200 OK (3ms)
+Started GET "/assets/onboarding/sessions.js?body=1" for 127.0.0.1 at 2013-09-20 18:34:52 -0400
+Served asset /onboarding/sessions.js - 200 OK (1ms)
+Started GET "/assets/site.js?body=1" for 127.0.0.1 at 2013-09-20 18:34:52 -0400
+Served asset /site.js - 200 OK (1ms)
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-20 18:34:52 -0400
+Served asset /application.js - 200 OK (8ms)
+Started GET "/assets/stay_tuned.png" for 127.0.0.1 at 2013-09-20 18:34:52 -0400
+Served asset /stay_tuned.png - 200 OK (3ms)
+Started GET "/assets/keep_me_informed.png" for 127.0.0.1 at 2013-09-20 18:34:52 -0400
+Served asset /keep_me_informed.png - 200 OK (3ms)
+Started GET "/assets/blingo_logo.png" for 127.0.0.1 at 2013-09-20 18:34:52 -0400
+Served asset /blingo_logo.png - 200 OK (3ms)
+Started GET "/" for 127.0.0.1 at 2013-09-20 18:34:57 -0400
+Processing by SiteController#index as HTML
+  Rendered application/_messages.html.erb (0.0ms)
+  Rendered site/index.html.erb within layouts/homepage (1.7ms)
+Completed 200 OK in 42ms (Views: 41.6ms | ActiveRecord: 0.0ms)
+Started GET "/assets/api/packs.css?body=1" for 127.0.0.1 at 2013-09-20 18:34:57 -0400
+Served asset /api/packs.css - 304 Not Modified (0ms)
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-20 18:34:57 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+Started GET "/assets/api/stickers.css?body=1" for 127.0.0.1 at 2013-09-20 18:34:57 -0400
+Served asset /api/stickers.css - 304 Not Modified (0ms)
+Started GET "/assets/ie/ie.css?body=1" for 127.0.0.1 at 2013-09-20 18:34:57 -0400
+Served asset /ie/ie.css - 304 Not Modified (0ms)
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2013-09-20 18:34:57 -0400
+Served asset /global.css - 304 Not Modified (0ms)
+Started GET "/assets/application-ie.css?body=1" for 127.0.0.1 at 2013-09-20 18:34:57 -0400
+Served asset /application-ie.css - 304 Not Modified (0ms)
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2013-09-20 18:34:57 -0400
+Served asset /messages.css - 304 Not Modified (0ms)
+Started GET "/assets/onboarding.css?body=1" for 127.0.0.1 at 2013-09-20 18:34:57 -0400
+Served asset /onboarding.css - 304 Not Modified (0ms)
+Started GET "/assets/onboarding/artists.css?body=1" for 127.0.0.1 at 2013-09-20 18:34:57 -0400
+Served asset /onboarding/artists.css - 304 Not Modified (0ms)
+Started GET "/assets/onboarding/images.css?body=1" for 127.0.0.1 at 2013-09-20 18:34:57 -0400
+Served asset /onboarding/images.css - 304 Not Modified (0ms)
+Started GET "/assets/onboarding/sessions.css?body=1" for 127.0.0.1 at 2013-09-20 18:34:57 -0400
+Served asset /onboarding/sessions.css - 304 Not Modified (0ms)
+Started GET "/assets/site.css?body=1" for 127.0.0.1 at 2013-09-20 18:34:57 -0400
+Served asset /site.css - 304 Not Modified (0ms)
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-20 18:34:57 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-20 18:34:57 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+Started GET "/assets/api/packs.js?body=1" for 127.0.0.1 at 2013-09-20 18:34:57 -0400
+Served asset /api/packs.js - 304 Not Modified (0ms)
+Started GET "/assets/api/stickers.js?body=1" for 127.0.0.1 at 2013-09-20 18:34:57 -0400
+Served asset /api/stickers.js - 304 Not Modified (0ms)
+Started GET "/assets/jquery.cookie.js?body=1" for 127.0.0.1 at 2013-09-20 18:34:57 -0400
+Served asset /jquery.cookie.js - 304 Not Modified (0ms)
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2013-09-20 18:34:57 -0400
+Served asset /messages.js - 304 Not Modified (0ms)
+Started GET "/assets/onboarding.js?body=1" for 127.0.0.1 at 2013-09-20 18:34:57 -0400
+Served asset /onboarding.js - 304 Not Modified (0ms)
+Started GET "/assets/onboarding/artists.js?body=1" for 127.0.0.1 at 2013-09-20 18:34:57 -0400
+Served asset /onboarding/artists.js - 304 Not Modified (0ms)
+Started GET "/assets/onboarding/files.js?body=1" for 127.0.0.1 at 2013-09-20 18:34:57 -0400
+Served asset /onboarding/files.js - 304 Not Modified (0ms)
+Started GET "/assets/onboarding/onboarding.js?body=1" for 127.0.0.1 at 2013-09-20 18:34:57 -0400
+Served asset /onboarding/onboarding.js - 304 Not Modified (0ms)
+Started GET "/assets/onboarding/sessions.js?body=1" for 127.0.0.1 at 2013-09-20 18:34:57 -0400
+Served asset /onboarding/sessions.js - 304 Not Modified (0ms)
+Started GET "/assets/site.js?body=1" for 127.0.0.1 at 2013-09-20 18:34:57 -0400
+Served asset /site.js - 304 Not Modified (0ms)
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-20 18:34:57 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+Started GET "/assets/keep_me_informed.png" for 127.0.0.1 at 2013-09-20 18:34:57 -0400
+Served asset /keep_me_informed.png - 304 Not Modified (0ms)
+Started GET "/assets/stay_tuned.png" for 127.0.0.1 at 2013-09-20 18:34:57 -0400
+Served asset /stay_tuned.png - 304 Not Modified (0ms)
+Started GET "/assets/blingo_logo.png" for 127.0.0.1 at 2013-09-20 18:34:57 -0400
+Served asset /blingo_logo.png - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (17.1ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (14.9ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateClients (20130807002210)
+  [1m[35m (9.5ms)[0m  CREATE TABLE `clients` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130807002210')[0m
+Migrating to CreateApps (20130807003133)
+  [1m[35m (9.7ms)[0m  CREATE TABLE `apps` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `client_id` int(11), `name` varchar(255), `api_password` varchar(255), `thumbnail_sticker_width` int(11), `thumbnail_sticker_height` int(11), `actual_sticker_width` int(11), `actual_sticker_height` int(11), `percentage_of_revenue` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (10.3ms)[0m  [1mCREATE INDEX `index_apps_on_client_id` ON `apps` (`client_id`)[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130807003133')
+Migrating to CreateArtists (20130807003310)
+  [1m[36m (8.7ms)[0m  [1mCREATE TABLE `artists` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first_name` varchar(255), `last_name` varchar(255), `percentage_of_revenue` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130807003310')
+Migrating to CreateBrands (20130807003322)
+  [1m[36m (8.7ms)[0m  [1mCREATE TABLE `brands` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `threshold_1` int(11), `threshold_1_price` decimal, `threshold_2` int(11), `threshold_2_price` decimal, `threshold_3` int(11), `threshold_3_price` decimal, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130807003322')
+Migrating to CreateStickers (20130807003334)
+  [1m[36m (9.0ms)[0m  [1mCREATE TABLE `stickers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `artist_id` int(11), `brand_id` int(11), `file_name` varchar(255), `available` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (10.7ms)[0m  CREATE INDEX `index_stickers_on_artist_id` ON `stickers` (`artist_id`)
+  [1m[36m (9.6ms)[0m  [1mCREATE INDEX `index_stickers_on_brand_id` ON `stickers` (`brand_id`)[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130807003334')
+Migrating to CreatePacks (20130807003348)
+  [1m[36m (10.4ms)[0m  [1mCREATE TABLE `packs` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `price` decimal, `cover_image` varchar(255), `available` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130807003348')
+Migrating to CreateTags (20130807003401)
+  [1m[36m (9.0ms)[0m  [1mCREATE TABLE `tags` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130807003401')
+Migrating to CreateOnboardingArtists (20130817192458)
+  [1m[36m (8.6ms)[0m  [1mCREATE TABLE `onboarding_artists` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first_name` varchar(255), `last_name` varchar(255), `signin_name` varchar(255), `password_digest` varchar(255), `licensing_permission` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130817192458')
+Migrating to CreateOnboardingFiles (20130817192811)
+  [1m[36m (9.8ms)[0m  [1mCREATE TABLE `onboarding_files` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `onboarding_artist_id` int(11), `file_name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (10.1ms)[0m  CREATE INDEX `index_onboarding_files_on_onboarding_artist_id` ON `onboarding_files` (`onboarding_artist_id`)
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130817192811')[0m
+Migrating to ChangeOnboardingArtistsLicensingPermission (20130823031002)
+  [1m[35m (13.2ms)[0m  ALTER TABLE `onboarding_artists` CHANGE `licensing_permission` `licensing_permission` datetime DEFAULT NULL
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130823031002')[0m
+Migrating to CreateBrandsPacks (20130827192623)
+  [1m[35m (11.1ms)[0m  CREATE TABLE `brands_packs` (`brand_id` int(11), `pack_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (10.7ms)[0m  [1mCREATE INDEX `index_brands_packs_on_brand_id` ON `brands_packs` (`brand_id`)[0m
+  [1m[35m (10.5ms)[0m  CREATE INDEX `index_brands_packs_on_pack_id` ON `brands_packs` (`pack_id`)
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130827192623')[0m
+Migrating to CreateArtistsPacks (20130827210212)
+  [1m[35m (9.6ms)[0m  CREATE TABLE `artists_packs` (`artist_id` int(11), `pack_id` int(11), `artist_percent` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (23.3ms)[0m  [1mCREATE INDEX `index_artists_packs_on_artist_id` ON `artists_packs` (`artist_id`)[0m
+  [1m[35m (10.7ms)[0m  CREATE INDEX `index_artists_packs_on_pack_id` ON `artists_packs` (`pack_id`)
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130827210212')[0m
+Migrating to CreatePacksStickers (20130828003030)
+  [1m[35m (10.4ms)[0m  CREATE TABLE `packs_stickers` (`pack_id` int(11), `sticker_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (10.3ms)[0m  [1mCREATE INDEX `index_packs_stickers_on_pack_id` ON `packs_stickers` (`pack_id`)[0m
+  [1m[35m (10.1ms)[0m  CREATE INDEX `index_packs_stickers_on_sticker_id` ON `packs_stickers` (`sticker_id`)
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130828003030')[0m
+Migrating to CreateAppsPacks (20130828003306)
+  [1m[35m (10.2ms)[0m  CREATE TABLE `apps_packs` (`app_id` int(11), `pack_id` int(11), `cover_image` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (10.3ms)[0m  [1mCREATE INDEX `index_apps_packs_on_app_id` ON `apps_packs` (`app_id`)[0m
+  [1m[35m (23.9ms)[0m  CREATE INDEX `index_apps_packs_on_pack_id` ON `apps_packs` (`pack_id`)
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130828003306')[0m
+Migrating to CreateArtistsTags (20130828003549)
+  [1m[35m (10.0ms)[0m  CREATE TABLE `artists_tags` (`artist_id` int(11), `tag_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (10.8ms)[0m  [1mCREATE INDEX `index_artists_tags_on_artist_id` ON `artists_tags` (`artist_id`)[0m
+  [1m[35m (10.5ms)[0m  CREATE INDEX `index_artists_tags_on_tag_id` ON `artists_tags` (`tag_id`)
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130828003549')[0m
+Migrating to CreatePacksTags (20130828004220)
+  [1m[35m (10.7ms)[0m  CREATE TABLE `packs_tags` (`pack_id` int(11), `tag_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (9.9ms)[0m  [1mCREATE INDEX `index_packs_tags_on_pack_id` ON `packs_tags` (`pack_id`)[0m
+  [1m[35m (11.4ms)[0m  CREATE INDEX `index_packs_tags_on_tag_id` ON `packs_tags` (`tag_id`)
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130828004220')[0m
+Migrating to CreateStickersTags (20130828004400)
+  [1m[35m (10.4ms)[0m  CREATE TABLE `stickers_tags` (`sticker_id` int(11), `tag_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (11.7ms)[0m  [1mCREATE INDEX `index_stickers_tags_on_sticker_id` ON `stickers_tags` (`sticker_id`)[0m
+  [1m[35m (10.4ms)[0m  CREATE INDEX `index_stickers_tags_on_tag_id` ON `stickers_tags` (`tag_id`)
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130828004400')[0m
+Migrating to CreateDownloads (20130828032051)
+  [1m[35m (10.4ms)[0m  CREATE TABLE `downloads` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `pack_id` int(11), `app_id` int(11), `app_user_id` varchar(255), `pack_price` decimal, `app_percentage_of_revenue` int(11), `artist_percentage_of_revenue` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (11.0ms)[0m  [1mCREATE INDEX `index_downloads_on_pack_id` ON `downloads` (`pack_id`)[0m
+  [1m[35m (10.9ms)[0m  CREATE INDEX `index_downloads_on_app_id` ON `downloads` (`app_id`)
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130828032051')[0m
+Migrating to ChangePacksPrice (20130828081843)
+  [1m[35m (12.2ms)[0m  ALTER TABLE `packs` CHANGE `price` `price` decimal(8,2) DEFAULT NULL
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130828081843')[0m
+Migrating to ChangeDownloadsPackPrice (20130828082129)
+  [1m[35m (13.8ms)[0m  ALTER TABLE `downloads` CHANGE `pack_price` `pack_price` decimal(8,2) DEFAULT NULL
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130828082129')[0m
+Migrating to AddContentTypeToOnboardingFiles (20130902191437)
+  [1m[35m (12.1ms)[0m  ALTER TABLE `onboarding_files` ADD `content_type` varchar(255) AFTER `file_name`
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130902191437')[0m
+Migrating to CreatePrelaunches (20130909234015)
+  [1m[35m (9.0ms)[0m  CREATE TABLE `prelaunches` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130909234015')[0m
+Migrating to AddPhotoAndBioToOnboardingArtists (20130912153049)
+  [1m[35m (11.2ms)[0m  ALTER TABLE `onboarding_artists` ADD `photo` varchar(255) AFTER `licensing_permission`
+  [1m[36m (10.3ms)[0m  [1mALTER TABLE `onboarding_artists` ADD `bio` text AFTER `licensing_permission`[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130912153049')
+Migrating to ChangeOnboardingFilesTableName (20130915191449)
+  [1m[36m (0.9ms)[0m  [1mRENAME TABLE `onboarding_files` TO `onboarding_images`[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130915191449')
+Migrating to CreateArtistsPacksPercentage (20130919123340)
+  [1m[36m (10.3ms)[0m  [1mCREATE TABLE `artists_packs_percentage` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `artist_id` int(11), `pack_id` int(11), `percentage_of_revenue` int(11), `start_date` datetime, `end_date` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (11.4ms)[0m  CREATE INDEX `index_artists_packs_percentage_on_artist_id_and_pack_id` ON `artists_packs_percentage` (`artist_id`, `pack_id`)
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130919123340')[0m
+Migrating to ArtistsPacksRemoveArtistPercent (20130919130127)
+  [1m[35m (11.1ms)[0m  ALTER TABLE `artists_packs` DROP `artist_percent`
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130919130127')[0m
+Migrating to CreateAppsPacksPercentage (20130919131321)
+  [1m[35m (10.3ms)[0m  CREATE TABLE `apps_packs_percentage` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `app_id` int(11), `pack_id` int(11), `percentage_of_revenue` int(11), `start_date` datetime, `end_date` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (11.0ms)[0m  [1mCREATE INDEX `index_apps_packs_percentage_on_app_id_and_pack_id` ON `apps_packs_percentage` (`app_id`, `pack_id`)[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130919131321')
+Migrating to CreatePacksPrices (20130919155513)
+  [1m[36m (8.7ms)[0m  [1mCREATE TABLE `packs_prices` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `pack_id` int(11), `price` decimal(8,2), `start_date` datetime, `end_date` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (10.3ms)[0m  CREATE INDEX `index_packs_prices_on_pack_id` ON `packs_prices` (`pack_id`)
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130919155513')[0m
+Migrating to ChangeDownloads (20130919164651)
+  [1m[35m (12.2ms)[0m  ALTER TABLE `downloads` ADD `pack_price_id` int(11) AFTER `app_id`
+  [1m[36m (11.9ms)[0m  [1mCREATE INDEX `index_downloads_on_pack_price_id` ON `downloads` (`pack_price_id`)[0m
+  [1m[35m (11.2ms)[0m  ALTER TABLE `downloads` DROP `pack_price`
+  [1m[36m (11.2ms)[0m  [1mALTER TABLE `downloads` DROP `app_percentage_of_revenue`[0m
+  [1m[35m (11.3ms)[0m  ALTER TABLE `downloads` DROP `artist_percentage_of_revenue`
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130919164651')[0m
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `onboarding_artists` (`bio`, `created_at`, `first_name`, `last_name`, `licensing_permission`, `password_digest`, `photo`, `signin_name`, `updated_at`) VALUES (NULL, '2013-09-23 09:08:24', 'John', 'Smith', NULL, '$2a$10$Ula1qV8HJqB7l1UBdDXcb.j1YoGTHwCQBKGi.EVPyr/UN3tdWP/Mu', NULL, 'johnsmith', '2013-09-23 09:08:24')[0m
+  [1m[35m (0.4ms)[0m  COMMIT

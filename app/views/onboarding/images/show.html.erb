@@ -1,0 +1,33 @@
+<div id="onboarding-landing" class="center-content">
+
+  <% #unless @errors.empty? %>
+    <!--<div id="error-explanation">Please answer the required questions.</div>-->
+  <% #end %>
+
+  <%= form_tag onboarding_artist_signin_path, :id => "signin-form" do %>
+  <div>
+    <%= label_tag :password, nil, :class => "display-none" %> <%= password_field_tag :password, nil, :title => "Please enter your password", :class => "onboarding-field center-content", :placeholder => "Please enter your password" %>
+  </div>
+    <% Rails.logger.debug(@onboarding_artist) %>
+    <% if @onboarding_artist.licensing_permission.nil? %>
+      <div id="licensing-permission-container">
+        <div id="license">
+          <%= render 'onboarding/shared/artist_license' %>
+        </div>
+        <div id="license-read-more">
+        Click here to read more...
+        </div>
+        <div id="license-read-less">
+        Click here to read less...
+        </div>
+        <div id="license-acknowledgement">
+          <span id="licensing-permission-checkbox"><%= check_box_tag(:licensing_permission, "1", params[:licensing_permission] == "1") %></span>
+          <%= label_tag("licensing_permission", "I have read and accept the terms of the Artist Licensing Agreement", :class => "onboarding-label") %>
+        </div>
+      <div id="onboarding-form-buttons-container">
+      <%= submit_tag "Submit", :class => "onboarding-field onboarding-form-button", :id => "onboarding-signin-submit" %>
+      <%= submit_tag "Cancel", :class => "onboarding-field onboarding-form-button", :id => "onboarding-signin-cancel" %>
+      </div>
+    <% end %>
+  <% end %>
+</div>

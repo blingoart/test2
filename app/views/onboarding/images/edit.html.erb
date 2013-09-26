@@ -1,0 +1,12 @@
+<div class="container-onboarding-files">
+  <%= link_to image_tag("onboarding_trash_small.png", :width => "31", :height =>"40", :id => "onboarding-trash"), onboarding_images_destroy_path(@file.id), confirm: 'Are you sure you want to delete this file?', method: :delete %>
+  <%= image_tag("onboarding_close.png", :width => "40", :height =>"40", :class => "onboarding-close") %>
+  <div class="onboarding-delete-file">
+    <%= show_files @file, onboarding_images_destroy_path(@file.id), "full" %>
+  </div>
+</div>
+
+<%= javascript_tag do %>
+  close_path = '<%= @path %>';
+  initialize_close_button();
+<% end %>

@@ -1,0 +1,30 @@
+<div id="overlay"></div>
+<div class="center-content" id="prelaunch">
+  <%= image_tag("keep_me_informed.png", :width => "501", :height => "346", :id => "keep-me-informed") %>
+  <div id="prelaunch-close">[X]</div>
+
+  <%= form_tag prelaunch_path, :remote => true do %>
+  <div>
+    <%= label_tag :email, nil, :class => "display-none" %> <%= text_field_tag :email, nil, :title => "Please enter your email address", :class => "prelaunch-field" %>
+  </div>
+  <div id="prelaunch-errors"></div>
+  <% end %>
+
+</div>
+
+<%= render :partial => "messages", :locals => { :messages => flash } %>
+
+<div class="center-page-container-outer">
+  <div class="center-page-container-inner">
+    <div class="center-content" id="homepage-logo">
+      <%= link_to image_tag("blingo_logo.png", :width => "595", :height => "111"), root_path %>
+    </div>
+    <div class="homepage-text-container center-content">
+      <div class="homepage-text">
+        making<br /> contemporary art<br /> part of everyday<br /> conversation
+      </div>
+      <%= image_tag("stay_tuned.png", :size => "140x36", :id => "stay-tuned") %>
+    </div>
+  </div>
+</div>
+

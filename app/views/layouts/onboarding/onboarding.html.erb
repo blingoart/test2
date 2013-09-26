@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title><%= title %></title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <!--[if IE]>
+  <%= stylesheet_link_tag    "application-ie", :media => "all" %>
+  <![endif]-->
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tag %>
+</head>
+
+<body>
+
+<%= render :partial => "messages", :locals => { :messages => flash } %>
+
+<div class="center-page-container-outer">
+  <div class="center-page-container-inner">
+    <div class="page-indent">
+      <div class="onboarding-header">
+        <% if @homepage %>
+        <div class="center-content" id="onboarding-logo">
+          <%= link_to image_tag("blingo_logo.png", :width => "595", :height => "111"), root_path %>
+        </div>
+        <% else %>
+          <div class="signin-name">
+          Welcome <%= @onboarding_artist.signin_name  %>
+          </div>
+          <div id="onboarding-logo-small">
+            <%= link_to image_tag("blingo_logo_small.png", :width => "318", :height => "61"), onboarding_images_new_path %>
+          </div>
+        <% end %>
+      </div>
+      <%= yield %>
+      <% if !current_page?(onboarding_images_path) %>
+        <div class="onboarding-footer">
+          <% if !current_page?(onboarding_legal_path) %>
+            <div class="button2" id="legal-button"><%= link_to "Legal", onboarding_legal_path, :class => "onboarding-button" %></div>
+          <% end %>
+          <% if signed_in? %>
+            <div class="button2" id="signout-button"><%= link_to "Sign Out", onboarding_artist_signout_path, :class => "onboarding-button" %></div>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
