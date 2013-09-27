@@ -10041,3 +10041,1410 @@ Completed 302 Found in 5ms (ActiveRecord: 1.6ms)
   [1m[36m (0.7ms)[0m  [1mTRUNCATE TABLE `stickers_tags`;[0m
   [1m[35m (0.5ms)[0m  TRUNCATE TABLE `tags`;
   [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+Connecting to database specified by database.yml
+  [1m[36m (13.6ms)[0m  [1mBEGIN[0m
+Mysql2::Error: Table 'blingo_test.clients' doesn't exist: SHOW FULL FIELDS FROM `clients`
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.6ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.3ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.5ms)[0m  [1mSELECT DATABASE() as db[0m
+  [1m[35m (1.2ms)[0m  select table_name from information_schema.views where table_schema = 'blingo_test'
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Mysql2::Error: Table 'blingo_test.clients' doesn't exist: SHOW FULL FIELDS FROM `clients`
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by Onboarding::ImagesController#show as HTML
+  Parameters: {"signin_name"=>"johnsmith"}
+Mysql2::Error: Table 'blingo_test.onboarding_artists' doesn't exist: SHOW FULL FIELDS FROM `onboarding_artists`
+Completed 500 Internal Server Error in 3ms
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Mysql2::Error: Table 'blingo_test.stickers' doesn't exist: SHOW FULL FIELDS FROM `stickers`
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Mysql2::Error: Table 'blingo_test.stickers' doesn't exist: SHOW FULL FIELDS FROM `stickers`
+  [1m[35m (0.0ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Mysql2::Error: Table 'blingo_test.stickers' doesn't exist: SHOW FULL FIELDS FROM `stickers`
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Mysql2::Error: Table 'blingo_test.stickers' doesn't exist: SHOW FULL FIELDS FROM `stickers`
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Mysql2::Error: Table 'blingo_test.stickers' doesn't exist: SHOW FULL FIELDS FROM `stickers`
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+Mysql2::Error: Table 'blingo_test.stickers' doesn't exist: SHOW FULL FIELDS FROM `stickers`
+  [1m[35m (0.0ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Mysql2::Error: Table 'blingo_test.stickers' doesn't exist: SHOW FULL FIELDS FROM `stickers`
+  [1m[36m (0.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Mysql2::Error: Table 'blingo_test.artists' doesn't exist: SHOW FULL FIELDS FROM `artists`
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Mysql2::Error: Table 'blingo_test.artists' doesn't exist: SHOW FULL FIELDS FROM `artists`
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Mysql2::Error: Table 'blingo_test.artists' doesn't exist: SHOW FULL FIELDS FROM `artists`
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+Mysql2::Error: Table 'blingo_test.artists' doesn't exist: SHOW FULL FIELDS FROM `artists`
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Mysql2::Error: Table 'blingo_test.packs' doesn't exist: SHOW FULL FIELDS FROM `packs`
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+Mysql2::Error: Table 'blingo_test.packs' doesn't exist: SHOW FULL FIELDS FROM `packs`
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Mysql2::Error: Table 'blingo_test.packs' doesn't exist: SHOW FULL FIELDS FROM `packs`
+  [1m[35m (0.0ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Mysql2::Error: Table 'blingo_test.packs' doesn't exist: SHOW FULL FIELDS FROM `packs`
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+Mysql2::Error: Table 'blingo_test.apps' doesn't exist: SHOW FULL FIELDS FROM `apps`
+  [1m[35m (0.0ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Mysql2::Error: Table 'blingo_test.apps' doesn't exist: SHOW FULL FIELDS FROM `apps`
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+Mysql2::Error: Table 'blingo_test.apps' doesn't exist: SHOW FULL FIELDS FROM `apps`
+  [1m[35m (0.0ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+Mysql2::Error: Table 'blingo_test.apps' doesn't exist: SHOW FULL FIELDS FROM `apps`
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+Mysql2::Error: Table 'blingo_test.apps' doesn't exist: SHOW FULL FIELDS FROM `apps`
+  [1m[35m (0.0ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Mysql2::Error: Table 'blingo_test.onboarding_artists' doesn't exist: SHOW FULL FIELDS FROM `onboarding_artists`
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Mysql2::Error: Table 'blingo_test.onboarding_artists' doesn't exist: SHOW FULL FIELDS FROM `onboarding_artists`
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Mysql2::Error: Table 'blingo_test.onboarding_artists' doesn't exist: SHOW FULL FIELDS FROM `onboarding_artists`
+  [1m[36m (0.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+Mysql2::Error: Table 'blingo_test.onboarding_images' doesn't exist: SHOW FULL FIELDS FROM `onboarding_images`
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+Mysql2::Error: Table 'blingo_test.onboarding_images' doesn't exist: SHOW FULL FIELDS FROM `onboarding_images`
+  [1m[36m (0.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+Mysql2::Error: Table 'blingo_test.brands' doesn't exist: SHOW FULL FIELDS FROM `brands`
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+Mysql2::Error: Table 'blingo_test.brands' doesn't exist: SHOW FULL FIELDS FROM `brands`
+  [1m[36m (0.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Mysql2::Error: Table 'blingo_test.brands' doesn't exist: SHOW FULL FIELDS FROM `brands`
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+Mysql2::Error: Table 'blingo_test.brands' doesn't exist: SHOW FULL FIELDS FROM `brands`
+  [1m[36m (0.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+Mysql2::Error: Table 'blingo_test.onboarding_images' doesn't exist: SHOW FULL FIELDS FROM `onboarding_images`
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Mysql2::Error: Table 'blingo_test.tags' doesn't exist: SHOW FULL FIELDS FROM `tags`
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Mysql2::Error: Table 'blingo_test.tags' doesn't exist: SHOW FULL FIELDS FROM `tags`
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Mysql2::Error: Table 'blingo_test.artists' doesn't exist: SHOW FULL FIELDS FROM `artists`
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mSELECT DATABASE() as db[0m
+  [1m[35m (1.1ms)[0m  select table_name from information_schema.views where table_schema = 'blingo_test'
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+Mysql2::Error: Table 'blingo_test.artists' doesn't exist: SHOW FULL FIELDS FROM `artists`
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+Mysql2::Error: Table 'blingo_test.artists' doesn't exist: SHOW FULL FIELDS FROM `artists`
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+Mysql2::Error: Table 'blingo_test.artists' doesn't exist: SHOW FULL FIELDS FROM `artists`
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+Mysql2::Error: Table 'blingo_test.stickers' doesn't exist: SHOW FULL FIELDS FROM `stickers`
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+Mysql2::Error: Table 'blingo_test.stickers' doesn't exist: SHOW FULL FIELDS FROM `stickers`
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+Mysql2::Error: Table 'blingo_test.stickers' doesn't exist: SHOW FULL FIELDS FROM `stickers`
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+Mysql2::Error: Table 'blingo_test.stickers' doesn't exist: SHOW FULL FIELDS FROM `stickers`
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+Mysql2::Error: Table 'blingo_test.stickers' doesn't exist: SHOW FULL FIELDS FROM `stickers`
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+Mysql2::Error: Table 'blingo_test.stickers' doesn't exist: SHOW FULL FIELDS FROM `stickers`
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+Mysql2::Error: Table 'blingo_test.stickers' doesn't exist: SHOW FULL FIELDS FROM `stickers`
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+Mysql2::Error: Table 'blingo_test.clients' doesn't exist: SHOW FULL FIELDS FROM `clients`
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+Mysql2::Error: Table 'blingo_test.clients' doesn't exist: SHOW FULL FIELDS FROM `clients`
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+Mysql2::Error: Table 'blingo_test.packs' doesn't exist: SHOW FULL FIELDS FROM `packs`
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+Mysql2::Error: Table 'blingo_test.packs' doesn't exist: SHOW FULL FIELDS FROM `packs`
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+Mysql2::Error: Table 'blingo_test.packs' doesn't exist: SHOW FULL FIELDS FROM `packs`
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+Mysql2::Error: Table 'blingo_test.packs' doesn't exist: SHOW FULL FIELDS FROM `packs`
+  [1m[36m (0.5ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+Mysql2::Error: Table 'blingo_test.onboarding_artists' doesn't exist: SHOW FULL FIELDS FROM `onboarding_artists`
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+Mysql2::Error: Table 'blingo_test.onboarding_artists' doesn't exist: SHOW FULL FIELDS FROM `onboarding_artists`
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+Mysql2::Error: Table 'blingo_test.onboarding_artists' doesn't exist: SHOW FULL FIELDS FROM `onboarding_artists`
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+Processing by Onboarding::ImagesController#show as HTML
+  Parameters: {"signin_name"=>"johnsmith"}
+Mysql2::Error: Table 'blingo_test.onboarding_artists' doesn't exist: SHOW FULL FIELDS FROM `onboarding_artists`
+Completed 500 Internal Server Error in 2ms
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+Mysql2::Error: Table 'blingo_test.brands' doesn't exist: SHOW FULL FIELDS FROM `brands`
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+Mysql2::Error: Table 'blingo_test.brands' doesn't exist: SHOW FULL FIELDS FROM `brands`
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+Mysql2::Error: Table 'blingo_test.brands' doesn't exist: SHOW FULL FIELDS FROM `brands`
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+Mysql2::Error: Table 'blingo_test.brands' doesn't exist: SHOW FULL FIELDS FROM `brands`
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+Mysql2::Error: Table 'blingo_test.apps' doesn't exist: SHOW FULL FIELDS FROM `apps`
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+Mysql2::Error: Table 'blingo_test.apps' doesn't exist: SHOW FULL FIELDS FROM `apps`
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+Mysql2::Error: Table 'blingo_test.apps' doesn't exist: SHOW FULL FIELDS FROM `apps`
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+Mysql2::Error: Table 'blingo_test.apps' doesn't exist: SHOW FULL FIELDS FROM `apps`
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+Mysql2::Error: Table 'blingo_test.apps' doesn't exist: SHOW FULL FIELDS FROM `apps`
+  [1m[35m (0.2ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+Mysql2::Error: Table 'blingo_test.onboarding_images' doesn't exist: SHOW FULL FIELDS FROM `onboarding_images`
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+Mysql2::Error: Table 'blingo_test.tags' doesn't exist: SHOW FULL FIELDS FROM `tags`
+  [1m[35m (0.2ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+Mysql2::Error: Table 'blingo_test.tags' doesn't exist: SHOW FULL FIELDS FROM `tags`
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+Mysql2::Error: Table 'blingo_test.onboarding_images' doesn't exist: SHOW FULL FIELDS FROM `onboarding_images`
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+Mysql2::Error: Table 'blingo_test.onboarding_images' doesn't exist: SHOW FULL FIELDS FROM `onboarding_images`
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+Connecting to database specified by database.yml
+  [1m[36m (150.3ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (253.3ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (54.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateClients (20130807002210)
+  [1m[35m (144.7ms)[0m  CREATE TABLE `clients` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130807002210')[0m
+Migrating to CreateApps (20130807003133)
+  [1m[35m (206.7ms)[0m  CREATE TABLE `apps` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `client_id` int(11), `name` varchar(255), `api_password` varchar(255), `thumbnail_sticker_width` int(11), `thumbnail_sticker_height` int(11), `actual_sticker_width` int(11), `actual_sticker_height` int(11), `percentage_of_revenue` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (180.2ms)[0m  [1mCREATE INDEX `index_apps_on_client_id` ON `apps` (`client_id`)[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130807003133')
+Migrating to CreateArtists (20130807003310)
+  [1m[36m (166.2ms)[0m  [1mCREATE TABLE `artists` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first_name` varchar(255), `last_name` varchar(255), `percentage_of_revenue` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130807003310')
+Migrating to CreateBrands (20130807003322)
+  [1m[36m (207.7ms)[0m  [1mCREATE TABLE `brands` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `threshold_1` int(11), `threshold_1_price` decimal, `threshold_2` int(11), `threshold_2_price` decimal, `threshold_3` int(11), `threshold_3_price` decimal, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130807003322')
+Migrating to CreateStickers (20130807003334)
+  [1m[36m (197.4ms)[0m  [1mCREATE TABLE `stickers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `artist_id` int(11), `brand_id` int(11), `file_name` varchar(255), `available` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (180.5ms)[0m  CREATE INDEX `index_stickers_on_artist_id` ON `stickers` (`artist_id`)
+  [1m[36m (236.2ms)[0m  [1mCREATE INDEX `index_stickers_on_brand_id` ON `stickers` (`brand_id`)[0m
+  [1m[35m (0.9ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130807003334')
+Migrating to CreatePacks (20130807003348)
+  [1m[36m (365.9ms)[0m  [1mCREATE TABLE `packs` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `price` decimal, `cover_image` varchar(255), `available` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130807003348')
+Migrating to CreateTags (20130807003401)
+  [1m[36m (407.7ms)[0m  [1mCREATE TABLE `tags` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (17.6ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130807003401')
+Migrating to CreateOnboardingArtists (20130817192458)
+  [1m[36m (370.0ms)[0m  [1mCREATE TABLE `onboarding_artists` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first_name` varchar(255), `last_name` varchar(255), `signin_name` varchar(255), `password_digest` varchar(255), `licensing_permission` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (13.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130817192458')
+Migrating to CreateOnboardingFiles (20130817192811)
+  [1m[36m (372.6ms)[0m  [1mCREATE TABLE `onboarding_files` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `onboarding_artist_id` int(11), `file_name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (443.1ms)[0m  CREATE INDEX `index_onboarding_files_on_onboarding_artist_id` ON `onboarding_files` (`onboarding_artist_id`)
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130817192811')[0m
+Migrating to ChangeOnboardingArtistsLicensingPermission (20130823031002)
+  [1m[35m (489.8ms)[0m  ALTER TABLE `onboarding_artists` CHANGE `licensing_permission` `licensing_permission` datetime DEFAULT NULL
+  [1m[36m (12.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130823031002')[0m
+Migrating to CreateBrandsPacks (20130827192623)
+  [1m[35m (302.0ms)[0m  CREATE TABLE `brands_packs` (`brand_id` int(11), `pack_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (367.1ms)[0m  [1mCREATE INDEX `index_brands_packs_on_brand_id` ON `brands_packs` (`brand_id`)[0m
+  [1m[35m (478.1ms)[0m  CREATE INDEX `index_brands_packs_on_pack_id` ON `brands_packs` (`pack_id`)
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130827192623')[0m
+Migrating to CreateArtistsPacks (20130827210212)
+  [1m[35m (232.1ms)[0m  CREATE TABLE `artists_packs` (`artist_id` int(11), `pack_id` int(11), `artist_percent` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (257.9ms)[0m  [1mCREATE INDEX `index_artists_packs_on_artist_id` ON `artists_packs` (`artist_id`)[0m
+  [1m[35m (224.6ms)[0m  CREATE INDEX `index_artists_packs_on_pack_id` ON `artists_packs` (`pack_id`)
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130827210212')[0m
+Migrating to CreatePacksStickers (20130828003030)
+  [1m[35m (193.6ms)[0m  CREATE TABLE `packs_stickers` (`pack_id` int(11), `sticker_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (202.9ms)[0m  [1mCREATE INDEX `index_packs_stickers_on_pack_id` ON `packs_stickers` (`pack_id`)[0m
+  [1m[35m (154.7ms)[0m  CREATE INDEX `index_packs_stickers_on_sticker_id` ON `packs_stickers` (`sticker_id`)
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130828003030')[0m
+Migrating to CreateAppsPacks (20130828003306)
+  [1m[35m (195.2ms)[0m  CREATE TABLE `apps_packs` (`app_id` int(11), `pack_id` int(11), `cover_image` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (203.3ms)[0m  [1mCREATE INDEX `index_apps_packs_on_app_id` ON `apps_packs` (`app_id`)[0m
+  [1m[35m (169.7ms)[0m  CREATE INDEX `index_apps_packs_on_pack_id` ON `apps_packs` (`pack_id`)
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130828003306')[0m
+Migrating to CreateArtistsTags (20130828003549)
+  [1m[35m (170.4ms)[0m  CREATE TABLE `artists_tags` (`artist_id` int(11), `tag_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (190.8ms)[0m  [1mCREATE INDEX `index_artists_tags_on_artist_id` ON `artists_tags` (`artist_id`)[0m
+  [1m[35m (218.7ms)[0m  CREATE INDEX `index_artists_tags_on_tag_id` ON `artists_tags` (`tag_id`)
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130828003549')[0m
+Migrating to CreatePacksTags (20130828004220)
+  [1m[35m (186.0ms)[0m  CREATE TABLE `packs_tags` (`pack_id` int(11), `tag_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (214.5ms)[0m  [1mCREATE INDEX `index_packs_tags_on_pack_id` ON `packs_tags` (`pack_id`)[0m
+  [1m[35m (635.3ms)[0m  CREATE INDEX `index_packs_tags_on_tag_id` ON `packs_tags` (`tag_id`)
+  [1m[36m (1.1ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130828004220')[0m
+Migrating to CreateStickersTags (20130828004400)
+  [1m[35m (249.7ms)[0m  CREATE TABLE `stickers_tags` (`sticker_id` int(11), `tag_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (223.4ms)[0m  [1mCREATE INDEX `index_stickers_tags_on_sticker_id` ON `stickers_tags` (`sticker_id`)[0m
+  [1m[35m (169.5ms)[0m  CREATE INDEX `index_stickers_tags_on_tag_id` ON `stickers_tags` (`tag_id`)
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130828004400')[0m
+Migrating to CreateDownloads (20130828032051)
+  [1m[35m (212.9ms)[0m  CREATE TABLE `downloads` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `pack_id` int(11), `app_id` int(11), `app_user_id` varchar(255), `pack_price` decimal, `app_percentage_of_revenue` int(11), `artist_percentage_of_revenue` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (225.1ms)[0m  [1mCREATE INDEX `index_downloads_on_pack_id` ON `downloads` (`pack_id`)[0m
+  [1m[35m (169.7ms)[0m  CREATE INDEX `index_downloads_on_app_id` ON `downloads` (`app_id`)
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130828032051')[0m
+Migrating to ChangePacksPrice (20130828081843)
+  [1m[35m (216.2ms)[0m  ALTER TABLE `packs` CHANGE `price` `price` decimal(8,2) DEFAULT NULL
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130828081843')[0m
+Migrating to ChangeDownloadsPackPrice (20130828082129)
+  [1m[35m (296.1ms)[0m  ALTER TABLE `downloads` CHANGE `pack_price` `pack_price` decimal(8,2) DEFAULT NULL
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130828082129')[0m
+Migrating to AddContentTypeToOnboardingFiles (20130902191437)
+  [1m[35m (275.3ms)[0m  ALTER TABLE `onboarding_files` ADD `content_type` varchar(255) AFTER `file_name`
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130902191437')[0m
+Migrating to CreatePrelaunches (20130909234015)
+  [1m[35m (268.1ms)[0m  CREATE TABLE `prelaunches` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130909234015')[0m
+Migrating to AddPhotoAndBioToOnboardingArtists (20130912153049)
+  [1m[35m (248.2ms)[0m  ALTER TABLE `onboarding_artists` ADD `photo` varchar(255) AFTER `licensing_permission`
+  [1m[36m (233.4ms)[0m  [1mALTER TABLE `onboarding_artists` ADD `bio` text AFTER `licensing_permission`[0m
+  [1m[35m (0.9ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130912153049')
+Migrating to ChangeOnboardingFilesTableName (20130915191449)
+  [1m[36m (2.5ms)[0m  [1mRENAME TABLE `onboarding_files` TO `onboarding_images`[0m
+  [1m[35m (0.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130915191449')
+Migrating to CreateArtistsPacksPercentage (20130919123340)
+  [1m[36m (311.1ms)[0m  [1mCREATE TABLE `artists_packs_percentage` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `artist_id` int(11), `pack_id` int(11), `percentage_of_revenue` int(11), `start_date` datetime, `end_date` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (275.5ms)[0m  CREATE INDEX `index_artists_packs_percentage_on_artist_id_and_pack_id` ON `artists_packs_percentage` (`artist_id`, `pack_id`)
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130919123340')[0m
+Migrating to ArtistsPacksRemoveArtistPercent (20130919130127)
+  [1m[35m (197.7ms)[0m  ALTER TABLE `artists_packs` DROP `artist_percent`
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130919130127')[0m
+Migrating to CreateAppsPacksPercentage (20130919131321)
+  [1m[35m (242.5ms)[0m  CREATE TABLE `apps_packs_percentage` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `app_id` int(11), `pack_id` int(11), `percentage_of_revenue` int(11), `start_date` datetime, `end_date` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (223.5ms)[0m  [1mCREATE INDEX `index_apps_packs_percentage_on_app_id_and_pack_id` ON `apps_packs_percentage` (`app_id`, `pack_id`)[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130919131321')
+Migrating to CreatePacksPrices (20130919155513)
+  [1m[36m (163.0ms)[0m  [1mCREATE TABLE `packs_prices` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `pack_id` int(11), `price` decimal(8,2), `start_date` datetime, `end_date` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (201.6ms)[0m  CREATE INDEX `index_packs_prices_on_pack_id` ON `packs_prices` (`pack_id`)
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130919155513')[0m
+Migrating to ChangeDownloads (20130919164651)
+  [1m[35m (220.1ms)[0m  ALTER TABLE `downloads` ADD `pack_price_id` int(11) AFTER `app_id`
+  [1m[36m (285.9ms)[0m  [1mCREATE INDEX `index_downloads_on_pack_price_id` ON `downloads` (`pack_price_id`)[0m
+  [1m[35m (238.5ms)[0m  ALTER TABLE `downloads` DROP `pack_price`
+  [1m[36m (223.2ms)[0m  [1mALTER TABLE `downloads` DROP `app_percentage_of_revenue`[0m
+  [1m[35m (258.7ms)[0m  ALTER TABLE `downloads` DROP `artist_percentage_of_revenue`
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130919164651')[0m
+Migrating to ChangePacksCoverImages (20130924134801)
+  [1m[35m (245.7ms)[0m  ALTER TABLE `packs` DROP `cover_image`
+  [1m[36m (239.4ms)[0m  [1mALTER TABLE `apps_packs` DROP `cover_image`[0m
+  [1m[35m (223.6ms)[0m  ALTER TABLE `apps_packs` ADD `cover_image_override` tinyint(1) AFTER `pack_id`
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130924134801')[0m
+Migrating to CreateAdmins (20130927000118)
+  [1m[35m (234.7ms)[0m  CREATE TABLE `admins` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `username` varchar(255), `email` varchar(255), `password_digest` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130927000118')[0m
+  [1m[35m (0.3ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.6ms)[0m  INSERT INTO `artists` (`created_at`, `first_name`, `last_name`, `percentage_of_revenue`, `updated_at`) VALUES ('2013-09-27 19:02:49', 'John', 'Smith', 60, '2013-09-27 19:02:49')
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.2ms)[0m  SELECT DATABASE() as db
+  [1m[36m (1.1ms)[0m  [1mselect table_name from information_schema.views where table_schema = 'blingo_test'[0m
+  [1m[35m (21.5ms)[0m  TRUNCATE TABLE `admins`;
+  [1m[36m (11.7ms)[0m  [1mTRUNCATE TABLE `apps`;[0m
+  [1m[35m (27.6ms)[0m  TRUNCATE TABLE `apps_packs`;
+  [1m[36m (12.6ms)[0m  [1mTRUNCATE TABLE `apps_packs_percentage`;[0m
+  [1m[35m (6.3ms)[0m  TRUNCATE TABLE `artists`;
+  [1m[36m (9.2ms)[0m  [1mTRUNCATE TABLE `artists_packs`;[0m
+  [1m[35m (8.2ms)[0m  TRUNCATE TABLE `artists_packs_percentage`;
+  [1m[36m (26.7ms)[0m  [1mTRUNCATE TABLE `artists_tags`;[0m
+  [1m[35m (6.2ms)[0m  TRUNCATE TABLE `brands`;
+  [1m[36m (12.1ms)[0m  [1mTRUNCATE TABLE `brands_packs`;[0m
+  [1m[35m (5.1ms)[0m  TRUNCATE TABLE `clients`;
+  [1m[36m (12.1ms)[0m  [1mTRUNCATE TABLE `downloads`;[0m
+  [1m[35m (5.0ms)[0m  TRUNCATE TABLE `onboarding_artists`;
+  [1m[36m (8.1ms)[0m  [1mTRUNCATE TABLE `onboarding_images`;[0m
+  [1m[35m (5.6ms)[0m  TRUNCATE TABLE `packs`;
+  [1m[36m (192.5ms)[0m  [1mTRUNCATE TABLE `packs_prices`;[0m
+  [1m[35m (11.0ms)[0m  TRUNCATE TABLE `packs_stickers`;
+  [1m[36m (9.4ms)[0m  [1mTRUNCATE TABLE `packs_tags`;[0m
+  [1m[35m (5.1ms)[0m  TRUNCATE TABLE `prelaunches`;
+  [1m[36m (9.4ms)[0m  [1mTRUNCATE TABLE `stickers`;[0m
+  [1m[35m (8.8ms)[0m  TRUNCATE TABLE `stickers_tags`;
+  [1m[36m (5.7ms)[0m  [1mTRUNCATE TABLE `tags`;[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (33.3ms)[0m  [1mTRUNCATE TABLE `admins`;[0m
+  [1m[35m (10.1ms)[0m  TRUNCATE TABLE `apps`;
+  [1m[36m (10.6ms)[0m  [1mTRUNCATE TABLE `apps_packs`;[0m
+  [1m[35m (35.5ms)[0m  TRUNCATE TABLE `apps_packs_percentage`;
+  [1m[36m (7.0ms)[0m  [1mTRUNCATE TABLE `artists`;[0m
+  [1m[35m (11.3ms)[0m  TRUNCATE TABLE `artists_packs`;
+  [1m[36m (10.1ms)[0m  [1mTRUNCATE TABLE `artists_packs_percentage`;[0m
+  [1m[35m (13.2ms)[0m  TRUNCATE TABLE `artists_tags`;
+  [1m[36m (6.3ms)[0m  [1mTRUNCATE TABLE `brands`;[0m
+  [1m[35m (10.9ms)[0m  TRUNCATE TABLE `brands_packs`;
+  [1m[36m (6.3ms)[0m  [1mTRUNCATE TABLE `clients`;[0m
+  [1m[35m (30.8ms)[0m  TRUNCATE TABLE `downloads`;
+  [1m[36m (5.9ms)[0m  [1mTRUNCATE TABLE `onboarding_artists`;[0m
+  [1m[35m (26.2ms)[0m  TRUNCATE TABLE `onboarding_images`;
+  [1m[36m (5.8ms)[0m  [1mTRUNCATE TABLE `packs`;[0m
+  [1m[35m (11.3ms)[0m  TRUNCATE TABLE `packs_prices`;
+  [1m[36m (74.2ms)[0m  [1mTRUNCATE TABLE `packs_stickers`;[0m
+  [1m[35m (179.1ms)[0m  TRUNCATE TABLE `packs_tags`;
+  [1m[36m (56.9ms)[0m  [1mTRUNCATE TABLE `prelaunches`;[0m
+  [1m[35m (20.1ms)[0m  TRUNCATE TABLE `stickers`;
+  [1m[36m (10.3ms)[0m  [1mTRUNCATE TABLE `stickers_tags`;[0m
+  [1m[35m (5.0ms)[0m  TRUNCATE TABLE `tags`;
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (4.2ms)[0m  TRUNCATE TABLE `admins`;
+  [1m[36m (7.3ms)[0m  [1mTRUNCATE TABLE `apps`;[0m
+  [1m[35m (7.8ms)[0m  TRUNCATE TABLE `apps_packs`;
+  [1m[36m (8.0ms)[0m  [1mTRUNCATE TABLE `apps_packs_percentage`;[0m
+  [1m[35m (5.0ms)[0m  TRUNCATE TABLE `artists`;
+  [1m[36m (7.9ms)[0m  [1mTRUNCATE TABLE `artists_packs`;[0m
+  [1m[35m (7.1ms)[0m  TRUNCATE TABLE `artists_packs_percentage`;
+  [1m[36m (9.7ms)[0m  [1mTRUNCATE TABLE `artists_tags`;[0m
+  [1m[35m (4.9ms)[0m  TRUNCATE TABLE `brands`;
+  [1m[36m (8.7ms)[0m  [1mTRUNCATE TABLE `brands_packs`;[0m
+  [1m[35m (5.2ms)[0m  TRUNCATE TABLE `clients`;
+  [1m[36m (11.9ms)[0m  [1mTRUNCATE TABLE `downloads`;[0m
+  [1m[35m (4.8ms)[0m  TRUNCATE TABLE `onboarding_artists`;
+  [1m[36m (7.5ms)[0m  [1mTRUNCATE TABLE `onboarding_images`;[0m
+  [1m[35m (23.8ms)[0m  TRUNCATE TABLE `packs`;
+  [1m[36m (26.6ms)[0m  [1mTRUNCATE TABLE `packs_prices`;[0m
+  [1m[35m (157.4ms)[0m  TRUNCATE TABLE `packs_stickers`;
+  [1m[36m (107.3ms)[0m  [1mTRUNCATE TABLE `packs_tags`;[0m
+  [1m[35m (6.0ms)[0m  TRUNCATE TABLE `prelaunches`;
+  [1m[36m (9.9ms)[0m  [1mTRUNCATE TABLE `stickers`;[0m
+  [1m[35m (9.9ms)[0m  TRUNCATE TABLE `stickers_tags`;
+  [1m[36m (5.0ms)[0m  [1mTRUNCATE TABLE `tags`;[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (5.1ms)[0m  [1mTRUNCATE TABLE `admins`;[0m
+  [1m[35m (11.1ms)[0m  TRUNCATE TABLE `apps`;
+  [1m[36m (12.5ms)[0m  [1mTRUNCATE TABLE `apps_packs`;[0m
+  [1m[35m (6.6ms)[0m  TRUNCATE TABLE `apps_packs_percentage`;
+  [1m[36m (4.5ms)[0m  [1mTRUNCATE TABLE `artists`;[0m
+  [1m[35m (8.5ms)[0m  TRUNCATE TABLE `artists_packs`;
+  [1m[36m (7.7ms)[0m  [1mTRUNCATE TABLE `artists_packs_percentage`;[0m
+  [1m[35m (11.7ms)[0m  TRUNCATE TABLE `artists_tags`;
+  [1m[36m (7.0ms)[0m  [1mTRUNCATE TABLE `brands`;[0m
+  [1m[35m (11.2ms)[0m  TRUNCATE TABLE `brands_packs`;
+  [1m[36m (7.1ms)[0m  [1mTRUNCATE TABLE `clients`;[0m
+  [1m[35m (16.9ms)[0m  TRUNCATE TABLE `downloads`;
+  [1m[36m (32.8ms)[0m  [1mTRUNCATE TABLE `onboarding_artists`;[0m
+  [1m[35m (11.5ms)[0m  TRUNCATE TABLE `onboarding_images`;
+  [1m[36m (7.0ms)[0m  [1mTRUNCATE TABLE `packs`;[0m
+  [1m[35m (107.5ms)[0m  TRUNCATE TABLE `packs_prices`;
+  [1m[36m (22.6ms)[0m  [1mTRUNCATE TABLE `packs_stickers`;[0m
+  [1m[35m (12.2ms)[0m  TRUNCATE TABLE `packs_tags`;
+  [1m[36m (6.3ms)[0m  [1mTRUNCATE TABLE `prelaunches`;[0m
+  [1m[35m (11.1ms)[0m  TRUNCATE TABLE `stickers`;
+  [1m[36m (13.1ms)[0m  [1mTRUNCATE TABLE `stickers_tags`;[0m
+  [1m[35m (6.9ms)[0m  TRUNCATE TABLE `tags`;
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM `onboarding_images` WHERE `onboarding_images`.`file_name` = 'test.jpg'[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `onboarding_images` (`content_type`, `created_at`, `file_name`, `onboarding_artist_id`, `updated_at`) VALUES ('image/jpeg', '2013-09-27 19:02:51', 'test.jpg', 1, '2013-09-27 19:02:51')
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (29.3ms)[0m  TRUNCATE TABLE `admins`;
+  [1m[36m (11.6ms)[0m  [1mTRUNCATE TABLE `apps`;[0m
+  [1m[35m (11.8ms)[0m  TRUNCATE TABLE `apps_packs`;
+  [1m[36m (8.4ms)[0m  [1mTRUNCATE TABLE `apps_packs_percentage`;[0m
+  [1m[35m (4.8ms)[0m  TRUNCATE TABLE `artists`;
+  [1m[36m (49.3ms)[0m  [1mTRUNCATE TABLE `artists_packs`;[0m
+  [1m[35m (7.8ms)[0m  TRUNCATE TABLE `artists_packs_percentage`;
+  [1m[36m (8.2ms)[0m  [1mTRUNCATE TABLE `artists_tags`;[0m
+  [1m[35m (7.6ms)[0m  TRUNCATE TABLE `brands`;
+  [1m[36m (39.9ms)[0m  [1mTRUNCATE TABLE `brands_packs`;[0m
+  [1m[35m (5.2ms)[0m  TRUNCATE TABLE `clients`;
+  [1m[36m (19.5ms)[0m  [1mTRUNCATE TABLE `downloads`;[0m
+  [1m[35m (5.2ms)[0m  TRUNCATE TABLE `onboarding_artists`;
+  [1m[36m (8.6ms)[0m  [1mTRUNCATE TABLE `onboarding_images`;[0m
+  [1m[35m (22.4ms)[0m  TRUNCATE TABLE `packs`;
+  [1m[36m (20.5ms)[0m  [1mTRUNCATE TABLE `packs_prices`;[0m
+  [1m[35m (11.8ms)[0m  TRUNCATE TABLE `packs_stickers`;
+  [1m[36m (45.0ms)[0m  [1mTRUNCATE TABLE `packs_tags`;[0m
+  [1m[35m (11.2ms)[0m  TRUNCATE TABLE `prelaunches`;
+  [1m[36m (13.0ms)[0m  [1mTRUNCATE TABLE `stickers`;[0m
+  [1m[35m (11.9ms)[0m  TRUNCATE TABLE `stickers_tags`;
+  [1m[36m (7.5ms)[0m  [1mTRUNCATE TABLE `tags`;[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.3ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (7.1ms)[0m  [1mTRUNCATE TABLE `admins`;[0m
+  [1m[35m (18.6ms)[0m  TRUNCATE TABLE `apps`;
+  [1m[36m (9.3ms)[0m  [1mTRUNCATE TABLE `apps_packs`;[0m
+  [1m[35m (48.4ms)[0m  TRUNCATE TABLE `apps_packs_percentage`;
+  [1m[36m (65.2ms)[0m  [1mTRUNCATE TABLE `artists`;[0m
+  [1m[35m (103.4ms)[0m  TRUNCATE TABLE `artists_packs`;
+  [1m[36m (100.3ms)[0m  [1mTRUNCATE TABLE `artists_packs_percentage`;[0m
+  [1m[35m (22.7ms)[0m  TRUNCATE TABLE `artists_tags`;
+  [1m[36m (25.6ms)[0m  [1mTRUNCATE TABLE `brands`;[0m
+  [1m[35m (14.9ms)[0m  TRUNCATE TABLE `brands_packs`;
+  [1m[36m (7.5ms)[0m  [1mTRUNCATE TABLE `clients`;[0m
+  [1m[35m (45.4ms)[0m  TRUNCATE TABLE `downloads`;
+  [1m[36m (14.3ms)[0m  [1mTRUNCATE TABLE `onboarding_artists`;[0m
+  [1m[35m (12.0ms)[0m  TRUNCATE TABLE `onboarding_images`;
+  [1m[36m (6.7ms)[0m  [1mTRUNCATE TABLE `packs`;[0m
+  [1m[35m (7.7ms)[0m  TRUNCATE TABLE `packs_prices`;
+  [1m[36m (20.3ms)[0m  [1mTRUNCATE TABLE `packs_stickers`;[0m
+  [1m[35m (92.8ms)[0m  TRUNCATE TABLE `packs_tags`;
+  [1m[36m (22.6ms)[0m  [1mTRUNCATE TABLE `prelaunches`;[0m
+  [1m[35m (25.0ms)[0m  TRUNCATE TABLE `stickers`;
+  [1m[36m (11.6ms)[0m  [1mTRUNCATE TABLE `stickers_tags`;[0m
+  [1m[35m (6.8ms)[0m  TRUNCATE TABLE `tags`;
+  [1m[36m (0.2ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `clients` (`created_at`, `name`, `updated_at`) VALUES ('2013-09-27 19:02:52', 'Live', '2013-09-27 19:02:52')[0m
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (6.6ms)[0m  [1mTRUNCATE TABLE `admins`;[0m
+  [1m[35m (20.1ms)[0m  TRUNCATE TABLE `apps`;
+  [1m[36m (9.1ms)[0m  [1mTRUNCATE TABLE `apps_packs`;[0m
+  [1m[35m (8.6ms)[0m  TRUNCATE TABLE `apps_packs_percentage`;
+  [1m[36m (6.0ms)[0m  [1mTRUNCATE TABLE `artists`;[0m
+  [1m[35m (29.1ms)[0m  TRUNCATE TABLE `artists_packs`;
+  [1m[36m (17.2ms)[0m  [1mTRUNCATE TABLE `artists_packs_percentage`;[0m
+  [1m[35m (98.7ms)[0m  TRUNCATE TABLE `artists_tags`;
+  [1m[36m (8.0ms)[0m  [1mTRUNCATE TABLE `brands`;[0m
+  [1m[35m (13.7ms)[0m  TRUNCATE TABLE `brands_packs`;
+  [1m[36m (7.4ms)[0m  [1mTRUNCATE TABLE `clients`;[0m
+  [1m[35m (28.8ms)[0m  TRUNCATE TABLE `downloads`;
+  [1m[36m (188.2ms)[0m  [1mTRUNCATE TABLE `onboarding_artists`;[0m
+  [1m[35m (32.4ms)[0m  TRUNCATE TABLE `onboarding_images`;
+  [1m[36m (30.0ms)[0m  [1mTRUNCATE TABLE `packs`;[0m
+  [1m[35m (11.3ms)[0m  TRUNCATE TABLE `packs_prices`;
+  [1m[36m (15.0ms)[0m  [1mTRUNCATE TABLE `packs_stickers`;[0m
+  [1m[35m (14.5ms)[0m  TRUNCATE TABLE `packs_tags`;
+  [1m[36m (33.8ms)[0m  [1mTRUNCATE TABLE `prelaunches`;[0m
+  [1m[35m (23.9ms)[0m  TRUNCATE TABLE `stickers`;
+  [1m[36m (15.2ms)[0m  [1mTRUNCATE TABLE `stickers_tags`;[0m
+  [1m[35m (46.4ms)[0m  TRUNCATE TABLE `tags`;
+  [1m[36m (0.2ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.2ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (8.0ms)[0m  TRUNCATE TABLE `admins`;
+  [1m[36m (26.8ms)[0m  [1mTRUNCATE TABLE `apps`;[0m
+  [1m[35m (52.3ms)[0m  TRUNCATE TABLE `apps_packs`;
+  [1m[36m (92.7ms)[0m  [1mTRUNCATE TABLE `apps_packs_percentage`;[0m
+  [1m[35m (21.4ms)[0m  TRUNCATE TABLE `artists`;
+  [1m[36m (19.8ms)[0m  [1mTRUNCATE TABLE `artists_packs`;[0m
+  [1m[35m (43.9ms)[0m  TRUNCATE TABLE `artists_packs_percentage`;
+  [1m[36m (18.0ms)[0m  [1mTRUNCATE TABLE `artists_tags`;[0m
+  [1m[35m (48.5ms)[0m  TRUNCATE TABLE `brands`;
+  [1m[36m (31.7ms)[0m  [1mTRUNCATE TABLE `brands_packs`;[0m
+  [1m[35m (21.8ms)[0m  TRUNCATE TABLE `clients`;
+  [1m[36m (131.4ms)[0m  [1mTRUNCATE TABLE `downloads`;[0m
+  [1m[35m (48.3ms)[0m  TRUNCATE TABLE `onboarding_artists`;
+  [1m[36m (54.9ms)[0m  [1mTRUNCATE TABLE `onboarding_images`;[0m
+  [1m[35m (21.8ms)[0m  TRUNCATE TABLE `packs`;
+  [1m[36m (16.4ms)[0m  [1mTRUNCATE TABLE `packs_prices`;[0m
+  [1m[35m (38.8ms)[0m  TRUNCATE TABLE `packs_stickers`;
+  [1m[36m (20.9ms)[0m  [1mTRUNCATE TABLE `packs_tags`;[0m
+  [1m[35m (6.6ms)[0m  TRUNCATE TABLE `prelaunches`;
+  [1m[36m (14.9ms)[0m  [1mTRUNCATE TABLE `stickers`;[0m
+  [1m[35m (62.0ms)[0m  TRUNCATE TABLE `stickers_tags`;
+  [1m[36m (8.7ms)[0m  [1mTRUNCATE TABLE `tags`;[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `onboarding_images` WHERE `onboarding_images`.`file_name` = 'test.jpg'
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `onboarding_images` (`content_type`, `created_at`, `file_name`, `onboarding_artist_id`, `updated_at`) VALUES ('image/jpeg', '2013-09-27 19:02:54', 'test.jpg', 1, '2013-09-27 19:02:54')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (4.8ms)[0m  [1mTRUNCATE TABLE `admins`;[0m
+  [1m[35m (37.2ms)[0m  TRUNCATE TABLE `apps`;
+  [1m[36m (14.6ms)[0m  [1mTRUNCATE TABLE `apps_packs`;[0m
+  [1m[35m (12.0ms)[0m  TRUNCATE TABLE `apps_packs_percentage`;
+  [1m[36m (7.1ms)[0m  [1mTRUNCATE TABLE `artists`;[0m
+  [1m[35m (10.1ms)[0m  TRUNCATE TABLE `artists_packs`;
+  [1m[36m (9.2ms)[0m  [1mTRUNCATE TABLE `artists_packs_percentage`;[0m
+  [1m[35m (12.1ms)[0m  TRUNCATE TABLE `artists_tags`;
+  [1m[36m (11.3ms)[0m  [1mTRUNCATE TABLE `brands`;[0m
+  [1m[35m (53.2ms)[0m  TRUNCATE TABLE `brands_packs`;
+  [1m[36m (19.0ms)[0m  [1mTRUNCATE TABLE `clients`;[0m
+  [1m[35m (413.0ms)[0m  TRUNCATE TABLE `downloads`;
+  [1m[36m (7.1ms)[0m  [1mTRUNCATE TABLE `onboarding_artists`;[0m
+  [1m[35m (9.8ms)[0m  TRUNCATE TABLE `onboarding_images`;
+  [1m[36m (7.1ms)[0m  [1mTRUNCATE TABLE `packs`;[0m
+  [1m[35m (7.1ms)[0m  TRUNCATE TABLE `packs_prices`;
+  [1m[36m (14.0ms)[0m  [1mTRUNCATE TABLE `packs_stickers`;[0m
+  [1m[35m (10.3ms)[0m  TRUNCATE TABLE `packs_tags`;
+  [1m[36m (35.6ms)[0m  [1mTRUNCATE TABLE `prelaunches`;[0m
+  [1m[35m (12.4ms)[0m  TRUNCATE TABLE `stickers`;
+  [1m[36m (14.0ms)[0m  [1mTRUNCATE TABLE `stickers_tags`;[0m
+  [1m[35m (4.9ms)[0m  TRUNCATE TABLE `tags`;
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `brands` (`created_at`, `name`, `threshold_1`, `threshold_1_price`, `threshold_2`, `threshold_2_price`, `threshold_3`, `threshold_3_price`, `updated_at`) VALUES ('2013-09-27 19:02:54', 'Marvel', 1000, 5, 10000, 4, 100000, 3, '2013-09-27 19:02:54')[0m
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (24.8ms)[0m  [1mTRUNCATE TABLE `admins`;[0m
+  [1m[35m (7.0ms)[0m  TRUNCATE TABLE `apps`;
+  [1m[36m (10.2ms)[0m  [1mTRUNCATE TABLE `apps_packs`;[0m
+  [1m[35m (9.2ms)[0m  TRUNCATE TABLE `apps_packs_percentage`;
+  [1m[36m (7.2ms)[0m  [1mTRUNCATE TABLE `artists`;[0m
+  [1m[35m (14.2ms)[0m  TRUNCATE TABLE `artists_packs`;
+  [1m[36m (10.1ms)[0m  [1mTRUNCATE TABLE `artists_packs_percentage`;[0m
+  [1m[35m (9.9ms)[0m  TRUNCATE TABLE `artists_tags`;
+  [1m[36m (6.3ms)[0m  [1mTRUNCATE TABLE `brands`;[0m
+  [1m[35m (13.4ms)[0m  TRUNCATE TABLE `brands_packs`;
+  [1m[36m (28.7ms)[0m  [1mTRUNCATE TABLE `clients`;[0m
+  [1m[35m (27.0ms)[0m  TRUNCATE TABLE `downloads`;
+  [1m[36m (24.6ms)[0m  [1mTRUNCATE TABLE `onboarding_artists`;[0m
+  [1m[35m (11.9ms)[0m  TRUNCATE TABLE `onboarding_images`;
+  [1m[36m (36.9ms)[0m  [1mTRUNCATE TABLE `packs`;[0m
+  [1m[35m (13.3ms)[0m  TRUNCATE TABLE `packs_prices`;
+  [1m[36m (15.3ms)[0m  [1mTRUNCATE TABLE `packs_stickers`;[0m
+  [1m[35m (17.0ms)[0m  TRUNCATE TABLE `packs_tags`;
+  [1m[36m (20.6ms)[0m  [1mTRUNCATE TABLE `prelaunches`;[0m
+  [1m[35m (16.0ms)[0m  TRUNCATE TABLE `stickers`;
+  [1m[36m (8.9ms)[0m  [1mTRUNCATE TABLE `stickers_tags`;[0m
+  [1m[35m (15.4ms)[0m  TRUNCATE TABLE `tags`;
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.2ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (31.9ms)[0m  TRUNCATE TABLE `admins`;
+  [1m[36m (12.8ms)[0m  [1mTRUNCATE TABLE `apps`;[0m
+  [1m[35m (48.4ms)[0m  TRUNCATE TABLE `apps_packs`;
+  [1m[36m (7.8ms)[0m  [1mTRUNCATE TABLE `apps_packs_percentage`;[0m
+  [1m[35m (62.3ms)[0m  TRUNCATE TABLE `artists`;
+  [1m[36m (49.6ms)[0m  [1mTRUNCATE TABLE `artists_packs`;[0m
+  [1m[35m (134.3ms)[0m  TRUNCATE TABLE `artists_packs_percentage`;
+  [1m[36m (71.0ms)[0m  [1mTRUNCATE TABLE `artists_tags`;[0m
+  [1m[35m (60.3ms)[0m  TRUNCATE TABLE `brands`;
+  [1m[36m (43.7ms)[0m  [1mTRUNCATE TABLE `brands_packs`;[0m
+  [1m[35m (15.7ms)[0m  TRUNCATE TABLE `clients`;
+  [1m[36m (69.9ms)[0m  [1mTRUNCATE TABLE `downloads`;[0m
+  [1m[35m (19.2ms)[0m  TRUNCATE TABLE `onboarding_artists`;
+  [1m[36m (13.3ms)[0m  [1mTRUNCATE TABLE `onboarding_images`;[0m
+  [1m[35m (49.0ms)[0m  TRUNCATE TABLE `packs`;
+  [1m[36m (15.5ms)[0m  [1mTRUNCATE TABLE `packs_prices`;[0m
+  [1m[35m (34.8ms)[0m  TRUNCATE TABLE `packs_stickers`;
+  [1m[36m (29.5ms)[0m  [1mTRUNCATE TABLE `packs_tags`;[0m
+  [1m[35m (7.1ms)[0m  TRUNCATE TABLE `prelaunches`;
+  [1m[36m (32.1ms)[0m  [1mTRUNCATE TABLE `stickers`;[0m
+  [1m[35m (14.1ms)[0m  TRUNCATE TABLE `stickers_tags`;
+  [1m[36m (10.7ms)[0m  [1mTRUNCATE TABLE `tags`;[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (31.0ms)[0m  [1mTRUNCATE TABLE `admins`;[0m
+  [1m[35m (10.8ms)[0m  TRUNCATE TABLE `apps`;
+  [1m[36m (11.6ms)[0m  [1mTRUNCATE TABLE `apps_packs`;[0m
+  [1m[35m (9.1ms)[0m  TRUNCATE TABLE `apps_packs_percentage`;
+  [1m[36m (5.8ms)[0m  [1mTRUNCATE TABLE `artists`;[0m
+  [1m[35m (20.6ms)[0m  TRUNCATE TABLE `artists_packs`;
+  [1m[36m (24.2ms)[0m  [1mTRUNCATE TABLE `artists_packs_percentage`;[0m
+  [1m[35m (11.4ms)[0m  TRUNCATE TABLE `artists_tags`;
+  [1m[36m (6.6ms)[0m  [1mTRUNCATE TABLE `brands`;[0m
+  [1m[35m (12.6ms)[0m  TRUNCATE TABLE `brands_packs`;
+  [1m[36m (26.7ms)[0m  [1mTRUNCATE TABLE `clients`;[0m
+  [1m[35m (40.3ms)[0m  TRUNCATE TABLE `downloads`;
+  [1m[36m (7.4ms)[0m  [1mTRUNCATE TABLE `onboarding_artists`;[0m
+  [1m[35m (65.7ms)[0m  TRUNCATE TABLE `onboarding_images`;
+  [1m[36m (44.9ms)[0m  [1mTRUNCATE TABLE `packs`;[0m
+  [1m[35m (9.6ms)[0m  TRUNCATE TABLE `packs_prices`;
+  [1m[36m (32.2ms)[0m  [1mTRUNCATE TABLE `packs_stickers`;[0m
+  [1m[35m (15.5ms)[0m  TRUNCATE TABLE `packs_tags`;
+  [1m[36m (19.2ms)[0m  [1mTRUNCATE TABLE `prelaunches`;[0m
+  [1m[35m (29.2ms)[0m  TRUNCATE TABLE `stickers`;
+  [1m[36m (14.4ms)[0m  [1mTRUNCATE TABLE `stickers_tags`;[0m
+  [1m[35m (87.6ms)[0m  TRUNCATE TABLE `tags`;
+  [1m[36m (0.2ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.2ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (10.4ms)[0m  TRUNCATE TABLE `admins`;
+  [1m[36m (45.6ms)[0m  [1mTRUNCATE TABLE `apps`;[0m
+  [1m[35m (10.4ms)[0m  TRUNCATE TABLE `apps_packs`;
+  [1m[36m (10.2ms)[0m  [1mTRUNCATE TABLE `apps_packs_percentage`;[0m
+  [1m[35m (6.7ms)[0m  TRUNCATE TABLE `artists`;
+  [1m[36m (10.2ms)[0m  [1mTRUNCATE TABLE `artists_packs`;[0m
+  [1m[35m (11.2ms)[0m  TRUNCATE TABLE `artists_packs_percentage`;
+  [1m[36m (13.1ms)[0m  [1mTRUNCATE TABLE `artists_tags`;[0m
+  [1m[35m (7.2ms)[0m  TRUNCATE TABLE `brands`;
+  [1m[36m (11.0ms)[0m  [1mTRUNCATE TABLE `brands_packs`;[0m
+  [1m[35m (6.3ms)[0m  TRUNCATE TABLE `clients`;
+  [1m[36m (14.7ms)[0m  [1mTRUNCATE TABLE `downloads`;[0m
+  [1m[35m (7.7ms)[0m  TRUNCATE TABLE `onboarding_artists`;
+  [1m[36m (9.4ms)[0m  [1mTRUNCATE TABLE `onboarding_images`;[0m
+  [1m[35m (6.7ms)[0m  TRUNCATE TABLE `packs`;
+  [1m[36m (16.2ms)[0m  [1mTRUNCATE TABLE `packs_prices`;[0m
+  [1m[35m (12.7ms)[0m  TRUNCATE TABLE `packs_stickers`;
+  [1m[36m (25.0ms)[0m  [1mTRUNCATE TABLE `packs_tags`;[0m
+  [1m[35m (30.2ms)[0m  TRUNCATE TABLE `prelaunches`;
+  [1m[36m (15.0ms)[0m  [1mTRUNCATE TABLE `stickers`;[0m
+  [1m[35m (13.5ms)[0m  TRUNCATE TABLE `stickers_tags`;
+  [1m[36m (7.7ms)[0m  [1mTRUNCATE TABLE `tags`;[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (5.9ms)[0m  [1mTRUNCATE TABLE `admins`;[0m
+  [1m[35m (8.3ms)[0m  TRUNCATE TABLE `apps`;
+  [1m[36m (17.3ms)[0m  [1mTRUNCATE TABLE `apps_packs`;[0m
+  [1m[35m (8.9ms)[0m  TRUNCATE TABLE `apps_packs_percentage`;
+  [1m[36m (5.6ms)[0m  [1mTRUNCATE TABLE `artists`;[0m
+  [1m[35m (27.1ms)[0m  TRUNCATE TABLE `artists_packs`;
+  [1m[36m (12.6ms)[0m  [1mTRUNCATE TABLE `artists_packs_percentage`;[0m
+  [1m[35m (32.6ms)[0m  TRUNCATE TABLE `artists_tags`;
+  [1m[36m (35.7ms)[0m  [1mTRUNCATE TABLE `brands`;[0m
+  [1m[35m (18.4ms)[0m  TRUNCATE TABLE `brands_packs`;
+  [1m[36m (58.8ms)[0m  [1mTRUNCATE TABLE `clients`;[0m
+  [1m[35m (54.2ms)[0m  TRUNCATE TABLE `downloads`;
+  [1m[36m (59.1ms)[0m  [1mTRUNCATE TABLE `onboarding_artists`;[0m
+  [1m[35m (145.1ms)[0m  TRUNCATE TABLE `onboarding_images`;
+  [1m[36m (36.5ms)[0m  [1mTRUNCATE TABLE `packs`;[0m
+  [1m[35m (8.7ms)[0m  TRUNCATE TABLE `packs_prices`;
+  [1m[36m (13.2ms)[0m  [1mTRUNCATE TABLE `packs_stickers`;[0m
+  [1m[35m (21.6ms)[0m  TRUNCATE TABLE `packs_tags`;
+  [1m[36m (6.4ms)[0m  [1mTRUNCATE TABLE `prelaunches`;[0m
+  [1m[35m (80.7ms)[0m  TRUNCATE TABLE `stickers`;
+  [1m[36m (22.4ms)[0m  [1mTRUNCATE TABLE `stickers_tags`;[0m
+  [1m[35m (6.7ms)[0m  TRUNCATE TABLE `tags`;
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (4.6ms)[0m  TRUNCATE TABLE `admins`;
+  [1m[36m (8.4ms)[0m  [1mTRUNCATE TABLE `apps`;[0m
+  [1m[35m (23.3ms)[0m  TRUNCATE TABLE `apps_packs`;
+  [1m[36m (7.9ms)[0m  [1mTRUNCATE TABLE `apps_packs_percentage`;[0m
+  [1m[35m (34.2ms)[0m  TRUNCATE TABLE `artists`;
+  [1m[36m (12.8ms)[0m  [1mTRUNCATE TABLE `artists_packs`;[0m
+  [1m[35m (48.5ms)[0m  TRUNCATE TABLE `artists_packs_percentage`;
+  [1m[36m (44.7ms)[0m  [1mTRUNCATE TABLE `artists_tags`;[0m
+  [1m[35m (7.4ms)[0m  TRUNCATE TABLE `brands`;
+  [1m[36m (11.0ms)[0m  [1mTRUNCATE TABLE `brands_packs`;[0m
+  [1m[35m (6.0ms)[0m  TRUNCATE TABLE `clients`;
+  [1m[36m (13.7ms)[0m  [1mTRUNCATE TABLE `downloads`;[0m
+  [1m[35m (9.4ms)[0m  TRUNCATE TABLE `onboarding_artists`;
+  [1m[36m (26.0ms)[0m  [1mTRUNCATE TABLE `onboarding_images`;[0m
+  [1m[35m (28.8ms)[0m  TRUNCATE TABLE `packs`;
+  [1m[36m (10.9ms)[0m  [1mTRUNCATE TABLE `packs_prices`;[0m
+  [1m[35m (17.6ms)[0m  TRUNCATE TABLE `packs_stickers`;
+  [1m[36m (102.3ms)[0m  [1mTRUNCATE TABLE `packs_tags`;[0m
+  [1m[35m (7.0ms)[0m  TRUNCATE TABLE `prelaunches`;
+  [1m[36m (34.0ms)[0m  [1mTRUNCATE TABLE `stickers`;[0m
+  [1m[35m (14.2ms)[0m  TRUNCATE TABLE `stickers_tags`;
+  [1m[36m (6.4ms)[0m  [1mTRUNCATE TABLE `tags`;[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (43.1ms)[0m  [1mTRUNCATE TABLE `admins`;[0m
+  [1m[35m (18.7ms)[0m  TRUNCATE TABLE `apps`;
+  [1m[36m (40.1ms)[0m  [1mTRUNCATE TABLE `apps_packs`;[0m
+  [1m[35m (40.8ms)[0m  TRUNCATE TABLE `apps_packs_percentage`;
+  [1m[36m (5.7ms)[0m  [1mTRUNCATE TABLE `artists`;[0m
+  [1m[35m (16.0ms)[0m  TRUNCATE TABLE `artists_packs`;
+  [1m[36m (8.6ms)[0m  [1mTRUNCATE TABLE `artists_packs_percentage`;[0m
+  [1m[35m (23.6ms)[0m  TRUNCATE TABLE `artists_tags`;
+  [1m[36m (47.5ms)[0m  [1mTRUNCATE TABLE `brands`;[0m
+  [1m[35m (14.3ms)[0m  TRUNCATE TABLE `brands_packs`;
+  [1m[36m (7.4ms)[0m  [1mTRUNCATE TABLE `clients`;[0m
+  [1m[35m (15.7ms)[0m  TRUNCATE TABLE `downloads`;
+  [1m[36m (78.7ms)[0m  [1mTRUNCATE TABLE `onboarding_artists`;[0m
+  [1m[35m (12.0ms)[0m  TRUNCATE TABLE `onboarding_images`;
+  [1m[36m (35.8ms)[0m  [1mTRUNCATE TABLE `packs`;[0m
+  [1m[35m (36.1ms)[0m  TRUNCATE TABLE `packs_prices`;
+  [1m[36m (14.8ms)[0m  [1mTRUNCATE TABLE `packs_stickers`;[0m
+  [1m[35m (12.6ms)[0m  TRUNCATE TABLE `packs_tags`;
+  [1m[36m (23.7ms)[0m  [1mTRUNCATE TABLE `prelaunches`;[0m
+  [1m[35m (20.4ms)[0m  TRUNCATE TABLE `stickers`;
+  [1m[36m (15.0ms)[0m  [1mTRUNCATE TABLE `stickers_tags`;[0m
+  [1m[35m (29.9ms)[0m  TRUNCATE TABLE `tags`;
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `stickers` (`artist_id`, `available`, `brand_id`, `created_at`, `file_name`, `updated_at`) VALUES (1, 1, 1, '2013-09-27 19:02:58', 'myimagefile.png', '2013-09-27 19:02:58')[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (107.4ms)[0m  [1mTRUNCATE TABLE `admins`;[0m
+  [1m[35m (10.5ms)[0m  TRUNCATE TABLE `apps`;
+  [1m[36m (14.0ms)[0m  [1mTRUNCATE TABLE `apps_packs`;[0m
+  [1m[35m (23.6ms)[0m  TRUNCATE TABLE `apps_packs_percentage`;
+  [1m[36m (41.0ms)[0m  [1mTRUNCATE TABLE `artists`;[0m
+  [1m[35m (11.6ms)[0m  TRUNCATE TABLE `artists_packs`;
+  [1m[36m (10.6ms)[0m  [1mTRUNCATE TABLE `artists_packs_percentage`;[0m
+  [1m[35m (9.4ms)[0m  TRUNCATE TABLE `artists_tags`;
+  [1m[36m (5.1ms)[0m  [1mTRUNCATE TABLE `brands`;[0m
+  [1m[35m (43.8ms)[0m  TRUNCATE TABLE `brands_packs`;
+  [1m[36m (7.7ms)[0m  [1mTRUNCATE TABLE `clients`;[0m
+  [1m[35m (17.7ms)[0m  TRUNCATE TABLE `downloads`;
+  [1m[36m (35.4ms)[0m  [1mTRUNCATE TABLE `onboarding_artists`;[0m
+  [1m[35m (12.2ms)[0m  TRUNCATE TABLE `onboarding_images`;
+  [1m[36m (44.8ms)[0m  [1mTRUNCATE TABLE `packs`;[0m
+  [1m[35m (12.6ms)[0m  TRUNCATE TABLE `packs_prices`;
+  [1m[36m (12.1ms)[0m  [1mTRUNCATE TABLE `packs_stickers`;[0m
+  [1m[35m (107.5ms)[0m  TRUNCATE TABLE `packs_tags`;
+  [1m[36m (65.4ms)[0m  [1mTRUNCATE TABLE `prelaunches`;[0m
+  [1m[35m (54.5ms)[0m  TRUNCATE TABLE `stickers`;
+  [1m[36m (11.8ms)[0m  [1mTRUNCATE TABLE `stickers_tags`;[0m
+  [1m[35m (23.9ms)[0m  TRUNCATE TABLE `tags`;
+  [1m[36m (0.2ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.2ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (22.2ms)[0m  TRUNCATE TABLE `admins`;
+  [1m[36m (9.6ms)[0m  [1mTRUNCATE TABLE `apps`;[0m
+  [1m[35m (10.4ms)[0m  TRUNCATE TABLE `apps_packs`;
+  [1m[36m (37.1ms)[0m  [1mTRUNCATE TABLE `apps_packs_percentage`;[0m
+  [1m[35m (7.5ms)[0m  TRUNCATE TABLE `artists`;
+  [1m[36m (30.3ms)[0m  [1mTRUNCATE TABLE `artists_packs`;[0m
+  [1m[35m (12.1ms)[0m  TRUNCATE TABLE `artists_packs_percentage`;
+  [1m[36m (14.8ms)[0m  [1mTRUNCATE TABLE `artists_tags`;[0m
+  [1m[35m (7.6ms)[0m  TRUNCATE TABLE `brands`;
+  [1m[36m (13.8ms)[0m  [1mTRUNCATE TABLE `brands_packs`;[0m
+  [1m[35m (7.7ms)[0m  TRUNCATE TABLE `clients`;
+  [1m[36m (18.2ms)[0m  [1mTRUNCATE TABLE `downloads`;[0m
+  [1m[35m (7.0ms)[0m  TRUNCATE TABLE `onboarding_artists`;
+  [1m[36m (10.4ms)[0m  [1mTRUNCATE TABLE `onboarding_images`;[0m
+  [1m[35m (54.6ms)[0m  TRUNCATE TABLE `packs`;
+  [1m[36m (121.9ms)[0m  [1mTRUNCATE TABLE `packs_prices`;[0m
+  [1m[35m (15.9ms)[0m  TRUNCATE TABLE `packs_stickers`;
+  [1m[36m (13.3ms)[0m  [1mTRUNCATE TABLE `packs_tags`;[0m
+  [1m[35m (6.7ms)[0m  TRUNCATE TABLE `prelaunches`;
+  [1m[36m (11.8ms)[0m  [1mTRUNCATE TABLE `stickers`;[0m
+  [1m[35m (11.2ms)[0m  TRUNCATE TABLE `stickers_tags`;
+  [1m[36m (5.3ms)[0m  [1mTRUNCATE TABLE `tags`;[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (5.4ms)[0m  [1mTRUNCATE TABLE `admins`;[0m
+  [1m[35m (9.8ms)[0m  TRUNCATE TABLE `apps`;
+  [1m[36m (14.9ms)[0m  [1mTRUNCATE TABLE `apps_packs`;[0m
+  [1m[35m (10.7ms)[0m  TRUNCATE TABLE `apps_packs_percentage`;
+  [1m[36m (40.8ms)[0m  [1mTRUNCATE TABLE `artists`;[0m
+  [1m[35m (16.8ms)[0m  TRUNCATE TABLE `artists_packs`;
+  [1m[36m (11.4ms)[0m  [1mTRUNCATE TABLE `artists_packs_percentage`;[0m
+  [1m[35m (13.5ms)[0m  TRUNCATE TABLE `artists_tags`;
+  [1m[36m (5.0ms)[0m  [1mTRUNCATE TABLE `brands`;[0m
+  [1m[35m (10.5ms)[0m  TRUNCATE TABLE `brands_packs`;
+  [1m[36m (26.3ms)[0m  [1mTRUNCATE TABLE `clients`;[0m
+  [1m[35m (34.8ms)[0m  TRUNCATE TABLE `downloads`;
+  [1m[36m (21.7ms)[0m  [1mTRUNCATE TABLE `onboarding_artists`;[0m
+  [1m[35m (33.8ms)[0m  TRUNCATE TABLE `onboarding_images`;
+  [1m[36m (5.4ms)[0m  [1mTRUNCATE TABLE `packs`;[0m
+  [1m[35m (14.4ms)[0m  TRUNCATE TABLE `packs_prices`;
+  [1m[36m (14.7ms)[0m  [1mTRUNCATE TABLE `packs_stickers`;[0m
+  [1m[35m (34.8ms)[0m  TRUNCATE TABLE `packs_tags`;
+  [1m[36m (7.3ms)[0m  [1mTRUNCATE TABLE `prelaunches`;[0m
+  [1m[35m (11.6ms)[0m  TRUNCATE TABLE `stickers`;
+  [1m[36m (39.0ms)[0m  [1mTRUNCATE TABLE `stickers_tags`;[0m
+  [1m[35m (13.2ms)[0m  TRUNCATE TABLE `tags`;
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.2ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (9.2ms)[0m  TRUNCATE TABLE `admins`;
+  [1m[36m (34.8ms)[0m  [1mTRUNCATE TABLE `apps`;[0m
+  [1m[35m (57.0ms)[0m  TRUNCATE TABLE `apps_packs`;
+  [1m[36m (45.3ms)[0m  [1mTRUNCATE TABLE `apps_packs_percentage`;[0m
+  [1m[35m (24.4ms)[0m  TRUNCATE TABLE `artists`;
+  [1m[36m (14.4ms)[0m  [1mTRUNCATE TABLE `artists_packs`;[0m
+  [1m[35m (11.6ms)[0m  TRUNCATE TABLE `artists_packs_percentage`;
+  [1m[36m (13.4ms)[0m  [1mTRUNCATE TABLE `artists_tags`;[0m
+  [1m[35m (31.1ms)[0m  TRUNCATE TABLE `brands`;
+  [1m[36m (12.9ms)[0m  [1mTRUNCATE TABLE `brands_packs`;[0m
+  [1m[35m (7.7ms)[0m  TRUNCATE TABLE `clients`;
+  [1m[36m (35.4ms)[0m  [1mTRUNCATE TABLE `downloads`;[0m
+  [1m[35m (11.3ms)[0m  TRUNCATE TABLE `onboarding_artists`;
+  [1m[36m (84.9ms)[0m  [1mTRUNCATE TABLE `onboarding_images`;[0m
+  [1m[35m (37.7ms)[0m  TRUNCATE TABLE `packs`;
+  [1m[36m (59.5ms)[0m  [1mTRUNCATE TABLE `packs_prices`;[0m
+  [1m[35m (25.3ms)[0m  TRUNCATE TABLE `packs_stickers`;
+  [1m[36m (19.3ms)[0m  [1mTRUNCATE TABLE `packs_tags`;[0m
+  [1m[35m (63.8ms)[0m  TRUNCATE TABLE `prelaunches`;
+  [1m[36m (19.8ms)[0m  [1mTRUNCATE TABLE `stickers`;[0m
+  [1m[35m (13.3ms)[0m  TRUNCATE TABLE `stickers_tags`;
+  [1m[36m (5.5ms)[0m  [1mTRUNCATE TABLE `tags`;[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `onboarding_artists` (`bio`, `created_at`, `first_name`, `last_name`, `licensing_permission`, `password_digest`, `photo`, `signin_name`, `updated_at`) VALUES (NULL, '2013-09-27 19:03:00', 'John', 'Smith', NULL, '$2a$10$Ula1qV8HJqB7l1UBdDXcb.j1YoGTHwCQBKGi.EVPyr/UN3tdWP/Mu', NULL, 'johnsmith', '2013-09-27 19:03:00')
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (7.2ms)[0m  TRUNCATE TABLE `admins`;
+  [1m[36m (49.0ms)[0m  [1mTRUNCATE TABLE `apps`;[0m
+  [1m[35m (14.2ms)[0m  TRUNCATE TABLE `apps_packs`;
+  [1m[36m (11.8ms)[0m  [1mTRUNCATE TABLE `apps_packs_percentage`;[0m
+  [1m[35m (8.1ms)[0m  TRUNCATE TABLE `artists`;
+  [1m[36m (12.2ms)[0m  [1mTRUNCATE TABLE `artists_packs`;[0m
+  [1m[35m (12.1ms)[0m  TRUNCATE TABLE `artists_packs_percentage`;
+  [1m[36m (30.4ms)[0m  [1mTRUNCATE TABLE `artists_tags`;[0m
+  [1m[35m (28.4ms)[0m  TRUNCATE TABLE `brands`;
+  [1m[36m (81.3ms)[0m  [1mTRUNCATE TABLE `brands_packs`;[0m
+  [1m[35m (50.2ms)[0m  TRUNCATE TABLE `clients`;
+  [1m[36m (214.3ms)[0m  [1mTRUNCATE TABLE `downloads`;[0m
+  [1m[35m (6.5ms)[0m  TRUNCATE TABLE `onboarding_artists`;
+  [1m[36m (8.8ms)[0m  [1mTRUNCATE TABLE `onboarding_images`;[0m
+  [1m[35m (7.1ms)[0m  TRUNCATE TABLE `packs`;
+  [1m[36m (8.6ms)[0m  [1mTRUNCATE TABLE `packs_prices`;[0m
+  [1m[35m (12.4ms)[0m  TRUNCATE TABLE `packs_stickers`;
+  [1m[36m (12.8ms)[0m  [1mTRUNCATE TABLE `packs_tags`;[0m
+  [1m[35m (6.7ms)[0m  TRUNCATE TABLE `prelaunches`;
+  [1m[36m (12.6ms)[0m  [1mTRUNCATE TABLE `stickers`;[0m
+  [1m[35m (13.3ms)[0m  TRUNCATE TABLE `stickers_tags`;
+  [1m[36m (7.2ms)[0m  [1mTRUNCATE TABLE `tags`;[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (7.0ms)[0m  [1mTRUNCATE TABLE `admins`;[0m
+  [1m[35m (12.4ms)[0m  TRUNCATE TABLE `apps`;
+  [1m[36m (13.0ms)[0m  [1mTRUNCATE TABLE `apps_packs`;[0m
+  [1m[35m (10.0ms)[0m  TRUNCATE TABLE `apps_packs_percentage`;
+  [1m[36m (6.5ms)[0m  [1mTRUNCATE TABLE `artists`;[0m
+  [1m[35m (12.8ms)[0m  TRUNCATE TABLE `artists_packs`;
+  [1m[36m (9.0ms)[0m  [1mTRUNCATE TABLE `artists_packs_percentage`;[0m
+  [1m[35m (10.5ms)[0m  TRUNCATE TABLE `artists_tags`;
+  [1m[36m (6.4ms)[0m  [1mTRUNCATE TABLE `brands`;[0m
+  [1m[35m (21.4ms)[0m  TRUNCATE TABLE `brands_packs`;
+  [1m[36m (38.7ms)[0m  [1mTRUNCATE TABLE `clients`;[0m
+  [1m[35m (19.1ms)[0m  TRUNCATE TABLE `downloads`;
+  [1m[36m (7.3ms)[0m  [1mTRUNCATE TABLE `onboarding_artists`;[0m
+  [1m[35m (11.1ms)[0m  TRUNCATE TABLE `onboarding_images`;
+  [1m[36m (11.8ms)[0m  [1mTRUNCATE TABLE `packs`;[0m
+  [1m[35m (53.4ms)[0m  TRUNCATE TABLE `packs_prices`;
+  [1m[36m (77.0ms)[0m  [1mTRUNCATE TABLE `packs_stickers`;[0m
+  [1m[35m (99.9ms)[0m  TRUNCATE TABLE `packs_tags`;
+  [1m[36m (168.6ms)[0m  [1mTRUNCATE TABLE `prelaunches`;[0m
+  [1m[35m (44.4ms)[0m  TRUNCATE TABLE `stickers`;
+  [1m[36m (12.9ms)[0m  [1mTRUNCATE TABLE `stickers_tags`;[0m
+  [1m[35m (7.0ms)[0m  TRUNCATE TABLE `tags`;
+  [1m[36m (0.2ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (5.2ms)[0m  TRUNCATE TABLE `admins`;
+  [1m[36m (8.6ms)[0m  [1mTRUNCATE TABLE `apps`;[0m
+  [1m[35m (13.0ms)[0m  TRUNCATE TABLE `apps_packs`;
+  [1m[36m (8.5ms)[0m  [1mTRUNCATE TABLE `apps_packs_percentage`;[0m
+  [1m[35m (123.1ms)[0m  TRUNCATE TABLE `artists`;
+  [1m[36m (13.3ms)[0m  [1mTRUNCATE TABLE `artists_packs`;[0m
+  [1m[35m (10.8ms)[0m  TRUNCATE TABLE `artists_packs_percentage`;
+  [1m[36m (14.6ms)[0m  [1mTRUNCATE TABLE `artists_tags`;[0m
+  [1m[35m (6.4ms)[0m  TRUNCATE TABLE `brands`;
+  [1m[36m (10.0ms)[0m  [1mTRUNCATE TABLE `brands_packs`;[0m
+  [1m[35m (5.4ms)[0m  TRUNCATE TABLE `clients`;
+  [1m[36m (14.7ms)[0m  [1mTRUNCATE TABLE `downloads`;[0m
+  [1m[35m (8.1ms)[0m  TRUNCATE TABLE `onboarding_artists`;
+  [1m[36m (8.1ms)[0m  [1mTRUNCATE TABLE `onboarding_images`;[0m
+  [1m[35m (6.4ms)[0m  TRUNCATE TABLE `packs`;
+  [1m[36m (10.2ms)[0m  [1mTRUNCATE TABLE `packs_prices`;[0m
+  [1m[35m (12.2ms)[0m  TRUNCATE TABLE `packs_stickers`;
+  [1m[36m (11.5ms)[0m  [1mTRUNCATE TABLE `packs_tags`;[0m
+  [1m[35m (7.6ms)[0m  TRUNCATE TABLE `prelaunches`;
+  [1m[36m (12.9ms)[0m  [1mTRUNCATE TABLE `stickers`;[0m
+  [1m[35m (11.4ms)[0m  TRUNCATE TABLE `stickers_tags`;
+  [1m[36m (7.4ms)[0m  [1mTRUNCATE TABLE `tags`;[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.3ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (6.4ms)[0m  [1mTRUNCATE TABLE `admins`;[0m
+  [1m[35m (16.5ms)[0m  TRUNCATE TABLE `apps`;
+  [1m[36m (10.6ms)[0m  [1mTRUNCATE TABLE `apps_packs`;[0m
+  [1m[35m (11.9ms)[0m  TRUNCATE TABLE `apps_packs_percentage`;
+  [1m[36m (6.0ms)[0m  [1mTRUNCATE TABLE `artists`;[0m
+  [1m[35m (9.8ms)[0m  TRUNCATE TABLE `artists_packs`;
+  [1m[36m (11.6ms)[0m  [1mTRUNCATE TABLE `artists_packs_percentage`;[0m
+  [1m[35m (59.9ms)[0m  TRUNCATE TABLE `artists_tags`;
+  [1m[36m (13.8ms)[0m  [1mTRUNCATE TABLE `brands`;[0m
+  [1m[35m (29.9ms)[0m  TRUNCATE TABLE `brands_packs`;
+  [1m[36m (7.6ms)[0m  [1mTRUNCATE TABLE `clients`;[0m
+  [1m[35m (12.4ms)[0m  TRUNCATE TABLE `downloads`;
+  [1m[36m (7.7ms)[0m  [1mTRUNCATE TABLE `onboarding_artists`;[0m
+  [1m[35m (8.8ms)[0m  TRUNCATE TABLE `onboarding_images`;
+  [1m[36m (22.2ms)[0m  [1mTRUNCATE TABLE `packs`;[0m
+  [1m[35m (13.2ms)[0m  TRUNCATE TABLE `packs_prices`;
+  [1m[36m (11.1ms)[0m  [1mTRUNCATE TABLE `packs_stickers`;[0m
+  [1m[35m (22.9ms)[0m  TRUNCATE TABLE `packs_tags`;
+  [1m[36m (19.4ms)[0m  [1mTRUNCATE TABLE `prelaunches`;[0m
+  [1m[35m (30.2ms)[0m  TRUNCATE TABLE `stickers`;
+  [1m[36m (66.1ms)[0m  [1mTRUNCATE TABLE `stickers_tags`;[0m
+  [1m[35m (37.9ms)[0m  TRUNCATE TABLE `tags`;
+  [1m[36m (0.2ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `tags` (`created_at`, `name`, `updated_at`) VALUES ('2013-09-27 19:03:03', 'Graffiti', '2013-09-27 19:03:03')[0m
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (15.6ms)[0m  [1mTRUNCATE TABLE `admins`;[0m
+  [1m[35m (34.7ms)[0m  TRUNCATE TABLE `apps`;
+  [1m[36m (127.5ms)[0m  [1mTRUNCATE TABLE `apps_packs`;[0m
+  [1m[35m (12.5ms)[0m  TRUNCATE TABLE `apps_packs_percentage`;
+  [1m[36m (7.2ms)[0m  [1mTRUNCATE TABLE `artists`;[0m
+  [1m[35m (11.8ms)[0m  TRUNCATE TABLE `artists_packs`;
+  [1m[36m (98.8ms)[0m  [1mTRUNCATE TABLE `artists_packs_percentage`;[0m
+  [1m[35m (408.8ms)[0m  TRUNCATE TABLE `artists_tags`;
+  [1m[36m (8.4ms)[0m  [1mTRUNCATE TABLE `brands`;[0m
+  [1m[35m (90.9ms)[0m  TRUNCATE TABLE `brands_packs`;
+  [1m[36m (7.8ms)[0m  [1mTRUNCATE TABLE `clients`;[0m
+  [1m[35m (53.8ms)[0m  TRUNCATE TABLE `downloads`;
+  [1m[36m (8.2ms)[0m  [1mTRUNCATE TABLE `onboarding_artists`;[0m
+  [1m[35m (8.4ms)[0m  TRUNCATE TABLE `onboarding_images`;
+  [1m[36m (8.9ms)[0m  [1mTRUNCATE TABLE `packs`;[0m
+  [1m[35m (10.6ms)[0m  TRUNCATE TABLE `packs_prices`;
+  [1m[36m (37.3ms)[0m  [1mTRUNCATE TABLE `packs_stickers`;[0m
+  [1m[35m (23.4ms)[0m  TRUNCATE TABLE `packs_tags`;
+  [1m[36m (57.2ms)[0m  [1mTRUNCATE TABLE `prelaunches`;[0m
+  [1m[35m (14.0ms)[0m  TRUNCATE TABLE `stickers`;
+  [1m[36m (15.8ms)[0m  [1mTRUNCATE TABLE `stickers_tags`;[0m
+  [1m[35m (6.5ms)[0m  TRUNCATE TABLE `tags`;
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `packs` (`available`, `created_at`, `price`, `title`, `updated_at`) VALUES (1, '2013-09-27 19:03:04', 9.99, 'DaVinci', '2013-09-27 19:03:04')[0m
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (8.2ms)[0m  [1mTRUNCATE TABLE `admins`;[0m
+  [1m[35m (10.6ms)[0m  TRUNCATE TABLE `apps`;
+  [1m[36m (9.1ms)[0m  [1mTRUNCATE TABLE `apps_packs`;[0m
+  [1m[35m (33.1ms)[0m  TRUNCATE TABLE `apps_packs_percentage`;
+  [1m[36m (7.2ms)[0m  [1mTRUNCATE TABLE `artists`;[0m
+  [1m[35m (14.4ms)[0m  TRUNCATE TABLE `artists_packs`;
+  [1m[36m (9.4ms)[0m  [1mTRUNCATE TABLE `artists_packs_percentage`;[0m
+  [1m[35m (33.0ms)[0m  TRUNCATE TABLE `artists_tags`;
+  [1m[36m (75.4ms)[0m  [1mTRUNCATE TABLE `brands`;[0m
+  [1m[35m (37.7ms)[0m  TRUNCATE TABLE `brands_packs`;
+  [1m[36m (14.2ms)[0m  [1mTRUNCATE TABLE `clients`;[0m
+  [1m[35m (36.6ms)[0m  TRUNCATE TABLE `downloads`;
+  [1m[36m (177.5ms)[0m  [1mTRUNCATE TABLE `onboarding_artists`;[0m
+  [1m[35m (10.6ms)[0m  TRUNCATE TABLE `onboarding_images`;
+  [1m[36m (55.1ms)[0m  [1mTRUNCATE TABLE `packs`;[0m
+  [1m[35m (86.8ms)[0m  TRUNCATE TABLE `packs_prices`;
+  [1m[36m (13.0ms)[0m  [1mTRUNCATE TABLE `packs_stickers`;[0m
+  [1m[35m (10.2ms)[0m  TRUNCATE TABLE `packs_tags`;
+  [1m[36m (7.4ms)[0m  [1mTRUNCATE TABLE `prelaunches`;[0m
+  [1m[35m (30.9ms)[0m  TRUNCATE TABLE `stickers`;
+  [1m[36m (15.0ms)[0m  [1mTRUNCATE TABLE `stickers_tags`;[0m
+  [1m[35m (7.7ms)[0m  TRUNCATE TABLE `tags`;
+  [1m[36m (0.2ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.2ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (5.7ms)[0m  TRUNCATE TABLE `admins`;
+  [1m[36m (8.7ms)[0m  [1mTRUNCATE TABLE `apps`;[0m
+  [1m[35m (11.0ms)[0m  TRUNCATE TABLE `apps_packs`;
+  [1m[36m (8.6ms)[0m  [1mTRUNCATE TABLE `apps_packs_percentage`;[0m
+  [1m[35m (5.1ms)[0m  TRUNCATE TABLE `artists`;
+  [1m[36m (9.8ms)[0m  [1mTRUNCATE TABLE `artists_packs`;[0m
+  [1m[35m (38.2ms)[0m  TRUNCATE TABLE `artists_packs_percentage`;
+  [1m[36m (15.7ms)[0m  [1mTRUNCATE TABLE `artists_tags`;[0m
+  [1m[35m (7.8ms)[0m  TRUNCATE TABLE `brands`;
+  [1m[36m (23.2ms)[0m  [1mTRUNCATE TABLE `brands_packs`;[0m
+  [1m[35m (8.4ms)[0m  TRUNCATE TABLE `clients`;
+  [1m[36m (15.7ms)[0m  [1mTRUNCATE TABLE `downloads`;[0m
+  [1m[35m (22.5ms)[0m  TRUNCATE TABLE `onboarding_artists`;
+  [1m[36m (12.3ms)[0m  [1mTRUNCATE TABLE `onboarding_images`;[0m
+  [1m[35m (8.1ms)[0m  TRUNCATE TABLE `packs`;
+  [1m[36m (10.7ms)[0m  [1mTRUNCATE TABLE `packs_prices`;[0m
+  [1m[35m (13.4ms)[0m  TRUNCATE TABLE `packs_stickers`;
+  [1m[36m (14.5ms)[0m  [1mTRUNCATE TABLE `packs_tags`;[0m
+  [1m[35m (36.0ms)[0m  TRUNCATE TABLE `prelaunches`;
+  [1m[36m (44.5ms)[0m  [1mTRUNCATE TABLE `stickers`;[0m
+  [1m[35m (13.1ms)[0m  TRUNCATE TABLE `stickers_tags`;
+  [1m[36m (4.9ms)[0m  [1mTRUNCATE TABLE `tags`;[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (7.0ms)[0m  [1mTRUNCATE TABLE `admins`;[0m
+  [1m[35m (11.5ms)[0m  TRUNCATE TABLE `apps`;
+  [1m[36m (25.2ms)[0m  [1mTRUNCATE TABLE `apps_packs`;[0m
+  [1m[35m (42.8ms)[0m  TRUNCATE TABLE `apps_packs_percentage`;
+  [1m[36m (16.6ms)[0m  [1mTRUNCATE TABLE `artists`;[0m
+  [1m[35m (53.7ms)[0m  TRUNCATE TABLE `artists_packs`;
+  [1m[36m (75.8ms)[0m  [1mTRUNCATE TABLE `artists_packs_percentage`;[0m
+  [1m[35m (21.8ms)[0m  TRUNCATE TABLE `artists_tags`;
+  [1m[36m (51.1ms)[0m  [1mTRUNCATE TABLE `brands`;[0m
+  [1m[35m (14.4ms)[0m  TRUNCATE TABLE `brands_packs`;
+  [1m[36m (13.8ms)[0m  [1mTRUNCATE TABLE `clients`;[0m
+  [1m[35m (15.1ms)[0m  TRUNCATE TABLE `downloads`;
+  [1m[36m (6.7ms)[0m  [1mTRUNCATE TABLE `onboarding_artists`;[0m
+  [1m[35m (9.1ms)[0m  TRUNCATE TABLE `onboarding_images`;
+  [1m[36m (6.7ms)[0m  [1mTRUNCATE TABLE `packs`;[0m
+  [1m[35m (8.9ms)[0m  TRUNCATE TABLE `packs_prices`;
+  [1m[36m (12.3ms)[0m  [1mTRUNCATE TABLE `packs_stickers`;[0m
+  [1m[35m (17.2ms)[0m  TRUNCATE TABLE `packs_tags`;
+  [1m[36m (46.6ms)[0m  [1mTRUNCATE TABLE `prelaunches`;[0m
+  [1m[35m (22.6ms)[0m  TRUNCATE TABLE `stickers`;
+  [1m[36m (15.3ms)[0m  [1mTRUNCATE TABLE `stickers_tags`;[0m
+  [1m[35m (33.4ms)[0m  TRUNCATE TABLE `tags`;
+  [1m[36m (0.2ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.2ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (31.4ms)[0m  TRUNCATE TABLE `admins`;
+  [1m[36m (12.1ms)[0m  [1mTRUNCATE TABLE `apps`;[0m
+  [1m[35m (10.0ms)[0m  TRUNCATE TABLE `apps_packs`;
+  [1m[36m (8.8ms)[0m  [1mTRUNCATE TABLE `apps_packs_percentage`;[0m
+  [1m[35m (32.8ms)[0m  TRUNCATE TABLE `artists`;
+  [1m[36m (14.5ms)[0m  [1mTRUNCATE TABLE `artists_packs`;[0m
+  [1m[35m (11.8ms)[0m  TRUNCATE TABLE `artists_packs_percentage`;
+  [1m[36m (13.4ms)[0m  [1mTRUNCATE TABLE `artists_tags`;[0m
+  [1m[35m (28.5ms)[0m  TRUNCATE TABLE `brands`;
+  [1m[36m (14.0ms)[0m  [1mTRUNCATE TABLE `brands_packs`;[0m
+  [1m[35m (8.2ms)[0m  TRUNCATE TABLE `clients`;
+  [1m[36m (31.5ms)[0m  [1mTRUNCATE TABLE `downloads`;[0m
+  [1m[35m (7.1ms)[0m  TRUNCATE TABLE `onboarding_artists`;
+  [1m[36m (8.8ms)[0m  [1mTRUNCATE TABLE `onboarding_images`;[0m
+  [1m[35m (64.0ms)[0m  TRUNCATE TABLE `packs`;
+  [1m[36m (16.7ms)[0m  [1mTRUNCATE TABLE `packs_prices`;[0m
+  [1m[35m (11.0ms)[0m  TRUNCATE TABLE `packs_stickers`;
+  [1m[36m (48.1ms)[0m  [1mTRUNCATE TABLE `packs_tags`;[0m
+  [1m[35m (7.3ms)[0m  TRUNCATE TABLE `prelaunches`;
+  [1m[36m (20.8ms)[0m  [1mTRUNCATE TABLE `stickers`;[0m
+  [1m[35m (37.1ms)[0m  TRUNCATE TABLE `stickers_tags`;
+  [1m[36m (59.6ms)[0m  [1mTRUNCATE TABLE `tags`;[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+Processing by Onboarding::ImagesController#show as HTML
+  Parameters: {"signin_name"=>"johnsmith"}
+  [1m[36mOnboardingArtist Load (10.9ms)[0m  [1mSELECT `onboarding_artists`.* FROM `onboarding_artists` WHERE `onboarding_artists`.`signin_name` = 'johnsmith' LIMIT 1[0m
+Redirected to http://test.host/
+Filter chain halted as :require_artist_name rendered or redirected
+Completed 302 Found in 13ms (ActiveRecord: 10.9ms)
+  [1m[35m (0.2ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (50.9ms)[0m  TRUNCATE TABLE `admins`;
+  [1m[36m (72.2ms)[0m  [1mTRUNCATE TABLE `apps`;[0m
+  [1m[35m (43.6ms)[0m  TRUNCATE TABLE `apps_packs`;
+  [1m[36m (121.8ms)[0m  [1mTRUNCATE TABLE `apps_packs_percentage`;[0m
+  [1m[35m (42.4ms)[0m  TRUNCATE TABLE `artists`;
+  [1m[36m (9.7ms)[0m  [1mTRUNCATE TABLE `artists_packs`;[0m
+  [1m[35m (7.2ms)[0m  TRUNCATE TABLE `artists_packs_percentage`;
+  [1m[36m (8.3ms)[0m  [1mTRUNCATE TABLE `artists_tags`;[0m
+  [1m[35m (5.1ms)[0m  TRUNCATE TABLE `brands`;
+  [1m[36m (9.4ms)[0m  [1mTRUNCATE TABLE `brands_packs`;[0m
+  [1m[35m (4.7ms)[0m  TRUNCATE TABLE `clients`;
+  [1m[36m (11.9ms)[0m  [1mTRUNCATE TABLE `downloads`;[0m
+  [1m[35m (31.0ms)[0m  TRUNCATE TABLE `onboarding_artists`;
+  [1m[36m (14.6ms)[0m  [1mTRUNCATE TABLE `onboarding_images`;[0m
+  [1m[35m (210.2ms)[0m  TRUNCATE TABLE `packs`;
+  [1m[36m (8.5ms)[0m  [1mTRUNCATE TABLE `packs_prices`;[0m
+  [1m[35m (14.1ms)[0m  TRUNCATE TABLE `packs_stickers`;
+  [1m[36m (12.9ms)[0m  [1mTRUNCATE TABLE `packs_tags`;[0m
+  [1m[35m (5.7ms)[0m  TRUNCATE TABLE `prelaunches`;
+  [1m[36m (10.2ms)[0m  [1mTRUNCATE TABLE `stickers`;[0m
+  [1m[35m (12.9ms)[0m  TRUNCATE TABLE `stickers_tags`;
+  [1m[36m (6.6ms)[0m  [1mTRUNCATE TABLE `tags`;[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (34.7ms)[0m  [1mTRUNCATE TABLE `admins`;[0m
+  [1m[35m (7.0ms)[0m  TRUNCATE TABLE `apps`;
+  [1m[36m (9.6ms)[0m  [1mTRUNCATE TABLE `apps_packs`;[0m
+  [1m[35m (11.3ms)[0m  TRUNCATE TABLE `apps_packs_percentage`;
+  [1m[36m (5.1ms)[0m  [1mTRUNCATE TABLE `artists`;[0m
+  [1m[35m (13.1ms)[0m  TRUNCATE TABLE `artists_packs`;
+  [1m[36m (11.1ms)[0m  [1mTRUNCATE TABLE `artists_packs_percentage`;[0m
+  [1m[35m (10.9ms)[0m  TRUNCATE TABLE `artists_tags`;
+  [1m[36m (21.8ms)[0m  [1mTRUNCATE TABLE `brands`;[0m
+  [1m[35m (10.8ms)[0m  TRUNCATE TABLE `brands_packs`;
+  [1m[36m (76.1ms)[0m  [1mTRUNCATE TABLE `clients`;[0m
+  [1m[35m (30.3ms)[0m  TRUNCATE TABLE `downloads`;
+  [1m[36m (7.5ms)[0m  [1mTRUNCATE TABLE `onboarding_artists`;[0m
+  [1m[35m (9.7ms)[0m  TRUNCATE TABLE `onboarding_images`;
+  [1m[36m (6.5ms)[0m  [1mTRUNCATE TABLE `packs`;[0m
+  [1m[35m (9.6ms)[0m  TRUNCATE TABLE `packs_prices`;
+  [1m[36m (9.4ms)[0m  [1mTRUNCATE TABLE `packs_stickers`;[0m
+  [1m[35m (11.3ms)[0m  TRUNCATE TABLE `packs_tags`;
+  [1m[36m (23.2ms)[0m  [1mTRUNCATE TABLE `prelaunches`;[0m
+  [1m[35m (68.4ms)[0m  TRUNCATE TABLE `stickers`;
+  [1m[36m (81.3ms)[0m  [1mTRUNCATE TABLE `stickers_tags`;[0m
+  [1m[35m (7.4ms)[0m  TRUNCATE TABLE `tags`;
+  [1m[36m (0.2ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `apps` (`actual_sticker_height`, `actual_sticker_width`, `api_password`, `client_id`, `created_at`, `name`, `percentage_of_revenue`, `thumbnail_sticker_height`, `thumbnail_sticker_width`, `updated_at`) VALUES (60, 60, 'test', 1, '2013-09-27 19:03:07', 'Live', 30, 30, 30, '2013-09-27 19:03:07')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (30.0ms)[0m  [1mTRUNCATE TABLE `admins`;[0m
+  [1m[35m (7.3ms)[0m  TRUNCATE TABLE `apps`;
+  [1m[36m (28.5ms)[0m  [1mTRUNCATE TABLE `apps_packs`;[0m
+  [1m[35m (11.5ms)[0m  TRUNCATE TABLE `apps_packs_percentage`;
+  [1m[36m (5.9ms)[0m  [1mTRUNCATE TABLE `artists`;[0m
+  [1m[35m (12.8ms)[0m  TRUNCATE TABLE `artists_packs`;
+  [1m[36m (11.0ms)[0m  [1mTRUNCATE TABLE `artists_packs_percentage`;[0m
+  [1m[35m (11.0ms)[0m  TRUNCATE TABLE `artists_tags`;
+  [1m[36m (7.9ms)[0m  [1mTRUNCATE TABLE `brands`;[0m
+  [1m[35m (264.9ms)[0m  TRUNCATE TABLE `brands_packs`;
+  [1m[36m (6.7ms)[0m  [1mTRUNCATE TABLE `clients`;[0m
+  [1m[35m (85.4ms)[0m  TRUNCATE TABLE `downloads`;
+  [1m[36m (6.8ms)[0m  [1mTRUNCATE TABLE `onboarding_artists`;[0m
+  [1m[35m (9.3ms)[0m  TRUNCATE TABLE `onboarding_images`;
+  [1m[36m (5.1ms)[0m  [1mTRUNCATE TABLE `packs`;[0m
+  [1m[35m (9.4ms)[0m  TRUNCATE TABLE `packs_prices`;
+  [1m[36m (30.3ms)[0m  [1mTRUNCATE TABLE `packs_stickers`;[0m
+  [1m[35m (10.6ms)[0m  TRUNCATE TABLE `packs_tags`;
+  [1m[36m (6.2ms)[0m  [1mTRUNCATE TABLE `prelaunches`;[0m
+  [1m[35m (12.3ms)[0m  TRUNCATE TABLE `stickers`;
+  [1m[36m (10.2ms)[0m  [1mTRUNCATE TABLE `stickers_tags`;[0m
+  [1m[35m (4.7ms)[0m  TRUNCATE TABLE `tags`;
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.2ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (6.0ms)[0m  TRUNCATE TABLE `admins`;
+  [1m[36m (12.2ms)[0m  [1mTRUNCATE TABLE `apps`;[0m
+  [1m[35m (212.9ms)[0m  TRUNCATE TABLE `apps_packs`;
+  [1m[36m (7.7ms)[0m  [1mTRUNCATE TABLE `apps_packs_percentage`;[0m
+  [1m[35m (4.8ms)[0m  TRUNCATE TABLE `artists`;
+  [1m[36m (9.7ms)[0m  [1mTRUNCATE TABLE `artists_packs`;[0m
+  [1m[35m (10.3ms)[0m  TRUNCATE TABLE `artists_packs_percentage`;
+  [1m[36m (159.0ms)[0m  [1mTRUNCATE TABLE `artists_tags`;[0m
+  [1m[35m (5.1ms)[0m  TRUNCATE TABLE `brands`;
+  [1m[36m (9.2ms)[0m  [1mTRUNCATE TABLE `brands_packs`;[0m
+  [1m[35m (4.4ms)[0m  TRUNCATE TABLE `clients`;
+  [1m[36m (10.5ms)[0m  [1mTRUNCATE TABLE `downloads`;[0m
+  [1m[35m (4.3ms)[0m  TRUNCATE TABLE `onboarding_artists`;
+  [1m[36m (6.5ms)[0m  [1mTRUNCATE TABLE `onboarding_images`;[0m
+  [1m[35m (4.5ms)[0m  TRUNCATE TABLE `packs`;
+  [1m[36m (7.9ms)[0m  [1mTRUNCATE TABLE `packs_prices`;[0m
+  [1m[35m (8.9ms)[0m  TRUNCATE TABLE `packs_stickers`;
+  [1m[36m (11.1ms)[0m  [1mTRUNCATE TABLE `packs_tags`;[0m
+  [1m[35m (6.8ms)[0m  TRUNCATE TABLE `prelaunches`;
+  [1m[36m (10.8ms)[0m  [1mTRUNCATE TABLE `stickers`;[0m
+  [1m[35m (10.9ms)[0m  TRUNCATE TABLE `stickers_tags`;
+  [1m[36m (4.7ms)[0m  [1mTRUNCATE TABLE `tags`;[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (6.5ms)[0m  [1mTRUNCATE TABLE `admins`;[0m
+  [1m[35m (10.2ms)[0m  TRUNCATE TABLE `apps`;
+  [1m[36m (13.6ms)[0m  [1mTRUNCATE TABLE `apps_packs`;[0m
+  [1m[35m (7.7ms)[0m  TRUNCATE TABLE `apps_packs_percentage`;
+  [1m[36m (5.0ms)[0m  [1mTRUNCATE TABLE `artists`;[0m
+  [1m[35m (11.8ms)[0m  TRUNCATE TABLE `artists_packs`;
+  [1m[36m (25.4ms)[0m  [1mTRUNCATE TABLE `artists_packs_percentage`;[0m
+  [1m[35m (20.4ms)[0m  TRUNCATE TABLE `artists_tags`;
+  [1m[36m (7.5ms)[0m  [1mTRUNCATE TABLE `brands`;[0m
+  [1m[35m (13.6ms)[0m  TRUNCATE TABLE `brands_packs`;
+  [1m[36m (5.5ms)[0m  [1mTRUNCATE TABLE `clients`;[0m
+  [1m[35m (17.7ms)[0m  TRUNCATE TABLE `downloads`;
+  [1m[36m (16.9ms)[0m  [1mTRUNCATE TABLE `onboarding_artists`;[0m
+  [1m[35m (15.0ms)[0m  TRUNCATE TABLE `onboarding_images`;
+  [1m[36m (7.9ms)[0m  [1mTRUNCATE TABLE `packs`;[0m
+  [1m[35m (36.9ms)[0m  TRUNCATE TABLE `packs_prices`;
+  [1m[36m (14.9ms)[0m  [1mTRUNCATE TABLE `packs_stickers`;[0m
+  [1m[35m (44.3ms)[0m  TRUNCATE TABLE `packs_tags`;
+  [1m[36m (45.3ms)[0m  [1mTRUNCATE TABLE `prelaunches`;[0m
+  [1m[35m (43.0ms)[0m  TRUNCATE TABLE `stickers`;
+  [1m[36m (51.1ms)[0m  [1mTRUNCATE TABLE `stickers_tags`;[0m
+  [1m[35m (24.1ms)[0m  TRUNCATE TABLE `tags`;
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (6.6ms)[0m  TRUNCATE TABLE `admins`;
+  [1m[36m (10.7ms)[0m  [1mTRUNCATE TABLE `apps`;[0m
+  [1m[35m (14.2ms)[0m  TRUNCATE TABLE `apps_packs`;
+  [1m[36m (6.9ms)[0m  [1mTRUNCATE TABLE `apps_packs_percentage`;[0m
+  [1m[35m (5.3ms)[0m  TRUNCATE TABLE `artists`;
+  [1m[36m (9.8ms)[0m  [1mTRUNCATE TABLE `artists_packs`;[0m
+  [1m[35m (44.0ms)[0m  TRUNCATE TABLE `artists_packs_percentage`;
+  [1m[36m (13.7ms)[0m  [1mTRUNCATE TABLE `artists_tags`;[0m
+  [1m[35m (7.2ms)[0m  TRUNCATE TABLE `brands`;
+  [1m[36m (11.0ms)[0m  [1mTRUNCATE TABLE `brands_packs`;[0m
+  [1m[35m (7.2ms)[0m  TRUNCATE TABLE `clients`;
+  [1m[36m (18.1ms)[0m  [1mTRUNCATE TABLE `downloads`;[0m
+  [1m[35m (26.5ms)[0m  TRUNCATE TABLE `onboarding_artists`;
+  [1m[36m (8.9ms)[0m  [1mTRUNCATE TABLE `onboarding_images`;[0m
+  [1m[35m (7.9ms)[0m  TRUNCATE TABLE `packs`;
+  [1m[36m (9.2ms)[0m  [1mTRUNCATE TABLE `packs_prices`;[0m
+  [1m[35m (10.0ms)[0m  TRUNCATE TABLE `packs_stickers`;
+  [1m[36m (25.6ms)[0m  [1mTRUNCATE TABLE `packs_tags`;[0m
+  [1m[35m (6.2ms)[0m  TRUNCATE TABLE `prelaunches`;
+  [1m[36m (11.3ms)[0m  [1mTRUNCATE TABLE `stickers`;[0m
+  [1m[35m (25.3ms)[0m  TRUNCATE TABLE `stickers_tags`;
+  [1m[36m (25.6ms)[0m  [1mTRUNCATE TABLE `tags`;[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1

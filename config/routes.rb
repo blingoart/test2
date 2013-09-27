@@ -6,6 +6,11 @@ Blingo::Application.routes.draw do
   #get "/artists", :to => "artists/#show", :as => :artists
   resources :artists
 
+  # admin routes
+  namespace :admin do
+    resources :dashboard
+  end
+
 
   namespace :onboarding do
     get "/:signin_name", :to => "images#show", :as => :images
