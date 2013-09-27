@@ -5,23 +5,24 @@ gem 'rails', '3.2.13'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-#gem 'sqlite3'
 gem 'mysql2', '0.3.11'
 gem 'carrierwave', '~>0.9.0'
 gem 'rubyzip', '~>1.0.0'
-
 gem 'bcrypt-ruby', '~>3.0.1'
-
 gem 'execjs', '~>1.4.0'
 gem 'therubyracer', '~>0.11.4'
 
 group :development,:test do
+  gem 'annotate'
+  gem 'guard'
+  gem 'pry-rails'
+  gem 'pry-debugger'
+  gem 'pry-stack_explorer'
   gem 'rspec-rails', '~>2.14.0'
   gem 'cucumber-rails', '~>1.3.1', :require => false
   #gem 'webrat', '~>0.7.3'
   gem 'database_cleaner', '~>1.0.1'
   gem 'factory_girl_rails', '~>4.2.0'
-  #gem "sqlite3"
 end
 
 # Gems used only for assets and not required
@@ -40,9 +41,6 @@ gem 'jquery-rails'
 
 gem 'capistrano', '~> 2.15.5'
 
-group :development, :test do
-  gem 'annotate'
-end
 
 
 # To use ActiveModel has_secure_password
