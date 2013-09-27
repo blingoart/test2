@@ -1,3 +1,19 @@
+# == Schema Information
+#
+# Table name: brands
+#
+#  id                :integer          not null, primary key
+#  name              :string(255)
+#  threshold_1       :integer
+#  threshold_1_price :integer
+#  threshold_2       :integer
+#  threshold_2_price :integer
+#  threshold_3       :integer
+#  threshold_3_price :integer
+#  created_at        :datetime         not null
+#  updated_at        :datetime         not null
+#
+
 class Brand < ActiveRecord::Base
 
   has_many :stickers

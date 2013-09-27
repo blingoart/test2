@@ -1,3 +1,15 @@
+# == Schema Information
+#
+# Table name: onboarding_images
+#
+#  id                   :integer          not null, primary key
+#  onboarding_artist_id :integer
+#  file_name            :string(255)
+#  content_type         :string(255)
+#  created_at           :datetime         not null
+#  updated_at           :datetime         not null
+#
+
 require 'spec_helper'
 
 describe OnboardingImage do

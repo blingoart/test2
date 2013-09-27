@@ -1,3 +1,16 @@
+# == Schema Information
+#
+# Table name: stickers
+#
+#  id         :integer          not null, primary key
+#  artist_id  :integer
+#  brand_id   :integer
+#  file_name  :string(255)
+#  available  :boolean
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
 require 'spec_helper'
 
 describe Sticker do

@@ -1,3 +1,20 @@
+# == Schema Information
+#
+# Table name: apps
+#
+#  id                       :integer          not null, primary key
+#  client_id                :integer
+#  name                     :string(255)
+#  api_password             :string(255)
+#  thumbnail_sticker_width  :integer
+#  thumbnail_sticker_height :integer
+#  actual_sticker_width     :integer
+#  actual_sticker_height    :integer
+#  percentage_of_revenue    :integer
+#  created_at               :datetime         not null
+#  updated_at               :datetime         not null
+#
+
 require 'spec_helper'
 
 describe App do

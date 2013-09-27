@@ -40,6 +40,11 @@ gem 'jquery-rails'
 
 gem 'capistrano', '~> 2.15.5'
 
+group :development, :test do
+  gem 'annotate'
+end
+
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

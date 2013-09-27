@@ -1,3 +1,15 @@
+# == Schema Information
+#
+# Table name: packs
+#
+#  id         :integer          not null, primary key
+#  title      :string(255)
+#  price      :decimal(8, 2)
+#  available  :boolean
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
 require 'spec_helper'
 
 describe Pack do
