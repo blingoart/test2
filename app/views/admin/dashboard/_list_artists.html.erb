@@ -1,0 +1,21 @@
+<div id="artist_list">
+  <table>
+    <h2>List of Artists</h2>
+    <tr>
+      <td class='category'>Signin Name</td>
+      <td class='category'>First Name</td>
+      <td class='category'>Last Name</td>
+      <td class='category'>Created At</td>
+    </tr>
+
+    <% artists.each do |artist| %>
+      <tr>
+        <td><%= link_to artist.signin_name, onboarding_images_new_path(artist.signin_name) %></td>
+        <td><%= artist.first_name %></td>
+        <td><%= artist.last_name %></td>
+        <td><%= artist.date_created %></td>
+      </tr>
+    <% end %>
+  <table>
+
+</div>

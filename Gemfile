@@ -15,6 +15,7 @@ gem 'therubyracer', '~>0.11.4'
 group :development,:test do
   gem 'annotate'
   gem 'guard'
+  gem 'quiet_assets'
   gem 'pry-rails'
   gem 'pry-debugger'
   gem 'pry-stack_explorer'

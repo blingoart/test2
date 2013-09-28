@@ -5,7 +5,6 @@ class Onboarding::SessionsController < ApplicationController
 
   before_filter :check_for_cancel
   before_filter :signed_in?, :only => [:delete]
-
   def new
     @title = "Sign in"
   end

@@ -8,7 +8,10 @@ Blingo::Application.routes.draw do
 
   # admin routes
   namespace :admin do
-    resources :dashboard
+    get     '/', :to => 'sessions#new',      :as => 'login'
+    post    '/', :to => 'sessions#create'
+    delete  '/', :to => 'sessions#destroy',  :as => 'logout'
+    resources :dashboard, :only => 'index'
   end
 
 

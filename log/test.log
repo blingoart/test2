@@ -16392,3 +16392,83 @@ Completed 302 Found in 65ms (ActiveRecord: 30.7ms)
   [1m[35m (9.5ms)[0m  TRUNCATE TABLE `stickers_tags`;
   [1m[36m (5.0ms)[0m  [1mTRUNCATE TABLE `tags`;[0m
   [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+Connecting to database specified by database.yml
+  [1m[36m (55.6ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `onboarding_artists` (`bio`, `created_at`, `first_name`, `last_name`, `licensing_permission`, `password_digest`, `photo`, `signin_name`, `updated_at`) VALUES (NULL, '2013-09-27 20:50:32', 'John', 'Smith', NULL, '$2a$10$Ula1qV8HJqB7l1UBdDXcb.j1YoGTHwCQBKGi.EVPyr/UN3tdWP/Mu', NULL, 'johnsmith', '2013-09-27 20:50:32')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+Connecting to database specified by database.yml
+  [1m[36m (40.5ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `onboarding_artists` (`bio`, `created_at`, `first_name`, `last_name`, `licensing_permission`, `password_digest`, `photo`, `signin_name`, `updated_at`) VALUES (NULL, '2013-09-27 20:51:00', 'John', 'Smith', NULL, '$2a$10$Ula1qV8HJqB7l1UBdDXcb.j1YoGTHwCQBKGi.EVPyr/UN3tdWP/Mu', NULL, 'johnsmith', '2013-09-27 20:51:00')[0m
+  [1m[35m (16.8ms)[0m  COMMIT
+Connecting to database specified by database.yml
+  [1m[36m (3.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `onboarding_artists` (`bio`, `created_at`, `first_name`, `last_name`, `licensing_permission`, `password_digest`, `photo`, `signin_name`, `updated_at`) VALUES (NULL, '2013-09-27 20:54:49', 'John', 'Smith', NULL, '$2a$10$Ula1qV8HJqB7l1UBdDXcb.j1YoGTHwCQBKGi.EVPyr/UN3tdWP/Mu', NULL, 'johnsmith', '2013-09-27 20:54:49')[0m
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `admins` (`created_at`, `email`, `password_digest`, `updated_at`, `username`) VALUES ('2013-09-27 20:54:50', 'admin@admin.com', '$2a$10$n4jfJK7dBuREVjw2q/W67ervVGAukCV9d3TVNvY5J9Q3/ChjjdxNW', '2013-09-27 20:54:50', 'admin')
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+Connecting to database specified by database.yml
+  [1m[36m (60.6ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35mSQL (129.4ms)[0m  DELETE FROM `onboarding_artists`
+  [1m[36mSQL (101.7ms)[0m  [1mDELETE FROM `admins`[0m
+  [1m[35m (2.0ms)[0m  BEGIN
+  [1m[36mSQL (30.8ms)[0m  [1mINSERT INTO `onboarding_artists` (`bio`, `created_at`, `first_name`, `last_name`, `licensing_permission`, `password_digest`, `photo`, `signin_name`, `updated_at`) VALUES (NULL, '2013-09-28 03:57:07', 'John', 'Smith', NULL, '$2a$10$Ula1qV8HJqB7l1UBdDXcb.j1YoGTHwCQBKGi.EVPyr/UN3tdWP/Mu', NULL, 'johnsmith', '2013-09-28 03:57:07')[0m
+  [1m[35m (30.7ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.9ms)[0m  INSERT INTO `admins` (`created_at`, `email`, `password_digest`, `updated_at`, `username`) VALUES ('2013-09-28 03:57:07', 'admin@admin.com', '$2a$10$hQyF.tDqygkwS0BafrOOzOEytpf8RXlE1kYuplqeKB9QPqEKUA1SS', '2013-09-28 03:57:07', 'admin')
+  [1m[36m (15.6ms)[0m  [1mCOMMIT[0m
+Connecting to database specified by database.yml
+  [1m[36m (32.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35mSQL (0.8ms)[0m  DELETE FROM `onboarding_artists`
+  [1m[36mSQL (17.2ms)[0m  [1mDELETE FROM `admins`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (26.3ms)[0m  [1mINSERT INTO `onboarding_artists` (`bio`, `created_at`, `first_name`, `last_name`, `licensing_permission`, `password_digest`, `photo`, `signin_name`, `updated_at`) VALUES (NULL, '2013-09-28 04:07:14', 'John', 'Smith', NULL, '$2a$10$Ula1qV8HJqB7l1UBdDXcb.j1YoGTHwCQBKGi.EVPyr/UN3tdWP/Mu', NULL, 'johnsmith', '2013-09-28 04:07:14')[0m
+  [1m[35m (12.3ms)[0m  COMMIT
+Connecting to database specified by database.yml
+  [1m[36m (3.4ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35mSQL (0.7ms)[0m  DELETE FROM `onboarding_artists`
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM `admins`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (15.2ms)[0m  [1mINSERT INTO `onboarding_artists` (`bio`, `created_at`, `first_name`, `last_name`, `licensing_permission`, `password_digest`, `photo`, `signin_name`, `updated_at`) VALUES (NULL, '2013-09-28 04:07:38', 'John', 'Smith', NULL, '$2a$10$Ula1qV8HJqB7l1UBdDXcb.j1YoGTHwCQBKGi.EVPyr/UN3tdWP/Mu', NULL, 'johnsmith', '2013-09-28 04:07:38')[0m
+  [1m[35m (1.1ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (44.4ms)[0m  INSERT INTO `onboarding_artists` (`bio`, `created_at`, `first_name`, `last_name`, `licensing_permission`, `password_digest`, `photo`, `signin_name`, `updated_at`) VALUES (NULL, '2013-09-28 04:07:38', 'Bob', 'Jones', NULL, '$2a$10$Ula1qV8HJqB7l1UBdDXcb.j1YoGTHwCQBKGi.EVPyr/UN3tdWP/Mu', NULL, 'bobjones', '2013-09-28 04:07:38')
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (18.6ms)[0m  [1mINSERT INTO `admins` (`created_at`, `email`, `password_digest`, `updated_at`, `username`) VALUES ('2013-09-28 04:07:39', 'admin@admin.com', '$2a$10$7tZ3jBdH.szfHQ2olxqOueKHr.SLqDgzMe2.CLkeSSH5W/mIocHAO', '2013-09-28 04:07:39', 'admin')[0m
+  [1m[35m (8.8ms)[0m  COMMIT
+Connecting to database specified by database.yml
+  [1m[36m (3.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35mSQL (15.2ms)[0m  DELETE FROM `onboarding_artists`
+  [1m[36mSQL (5.6ms)[0m  [1mDELETE FROM `admins`[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `onboarding_artists` (`bio`, `created_at`, `first_name`, `last_name`, `licensing_permission`, `password_digest`, `photo`, `signin_name`, `updated_at`) VALUES (NULL, '2013-09-28 04:10:21', 'John', 'Smith', NULL, '$2a$10$Ula1qV8HJqB7l1UBdDXcb.j1YoGTHwCQBKGi.EVPyr/UN3tdWP/Mu', NULL, 'johnsmith', '2013-09-28 04:10:21')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `onboarding_artists` (`bio`, `created_at`, `first_name`, `last_name`, `licensing_permission`, `password_digest`, `photo`, `signin_name`, `updated_at`) VALUES (NULL, '2013-09-28 04:10:21', 'Bob', 'Jones', NULL, '$2a$10$Ula1qV8HJqB7l1UBdDXcb.j1YoGTHwCQBKGi.EVPyr/UN3tdWP/Mu', NULL, 'bobjones', '2013-09-28 04:10:21')
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (17.0ms)[0m  [1mINSERT INTO `onboarding_artists` (`bio`, `created_at`, `first_name`, `last_name`, `licensing_permission`, `password_digest`, `photo`, `signin_name`, `updated_at`) VALUES (NULL, '2013-09-28 04:10:21', 'Mark', 'McMurphy', NULL, '$2a$10$Ula1qV8HJqB7l1UBdDXcb.j1YoGTHwCQBKGi.EVPyr/UN3tdWP/Mu', NULL, 'markmcmurphy', '2013-09-28 04:10:21')[0m
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `admins` (`created_at`, `email`, `password_digest`, `updated_at`, `username`) VALUES ('2013-09-28 04:10:21', 'admin@admin.com', '$2a$10$xuf0iAk3RA3tbUDhOPbwyum.t9nQ5Wrd4xXq.WqUG2bPQyygojSHe', '2013-09-28 04:10:21', 'admin')
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Connecting to database specified by database.yml
+  [1m[36m (74.6ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35mSQL (77.9ms)[0m  DELETE FROM `onboarding_artists`
+  [1m[36mSQL (54.3ms)[0m  [1mDELETE FROM `admins`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `onboarding_artists` (`bio`, `created_at`, `first_name`, `last_name`, `licensing_permission`, `password_digest`, `photo`, `signin_name`, `updated_at`) VALUES (NULL, '2013-09-28 15:47:22', 'John', 'Smith', NULL, '$2a$10$uzNk1pX4nOlcvwWziuhfn.prKeed0wbLcKWKRMY2qpSdrvTkU7aS.', NULL, 'johnsmith', '2013-09-28 15:47:22')[0m
+  [1m[35m (25.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `onboarding_artists` (`bio`, `created_at`, `first_name`, `last_name`, `licensing_permission`, `password_digest`, `photo`, `signin_name`, `updated_at`) VALUES (NULL, '2013-09-28 15:47:22', 'Bob', 'Jones', NULL, '$2a$10$6l0nD.qhT8wHyEJ4MxGN6.t2B6d6y3.FIfHfoi5.TGXAepgnYP24m', NULL, 'bobjones', '2013-09-28 15:47:22')
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (11.2ms)[0m  [1mINSERT INTO `onboarding_artists` (`bio`, `created_at`, `first_name`, `last_name`, `licensing_permission`, `password_digest`, `photo`, `signin_name`, `updated_at`) VALUES (NULL, '2013-09-28 15:47:22', 'Mark', 'McMurphy', NULL, '$2a$10$oDUqREYetWV66qqa8ymIl.QvTKZiAoDTD.0awwlRF7nkYmLzQoo52', NULL, 'markmcmurphy', '2013-09-28 15:47:22')[0m
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `admins` (`created_at`, `email`, `password_digest`, `updated_at`, `username`) VALUES ('2013-09-28 15:47:22', 'admin@admin.com', '$2a$10$YsyXEkpOpRHdIH0HQAebaOt/b/ZE/lrC0fCqB64ckBmhePCIyfBB.', '2013-09-28 15:47:22', 'admin')
+  [1m[36m (18.3ms)[0m  [1mCOMMIT[0m

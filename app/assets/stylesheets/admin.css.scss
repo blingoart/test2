@@ -1,0 +1,58 @@
+#admin_login {
+  width: 50%;
+  height: 250px;
+  margin: 10% auto;
+  background-color: lightblue;
+  padding: 5px 15px;
+  border-radius: 3px;
+  box-shadow: 2px 2px #ececec;
+
+  #username, #password {
+    width: 250px;
+    margin: 5px;
+  }
+
+  #btn_login {
+    position: relative;
+    display: block;
+    right: 0;
+  }
+}
+
+#artist_list {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1px 3px;
+  background-color: #fff;
+  table {
+    width: 100%;
+    padding: 1px;
+    .category {
+      font-weight: 400;
+      font-size: 18px;
+    }
+  }
+}
+
+// navigation
+nav {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  ul {
+    display: inline-block;
+    text-align: right;
+    right: 0;
+    list-style: none;
+  }
+}
+
+#dashboard {
+  h1 {
+    display: inline-block;
+    width: 90%;
+    margin: 0 auto;
+
+  }
+}
+

@@ -9,9 +9,36 @@
 #Client.create(name:'Live')
 #App.create(name:'Live', api_password:'test123', thumbnail_sticker_width:30, thumbnail_sticker_height:30, actual_sticker_width:60, actual_sticker_height:60, percentage_of_revenue:30)
 #Artist.create(first_name:'John', last_name:'Smith', percentage_of_revenue:60)
+
+OnboardingArtist.delete_all
+Admin.delete_all
+
+
 OnboardingArtist.create(first_name:'John',
                         last_name:'Smith',
                         signin_name:'johnsmith',
-                        password_digest:'$2a$10$Ula1qV8HJqB7l1UBdDXcb.j1YoGTHwCQBKGi.EVPyr/UN3tdWP/Mu')
-                        # password: 'johnsmith')
+                        # password_digest:'$2a$10$Ula1qV8HJqB7l1UBdDXcb.j1YoGTHwCQBKGi.EVPyr/UN3tdWP/Mu')
+                        password: 'johnsmith',
+                        password_confirmation: 'johnsmith')
+
+OnboardingArtist.create(first_name:'Bob',
+                        last_name:'Jones',
+                        signin_name:'bobjones',
+                        # password_digest:'$2a$10$Ula1qV8HJqB7l1UBdDXcb.j1YoGTHwCQBKGi.EVPyr/UN3tdWP/Mu')
+                        password: 'bobjones',
+                        password_confirmation: 'bobjones')
+
+OnboardingArtist.create(first_name:'Mark',
+                        last_name:'McMurphy',
+                        signin_name:'markmcmurphy',
+                        # password_digest:'$2a$10$Ula1qV8HJqB7l1UBdDXcb.j1YoGTHwCQBKGi.EVPyr/UN3tdWP/Mu')
+                        password: 'markmcmurphy',
+                        password_confirmation: 'markmcmurphy')
+
+
+
+
+
+
+Admin.create(:username=>'admin', :email =>'admin@admin.com', :password=>'admin')
 

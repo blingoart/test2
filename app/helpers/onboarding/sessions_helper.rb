@@ -1,5 +1,9 @@
 module Onboarding::SessionsHelper
 
+  def admin_signed_in?
+    session[:admin_id].present?
+  end
+
   def signed_in?
     !!current_artist
   end
@@ -17,7 +21,7 @@ module Onboarding::SessionsHelper
   end
 
   def require_signed_in
-    unless signed_in?
+    unless signed_in? || admin_signed_in?
       #store_location
       redirect_to onboarding_images_path, :notice => "Please sign in to access this page"
     end

@@ -1,1 +1,8 @@
-<h1>Got here</h1>
+<div id="dashboard">
+
+  <! -- Navigation -->
+  <%= render :partial => 'admin/dashboard/nav' %>
+
+  <!-- List artists -->
+  <%= render :partial => 'list_artists', :locals => {:artists => @onboarding_artists} %>
+</div>

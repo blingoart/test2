@@ -1,6 +1,7 @@
 class Onboarding::ImagesController < Onboarding::OnboardingController
   before_filter :get_files
-  before_filter :require_signed_in, :except => :show
+  before_filter :require_signed_in, :except => [:show]
+  before_filter :authenticate
 
   def create
     # if the upload data exists and the previous page was new or create then process the upload data

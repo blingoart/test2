@@ -1,6 +1,10 @@
 module SessionsHelper
+  def admin_signed_in?
+    session[:admin_id].present?
+  end
+
   def signed_in?
-    !!current_member
+    !!current_member || admin_signed_in?
   end
 
   def signed_out?

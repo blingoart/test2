@@ -2,8 +2,7 @@ class Onboarding::OnboardingController < ApplicationController
   layout "onboarding/onboarding"
 
   include Onboarding::SessionsHelper
-  helper_method :current_artist, :signed_in?, :signed_out?, :require_signed_in
-
+  helper_method :current_artist, :signed_in?, :signed_out?
   before_filter :require_artist_name
   before_filter :set_path_cookie
 
