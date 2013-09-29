@@ -101,19 +101,20 @@ class Onboarding::ImagesController < Onboarding::OnboardingController
   end
 
   def create_zip
+    require 'zip'
     artist = OnboardingArtist.find_by_signin_name(params[:signin_name])
-    path = "public/uploads/#{artist.id}"
-    zipfile_name = path+"/#{artist.id}_all.zip"
+    zipfile_name = "public/uploads/#{artist.id}/#{artist.id}_all.zip"
+
+    # create a zip outputstream and package all onboarding images
     Zip::OutputStream.open(zipfile_name) do |z|
       artist.onboarding_images.each do |img|
-        title = img.file_name.to_s[9..-1]         # don't need full path
+        title = img.file_name.to_s[9..-1]
         z.put_next_entry(title)
       end unless artist.onboarding_images.empty?
     end
 
-    send_file zipfile_name,  :type         => 'application/zip',
-                             :disposition  => 'attachment',
-                             :filename     => "#{artist.id}_all.zip"
+    send_file( zipfile_name, :type =>'application/zip', :disposition => 'attachment' )
+
   end
 
   private
