@@ -11,9 +11,9 @@
     <% artists.each do |artist| %>
       <tr>
         <td><%= link_to artist.signin_name, onboarding_images_new_path(artist.signin_name) %></td>
-        <td><%= artist.first_name %></td>
-        <td><%= artist.last_name %></td>
-        <td><%= artist.date_created %></td>
+        <td><%= link_to artist.first_name, onboarding_images_new_path(artist.signin_name) %></td>
+        <td><%= link_to artist.last_name, onboarding_images_new_path(artist.signin_name) %></td>
+        <td><%= link_to artist.date_created, onboarding_images_new_path(artist.signin_name) %></td>
       </tr>
     <% end %>
   <table>
