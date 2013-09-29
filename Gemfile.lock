@@ -32,6 +32,9 @@ GEM
       rake
     arel (3.0.2)
     bcrypt-ruby (3.0.1)
+    better_errors (1.0.1)
+      coderay (>= 1.0.0)
+      erubis (>= 2.6.6)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     builder (3.0.4)
@@ -220,6 +223,7 @@ PLATFORMS
 DEPENDENCIES
   annotate
   bcrypt-ruby (~> 3.0.1)
+  better_errors
   capistrano (~> 2.15.5)
   carrierwave (~> 0.9.0)
   coffee-rails (~> 3.2.1)

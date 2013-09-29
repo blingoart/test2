@@ -2,11 +2,11 @@
   <%= form_tag admin_login_path do %>
     <div id="admin_login">
       <h2>Admin Login</h2>
-      <%= label_tag           :username %>
-      <%= text_field_tag      :username , nil, :autofocus => true %>
+      <%= label_tag           :username , nil %>
+      <%= text_field_tag      :username , nil, :placeholder => 'username', :autofocus => true %>
       <br>
       <%= label_tag           :password %>
-      <%= password_field_tag  :password %>
+      <%= password_field_tag  :password, nil, :placeholder => 'password' %>
       <%= submit_tag "login", :id=>'btn_login' %>
     </div>
 <% end %>

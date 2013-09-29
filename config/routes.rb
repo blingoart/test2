@@ -16,18 +16,20 @@ Blingo::Application.routes.draw do
 
 
   namespace :onboarding do
-    get "/:signin_name", :to => "images#show", :as => :images
-    get "/new/:signin_name", :to => "images#new", :as => :images_new
-    match "/create/:signin_name", :to => "images#create", :as => :images_create
-    get "/:id/edit/:signin_name", :to => "images#edit", :as => :images_edit
-    delete "/:id/:signin_name", :to => "images#destroy", :as => :images_destroy
-    post '/:signin_name', :to => 'sessions#create', :as => :artist_signin
-    match '/signout/:signin_name', :to => 'sessions#destroy', :as => :artist_signout
-    get "/bio/:signin_name", :to => "artists#show", :as => :artist_show
-    match "/create/bio/:signin_name", :to => "artists#create", :as => :artist_create
-    delete "/photo/bio/:signin_name", :to => "artists#destroy_photo", :as => :artist_photo_destroy
-    get "/legal/:signin_name", :to => "artists#legal", :as => :legal
-    get "createartist/:signin_name", :to => "artists#signin_create"
+    get "/:signin_name",                  :to => "images#show",           :as => :images
+    get "/new/:signin_name",              :to => "images#new",            :as => :images_new
+    match "/create/:signin_name",         :to => "images#create",         :as => :images_create
+    get "/:id/edit/:signin_name",         :to => "images#edit",           :as => :images_edit
+    delete "/:id/:signin_name",           :to => "images#destroy",        :as => :images_destroy
+    post "/:signin_name/zip/create",      :to => 'images#create_zip',     :as => :images_create_zip
+    post '/:signin_name',                 :to => 'sessions#create',       :as => :artist_signin
+    match '/signout/:signin_name',        :to => 'sessions#destroy',      :as => :artist_signout
+    get "/bio/:signin_name",              :to => "artists#show",          :as => :artist_show
+    match "/create/bio/:signin_name",     :to => "artists#create",        :as => :artist_create
+    delete "/photo/bio/:signin_name",     :to => "artists#destroy_photo", :as => :artist_photo_destroy
+    get "/legal/:signin_name",            :to => "artists#legal",         :as => :legal
+    get "createartist/:signin_name",      :to => "artists#signin_create"
+
   end
 
   namespace :api do

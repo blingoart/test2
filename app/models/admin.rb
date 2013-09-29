@@ -13,4 +13,6 @@
 class Admin < ActiveRecord::Base
   attr_accessible :username, :email, :password, :password_confirmation
   has_secure_password
+
+  validates_presence_of :username, :email
 end

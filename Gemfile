@@ -14,6 +14,7 @@ gem 'therubyracer', '~>0.11.4'
 
 group :development,:test do
   gem 'annotate'
+  gem 'better_errors'
   gem 'guard'
   gem 'quiet_assets'
   gem 'pry-rails'

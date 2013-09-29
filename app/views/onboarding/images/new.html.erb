@@ -4,7 +4,14 @@
   <div id="show-files-container">
     <div id="show-files" class="show-file-names"></div>
   </div>
+
+  <!-- Upload File(s) Button in the View -->
   <%= render 'form' %>
+
+  <!-- Bio button in the view -->
   <%= link_to "Bio", onboarding_artist_show_path, :class =>"button2 onboarding-button", :id => "bio-button" %>
-</div>
+
+  <!-- Zip Buttons -->
+  <%= link_to 'Download Zip', onboarding_images_create_zip_path(params[:signin_name]), :class=>'button2 onboarding-button', :method => 'post',  :id => 'package-zip-button' %>
+
 <%= render 'files' %>
