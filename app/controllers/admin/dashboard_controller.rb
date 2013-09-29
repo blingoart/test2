@@ -7,9 +7,9 @@ class Admin::DashboardController < ApplicationController
 
   # authenticate is now located in the top-level ApplicationController
   # private
-  # def authenticate
-  #   @admin = Admin.find(session[:admin_id]) if session[:admin_id].present?
-  #   redirect_to root_path if @admin.nil?
-  # end
+  def authenticate
+    @admin = Admin.find(session[:admin_id]) if session[:admin_id].present?
+    redirect_to root_path if @admin.nil?
+  end
 
 end

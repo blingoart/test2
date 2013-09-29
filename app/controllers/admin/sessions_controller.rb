@@ -1,5 +1,4 @@
 class Admin::SessionsController < ApplicationController
-  before_filter :authenticate
 
   def new
     redirect_to(admin_dashboard_index_path) if @admin.present?

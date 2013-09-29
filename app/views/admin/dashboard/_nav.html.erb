@@ -1,4 +1,7 @@
 <nav>
+  <div class="logo" style="margin: 5% 0 0 0; position: relative;">
+    <%= link_to image_tag("blingo_logo.png", :width => "200"), root_path %>
+  </div>
   <h2 style='display:inline-block;'>Admin</h2>
   <ul>
     <li><%= link_to 'Logout', admin_logout_path, :method => 'delete' %></li>
