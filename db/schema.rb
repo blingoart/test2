@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130924134801) do
+ActiveRecord::Schema.define(:version => 20131007163102) do
 
   create_table "apps", :force => true do |t|
     t.integer  "client_id"
@@ -62,8 +62,8 @@ ActiveRecord::Schema.define(:version => 20130924134801) do
   create_table "artists_packs", :id => false, :force => true do |t|
     t.integer  "artist_id"
     t.integer  "pack_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   add_index "artists_packs", ["artist_id"], :name => "index_artists_packs_on_artist_id"

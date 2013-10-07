@@ -27,12 +27,17 @@
 # Admin.delete_all
 
 Artist.delete_all
+Pack.delete_all
 
-Artist.create(first_name:'John',    last_name:'Smith',      percentage_of_revenue: 5.0)
-Artist.create(first_name:'Bob',     last_name:'Jones',      percentage_of_revenue: 2.5)
-Artist.create(first_name:'Mark',    last_name:'McMurphy',   percentage_of_revenue: 10.0)
-Artist.create(first_name:'John',    last_name:'Lennon',     percentage_of_revenue: 50.0)
-Artist.create(first_name:'Melissa', last_name:'Yingling',   percentage_of_revenue: 100.0)
+a1 = Artist.create(first_name:'John',    last_name:'Smith',      percentage_of_revenue: 5.0)
+a2 = Artist.create(first_name:'Bob',     last_name:'Jones',      percentage_of_revenue: 2.5)
+a3 = Artist.create(first_name:'Mark',    last_name:'McMurphy',   percentage_of_revenue: 10.0)
+a4 = Artist.create(first_name:'John',    last_name:'Lennon',     percentage_of_revenue: 50.0)
+a5 = Artist.create(first_name:'Melissa', last_name:'Yingling',   percentage_of_revenue: 100.0)
+
+p1 = Pack.create(title:'Awesome Pack',  price: 10.00,  available: true)
+
+a4.packs << p1
 
 
 

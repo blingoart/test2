@@ -10144,3 +10144,132 @@ Connecting to database specified by database.yml
   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
   [1m[35mSQL (0.5ms)[0m  INSERT INTO `artists` (`created_at`, `first_name`, `last_name`, `percentage_of_revenue`, `updated_at`) VALUES ('2013-10-06 21:59:27', 'Melissa', 'Yingling', 100, '2013-10-06 21:59:27')
   [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Connecting to database specified by database.yml
+  [1m[36m (202.6ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (374.0ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (29.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateClients (20130807002210)
+  [1m[35m (236.6ms)[0m  CREATE TABLE `clients` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (27.8ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130807002210')[0m
+Migrating to CreateApps (20130807003133)
+  [1m[35m (202.2ms)[0m  CREATE TABLE `apps` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `client_id` int(11), `name` varchar(255), `api_password` varchar(255), `thumbnail_sticker_width` int(11), `thumbnail_sticker_height` int(11), `actual_sticker_width` int(11), `actual_sticker_height` int(11), `percentage_of_revenue` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (203.4ms)[0m  [1mCREATE INDEX `index_apps_on_client_id` ON `apps` (`client_id`)[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130807003133')
+Migrating to CreateArtists (20130807003310)
+  [1m[36m (251.8ms)[0m  [1mCREATE TABLE `artists` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first_name` varchar(255), `last_name` varchar(255), `percentage_of_revenue` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (30.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130807003310')
+Migrating to CreateBrands (20130807003322)
+  [1m[36m (268.8ms)[0m  [1mCREATE TABLE `brands` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `threshold_1` int(11), `threshold_1_price` decimal, `threshold_2` int(11), `threshold_2_price` decimal, `threshold_3` int(11), `threshold_3_price` decimal, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.9ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130807003322')
+Migrating to CreateStickers (20130807003334)
+  [1m[36m (137.3ms)[0m  [1mCREATE TABLE `stickers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `artist_id` int(11), `brand_id` int(11), `file_name` varchar(255), `available` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (173.0ms)[0m  CREATE INDEX `index_stickers_on_artist_id` ON `stickers` (`artist_id`)
+  [1m[36m (213.0ms)[0m  [1mCREATE INDEX `index_stickers_on_brand_id` ON `stickers` (`brand_id`)[0m
+  [1m[35m (0.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130807003334')
+Migrating to CreatePacks (20130807003348)
+  [1m[36m (226.5ms)[0m  [1mCREATE TABLE `packs` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `price` decimal, `cover_image` varchar(255), `available` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130807003348')
+Migrating to CreateTags (20130807003401)
+  [1m[36m (270.5ms)[0m  [1mCREATE TABLE `tags` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130807003401')
+Migrating to CreateOnboardingArtists (20130817192458)
+  [1m[36m (186.1ms)[0m  [1mCREATE TABLE `onboarding_artists` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first_name` varchar(255), `last_name` varchar(255), `signin_name` varchar(255), `password_digest` varchar(255), `licensing_permission` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (1.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130817192458')
+Migrating to CreateOnboardingFiles (20130817192811)
+  [1m[36m (221.5ms)[0m  [1mCREATE TABLE `onboarding_files` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `onboarding_artist_id` int(11), `file_name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (229.6ms)[0m  CREATE INDEX `index_onboarding_files_on_onboarding_artist_id` ON `onboarding_files` (`onboarding_artist_id`)
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130817192811')[0m
+Migrating to ChangeOnboardingArtistsLicensingPermission (20130823031002)
+  [1m[35m (243.0ms)[0m  ALTER TABLE `onboarding_artists` CHANGE `licensing_permission` `licensing_permission` datetime DEFAULT NULL
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130823031002')[0m
+Migrating to CreateBrandsPacks (20130827192623)
+  [1m[35m (236.7ms)[0m  CREATE TABLE `brands_packs` (`brand_id` int(11), `pack_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (182.9ms)[0m  [1mCREATE INDEX `index_brands_packs_on_brand_id` ON `brands_packs` (`brand_id`)[0m
+  [1m[35m (207.4ms)[0m  CREATE INDEX `index_brands_packs_on_pack_id` ON `brands_packs` (`pack_id`)
+  [1m[36m (9.1ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130827192623')[0m
+Migrating to CreateArtistsPacks (20130827210212)
+  [1m[35m (298.0ms)[0m  CREATE TABLE `artists_packs` (`artist_id` int(11), `pack_id` int(11), `artist_percent` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (254.7ms)[0m  [1mCREATE INDEX `index_artists_packs_on_artist_id` ON `artists_packs` (`artist_id`)[0m
+  [1m[35m (222.5ms)[0m  CREATE INDEX `index_artists_packs_on_pack_id` ON `artists_packs` (`pack_id`)
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130827210212')[0m
+Migrating to CreatePacksStickers (20130828003030)
+  [1m[35m (208.8ms)[0m  CREATE TABLE `packs_stickers` (`pack_id` int(11), `sticker_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (201.6ms)[0m  [1mCREATE INDEX `index_packs_stickers_on_pack_id` ON `packs_stickers` (`pack_id`)[0m
+  [1m[35m (269.3ms)[0m  CREATE INDEX `index_packs_stickers_on_sticker_id` ON `packs_stickers` (`sticker_id`)
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130828003030')[0m
+Migrating to CreateAppsPacks (20130828003306)
+  [1m[35m (205.8ms)[0m  CREATE TABLE `apps_packs` (`app_id` int(11), `pack_id` int(11), `cover_image` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (213.9ms)[0m  [1mCREATE INDEX `index_apps_packs_on_app_id` ON `apps_packs` (`app_id`)[0m
+  [1m[35m (426.8ms)[0m  CREATE INDEX `index_apps_packs_on_pack_id` ON `apps_packs` (`pack_id`)
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130828003306')[0m
+Migrating to CreateArtistsTags (20130828003549)
+  [1m[35m (213.3ms)[0m  CREATE TABLE `artists_tags` (`artist_id` int(11), `tag_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (193.6ms)[0m  [1mCREATE INDEX `index_artists_tags_on_artist_id` ON `artists_tags` (`artist_id`)[0m
+  [1m[35m (263.1ms)[0m  CREATE INDEX `index_artists_tags_on_tag_id` ON `artists_tags` (`tag_id`)
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130828003549')[0m
+Migrating to CreatePacksTags (20130828004220)
+  [1m[35m (212.2ms)[0m  CREATE TABLE `packs_tags` (`pack_id` int(11), `tag_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (213.6ms)[0m  [1mCREATE INDEX `index_packs_tags_on_pack_id` ON `packs_tags` (`pack_id`)[0m
+  [1m[35m (179.7ms)[0m  CREATE INDEX `index_packs_tags_on_tag_id` ON `packs_tags` (`tag_id`)
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130828004220')[0m
+Migrating to CreateStickersTags (20130828004400)
+  [1m[35m (289.7ms)[0m  CREATE TABLE `stickers_tags` (`sticker_id` int(11), `tag_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (395.4ms)[0m  [1mCREATE INDEX `index_stickers_tags_on_sticker_id` ON `stickers_tags` (`sticker_id`)[0m
+  [1m[35m (428.3ms)[0m  CREATE INDEX `index_stickers_tags_on_tag_id` ON `stickers_tags` (`tag_id`)
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130828004400')[0m
+Migrating to CreateDownloads (20130828032051)
+  [1m[35m (119.5ms)[0m  CREATE TABLE `downloads` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `pack_id` int(11), `app_id` int(11), `app_user_id` varchar(255), `pack_price` decimal, `app_percentage_of_revenue` int(11), `artist_percentage_of_revenue` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (366.3ms)[0m  [1mCREATE INDEX `index_downloads_on_pack_id` ON `downloads` (`pack_id`)[0m
+  [1m[35m (241.5ms)[0m  CREATE INDEX `index_downloads_on_app_id` ON `downloads` (`app_id`)
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130828032051')[0m
+Migrating to ChangePacksPrice (20130828081843)
+  [1m[35m (448.0ms)[0m  ALTER TABLE `packs` CHANGE `price` `price` decimal(8,2) DEFAULT NULL
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130828081843')[0m
+Migrating to ChangeDownloadsPackPrice (20130828082129)
+  [1m[35m (264.0ms)[0m  ALTER TABLE `downloads` CHANGE `pack_price` `pack_price` decimal(8,2) DEFAULT NULL
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130828082129')[0m
+Migrating to AddContentTypeToOnboardingFiles (20130902191437)
+  [1m[35m (313.5ms)[0m  ALTER TABLE `onboarding_files` ADD `content_type` varchar(255) AFTER `file_name`
+  [1m[36m (15.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130902191437')[0m
+Migrating to CreatePrelaunches (20130909234015)
+  [1m[35m (232.4ms)[0m  CREATE TABLE `prelaunches` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130909234015')[0m
+Migrating to AddPhotoAndBioToOnboardingArtists (20130912153049)
+  [1m[35m (220.8ms)[0m  ALTER TABLE `onboarding_artists` ADD `photo` varchar(255) AFTER `licensing_permission`
+  [1m[36m (220.9ms)[0m  [1mALTER TABLE `onboarding_artists` ADD `bio` text AFTER `licensing_permission`[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130912153049')
+Migrating to ChangeOnboardingFilesTableName (20130915191449)
+  [1m[36m (34.5ms)[0m  [1mRENAME TABLE `onboarding_files` TO `onboarding_images`[0m
+  [1m[35m (0.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130915191449')
+Migrating to CreateArtistsPacksPercentage (20130919123340)
+  [1m[36m (247.6ms)[0m  [1mCREATE TABLE `artists_packs_percentage` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `artist_id` int(11), `pack_id` int(11), `percentage_of_revenue` int(11), `start_date` datetime, `end_date` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (245.5ms)[0m  CREATE INDEX `index_artists_packs_percentage_on_artist_id_and_pack_id` ON `artists_packs_percentage` (`artist_id`, `pack_id`)
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130919123340')[0m
+Migrating to ArtistsPacksRemoveArtistPercent (20130919130127)
+  [1m[35m (245.9ms)[0m  ALTER TABLE `artists_packs` DROP `artist_percent`
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130919130127')[0m
+Migrating to CreateAppsPacksPercentage (20130919131321)
+  [1m[35m (250.2ms)[0m  CREATE TABLE `apps_packs_percentage` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `app_id` int(11), `pack_id` int(11), `percentage_of_revenue` int(11), `start_date` datetime, `end_date` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (212.0ms)[0m  [1mCREATE INDEX `index_apps_packs_percentage_on_app_id_and_pack_id` ON `apps_packs_percentage` (`app_id`, `pack_id`)[0m
+  [1m[35m (0.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130919131321')
+Migrating to CreatePacksPrices (20130919155513)
+  [1m[36m (207.8ms)[0m  [1mCREATE TABLE `packs_prices` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `pack_id` int(11), `price` decimal(8,2), `start_date` datetime, `end_date` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (272.2ms)[0m  CREATE INDEX `index_packs_prices_on_pack_id` ON `packs_prices` (`pack_id`)
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130919155513')[0m
+Migrating to ChangeDownloads (20130919164651)
+  [1m[35m (194.9ms)[0m  ALTER TABLE `downloads` ADD `pack_price_id` int(11) AFTER `app_id`
+  [1m[36m (318.8ms)[0m  [1mCREATE INDEX `index_downloads_on_pack_price_id` ON `downloads` (`pack_price_id`)[0m
+  [1m[35m (264.6ms)[0m  ALTER TABLE `downloads` DROP `pack_price`
+  [1m[36m (315.6ms)[0m  [1mALTER TABLE `downloads` DROP `app_percentage_of_revenue`[0m
+  [1m[35m (323.6ms)[0m  ALTER TABLE `downloads` DROP `artist_percentage_of_revenue`
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130919164651')[0m
+Migrating to ChangePacksCoverImages (20130924134801)
+  [1m[35m (298.1ms)[0m  ALTER TABLE `packs` DROP `cover_image`
+  [1m[36m (204.7ms)[0m  [1mALTER TABLE `apps_packs` DROP `cover_image`[0m
+  [1m[35m (289.2ms)[0m  ALTER TABLE `apps_packs` ADD `cover_image_override` tinyint(1) AFTER `pack_id`
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130924134801')[0m
+Migrating to ChangeNullableForTimestampsOnArtistsPacks (20131007163102)
+  [1m[35m (371.4ms)[0m  ALTER TABLE `artists_packs` CHANGE `created_at` `created_at` datetime DEFAULT NULL
+  [1m[36m (235.1ms)[0m  [1mALTER TABLE `artists_packs` CHANGE `updated_at` `updated_at` datetime DEFAULT NULL[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20131007163102')
+  [1m[36m (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m

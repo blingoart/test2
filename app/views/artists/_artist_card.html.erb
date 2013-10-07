@@ -3,6 +3,13 @@
     <div class="artist_name">
       <%= artist.first_name %> <%= artist.last_name %>
     </div>
-    <div class="artist_photo"></div>
+    <div class="artist_photo<%= artist.packs.present? ? " has_packs" : '' %> ">
+      <% if artist.packs.present? %>
+        <div class="packs">
+          <div class="text">
+          <%= pluralize artist.packs.count, 'Pack' %></div>
+        </div>
+      <% end %>
+    </div>
 </div>
 </a>

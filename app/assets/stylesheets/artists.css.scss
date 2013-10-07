@@ -68,17 +68,44 @@
     } // .search
   }   // .search-bar
 
-  .artist_card {
-    position: relative;
-    display: inline-block;
-    width: 220px;
-    height: 260px;
-    margin: 15px;
-    background-color: rgb(215,215,215);
-    .artist_name {
-      background-color: #FFF;
-      padding: 10px 0 0 10px;
-      color: rgb(133,133,133);
+  .artist_cards {
+
+    .artist_card {
+      vertical-align: top;
+      position: relative;
+      display: inline-block;
+      width: 220px;
+      height: 260px;
+      margin: 15px;
+      background-color: rgb(215,215,215);
+
+      .artist_name {
+        background-color: #FFF;
+        padding: 10px 0 0 10px;
+        color: rgb(133,133,133);
+      }
+      .artist_photo {
+        width: 220px;
+        height: 231px;
+        position: relative;
+        .packs {
+          position: absolute;
+          margin: 25%;
+          width: 100px;
+          height: 100px;
+          background-color: #FFF;
+          border-radius: 100%;
+          text-align: center;
+          vertical-align: middle;
+          .text {
+            position: relative;
+            top: 45%;
+          }
+        }
+      }
+      .has_packs {
+        background-color: rgb(242,108,126);
+      }
     }
   }
 
@@ -154,10 +181,7 @@
           }
         }
       }
-
     }
-
-
   }
 
 
