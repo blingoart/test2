@@ -1,0 +1,121 @@
+// CSS Media Queries
+
+@media all and (max-width: 1013px ) {
+  .container {
+    width: 800px;
+    .search-bar {
+      .search {
+        position: relative;
+        form {
+          #search {
+            width: 89%;
+          }
+          img: {
+            position: absolute;
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 750px ) {
+  .container {
+    width: 650px;
+    .artist_cards {
+      text-align: center;
+    }
+    .search-bar {
+      .search {
+        form {
+          #search {
+            width: 85%
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 620px ) {
+  .container {
+    width: 600px;
+    .artist_cards {
+      text-align: center;
+    }
+    .search-bar {
+      .search {
+        &:first-child {
+          width: 40%;
+        }
+        form {
+          #search {
+            width: 85%
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media all and (max-width: 600px ) {
+  .container {
+    width: 500px;
+    .artist_cards {
+      text-align: center;
+    }
+    .search-bar {
+      .search {
+        &:first-child {
+          width: 40%;
+        }
+        form {
+          #search {
+            width: 78%
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 500px ) {
+  .container {
+    width: 400px;
+    .artist_cards {
+      text-align: center;
+    }
+    .search-bar {
+      .search {
+        &:first-child {
+          width: 40%;
+        }
+        form {
+          #search {
+            width: 78%
+          }
+        }
+      }
+    }
+    .footer {
+      text-align: left;
+      .email_form, .company_info {
+        position: relative;
+        text-align: left;
+        width: 90%;
+        display: block;
+        margin: 0;
+        padding: {
+          left: 5px;
+        }
+      }
+      .company_links {
+        text-align: left;
+      }
+
+
+    }
+  }
+}
