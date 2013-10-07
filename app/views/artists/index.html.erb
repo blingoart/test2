@@ -1,6 +1,6 @@
-<div class="onboarding-images-container">
-<%- @artists.each do |artist| %>
-  <div><%= artist.first_name %></div>
-<%- end %>
+<div class="container">
+  <%= render :partial =>  'artists/header' %>
+  <%= render :partial =>  'artists/artist_cards', :locals => {:artists => @artists} %>
+  <%= render :partial =>  'artists/footer' %>
 </div>
 

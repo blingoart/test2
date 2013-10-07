@@ -1,0 +1,10 @@
+<div class="email_form">
+  <h2>Want to know more?</h2>
+  <%= form_tag '/newsletter' do %>
+    <div class="email_field">
+      <%= image_tag 'artists/mail.png' %>
+      <%= email_field_tag 'email', nil %>
+    </div>
+  <% end %>
+
+</div>

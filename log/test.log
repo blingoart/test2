@@ -10041,3 +10041,106 @@ Completed 302 Found in 5ms (ActiveRecord: 1.6ms)
   [1m[36m (0.7ms)[0m  [1mTRUNCATE TABLE `stickers_tags`;[0m
   [1m[35m (0.5ms)[0m  TRUNCATE TABLE `tags`;
   [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+Connecting to database specified by database.yml
+  [1m[36m (24.4ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateClients (20130807002210)
+Migrating to CreateApps (20130807003133)
+Migrating to CreateArtists (20130807003310)
+Migrating to CreateBrands (20130807003322)
+Migrating to CreateStickers (20130807003334)
+Migrating to CreatePacks (20130807003348)
+Migrating to CreateTags (20130807003401)
+Migrating to CreateOnboardingArtists (20130817192458)
+Migrating to CreateOnboardingFiles (20130817192811)
+Migrating to ChangeOnboardingArtistsLicensingPermission (20130823031002)
+Migrating to CreateBrandsPacks (20130827192623)
+Migrating to CreateArtistsPacks (20130827210212)
+Migrating to CreatePacksStickers (20130828003030)
+Migrating to CreateAppsPacks (20130828003306)
+Migrating to CreateArtistsTags (20130828003549)
+Migrating to CreatePacksTags (20130828004220)
+Migrating to CreateStickersTags (20130828004400)
+Migrating to CreateDownloads (20130828032051)
+Migrating to ChangePacksPrice (20130828081843)
+Migrating to ChangeDownloadsPackPrice (20130828082129)
+Migrating to AddContentTypeToOnboardingFiles (20130902191437)
+Migrating to CreatePrelaunches (20130909234015)
+Migrating to AddPhotoAndBioToOnboardingArtists (20130912153049)
+Migrating to ChangeOnboardingFilesTableName (20130915191449)
+Migrating to CreateArtistsPacksPercentage (20130919123340)
+Migrating to ArtistsPacksRemoveArtistPercent (20130919130127)
+Migrating to CreateAppsPacksPercentage (20130919131321)
+Migrating to CreatePacksPrices (20130919155513)
+Migrating to ChangeDownloads (20130919164651)
+Migrating to ChangePacksCoverImages (20130924134801)
+  [1m[35m (0.3ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+  [1m[36m (2.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Connecting to database specified by database.yml
+  [1m[36m (3.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Connecting to database specified by database.yml
+  [1m[36m (2.8ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Connecting to database specified by database.yml
+  [1m[36m (26.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Connecting to database specified by database.yml
+  [1m[36m (2.4ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Connecting to database specified by database.yml
+  [1m[36m (2.4ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (2.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (64.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (265.0ms)[0m  [1mINSERT INTO `artists` (`created_at`, `first_name`, `last_name`, `percentage_of_revenue`, `updated_at`) VALUES ('2013-10-06 21:15:54', 'John', 'Smith', 5, '2013-10-06 21:15:54')[0m
+  [1m[35m (100.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (23.8ms)[0m  INSERT INTO `artists` (`created_at`, `first_name`, `last_name`, `percentage_of_revenue`, `updated_at`) VALUES ('2013-10-06 21:15:54', 'Bob', 'Jones', 2, '2013-10-06 21:15:54')
+  [1m[36m (28.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (60.4ms)[0m  [1mINSERT INTO `artists` (`created_at`, `first_name`, `last_name`, `percentage_of_revenue`, `updated_at`) VALUES ('2013-10-06 21:15:54', 'Mark', 'McMurphy', 10, '2013-10-06 21:15:54')[0m
+  [1m[35m (1.1ms)[0m  COMMIT
+Connecting to database specified by database.yml
+  [1m[36m (30.7ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35mSQL (74.7ms)[0m  DELETE FROM `artists`
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (43.9ms)[0m  INSERT INTO `artists` (`created_at`, `first_name`, `last_name`, `percentage_of_revenue`, `updated_at`) VALUES ('2013-10-06 21:35:33', 'John', 'Smith', 5, '2013-10-06 21:35:33')
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO `artists` (`created_at`, `first_name`, `last_name`, `percentage_of_revenue`, `updated_at`) VALUES ('2013-10-06 21:35:33', 'Bob', 'Jones', 2, '2013-10-06 21:35:33')[0m
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `artists` (`created_at`, `first_name`, `last_name`, `percentage_of_revenue`, `updated_at`) VALUES ('2013-10-06 21:35:33', 'Mark', 'McMurphy', 10, '2013-10-06 21:35:33')
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `artists` (`created_at`, `first_name`, `last_name`, `percentage_of_revenue`, `updated_at`) VALUES ('2013-10-06 21:35:33', 'John', 'Lennon', 50, '2013-10-06 21:35:33')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+Connecting to database specified by database.yml
+  [1m[36m (29.4ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35mSQL (89.0ms)[0m  DELETE FROM `artists`
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `artists` (`created_at`, `first_name`, `last_name`, `percentage_of_revenue`, `updated_at`) VALUES ('2013-10-06 21:59:27', 'John', 'Smith', 5, '2013-10-06 21:59:27')
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (24.4ms)[0m  [1mINSERT INTO `artists` (`created_at`, `first_name`, `last_name`, `percentage_of_revenue`, `updated_at`) VALUES ('2013-10-06 21:59:27', 'Bob', 'Jones', 2, '2013-10-06 21:59:27')[0m
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (21.2ms)[0m  INSERT INTO `artists` (`created_at`, `first_name`, `last_name`, `percentage_of_revenue`, `updated_at`) VALUES ('2013-10-06 21:59:27', 'Mark', 'McMurphy', 10, '2013-10-06 21:59:27')
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `artists` (`created_at`, `first_name`, `last_name`, `percentage_of_revenue`, `updated_at`) VALUES ('2013-10-06 21:59:27', 'John', 'Lennon', 50, '2013-10-06 21:59:27')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `artists` (`created_at`, `first_name`, `last_name`, `percentage_of_revenue`, `updated_at`) VALUES ('2013-10-06 21:59:27', 'Melissa', 'Yingling', 100, '2013-10-06 21:59:27')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m

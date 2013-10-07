@@ -16,12 +16,13 @@ gem 'execjs', '~>1.4.0'
 gem 'therubyracer', '~>0.11.4'
 
 group :development,:test do
+  gem 'better_errors'
+  gem 'quiet_assets'
+  gem 'pry-debugger'
   gem 'rspec-rails', '~>2.14.0'
   gem 'cucumber-rails', '~>1.3.1', :require => false
-  #gem 'webrat', '~>0.7.3'
   gem 'database_cleaner', '~>1.0.1'
   gem 'factory_girl_rails', '~>4.2.0'
-  #gem "sqlite3"
 end
 
 # Gems used only for assets and not required
