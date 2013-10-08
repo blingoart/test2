@@ -26,15 +26,16 @@
 
   .search-bar {
     background-color: #FFF;
-    vertical-align: top;
+    vertical-align: middle;
     margin-bottom: 20px;
 
     h2 {
       font-weight: bolder;
       padding-left: 10px;
-      margin: 15px;
+      margin-left: 15px;
       display: inline-block;
       color: rgb(239,239,239);
+
     }
     img {
       vertical-align: middle;
@@ -170,19 +171,16 @@
         }
       }
       .company_links {
-        position: absolute;
+        position: relative;
         margin: {
           top: 10px;
-          right: 18px;
+          right: -10px;
         }
-        right: 0;
         a {
           padding: 30px;
           vertical-align: bottom;
           color: #FFF;
-          &:last-child {
-            padding-right: 0;
-          }
+
         }
       }
     }

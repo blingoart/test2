@@ -111,11 +111,20 @@
           left: 5px;
         }
       }
-      .company_links {
-        text-align: left;
+      .company_info {
+        .social_links {
+          text-align: center;
+        }
+        .company_links {
+          position: absolute;
+          left: 0;
+          a {
+            &:first-child {
+              margin-left: -23px;
+            }
+          }
+        }
       }
-
-
     }
   }
 }

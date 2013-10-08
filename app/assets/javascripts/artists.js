@@ -1,15 +1,16 @@
 
 
 $(document).ready(function() {
-  var $artistCards = $('.artist_card');
 
-  $('.search form').submit(function(e) {
+  $('.search form, .footer form').submit(function(e) {
     e.preventDefault();
   });
 
   // filtering results
   $('#search').keyup(function() {
-    var val = $.trim(this.value).toUpperCase();
+    var val = $.trim(this.value).toUpperCase(),
+    $artistCards = $('.artist_card');
+
 
     if ( val === '')
       $artistCards.show();
